@@ -1,0 +1,30 @@
+# Version: 8.6.1.26 (98ee412)
+# [first argument, ignore] # /Users/sephiroth/Desktop/BubbleCell/BubbleCell/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.1.26/bin/mtouch-64 \
+	--cache \
+	/Users/sephiroth/Desktop/BubbleCell/BubbleCell/obj/iPhoneSimulator/Release/mtouch-cache \
+	--sim \
+	/Users/sephiroth/Desktop/BubbleCell/BubbleCell/bin/iPhoneSimulator/Release/BubbleCell.app \
+	--executable \
+	BubbleCell \
+	--nolink \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	7.1 \
+	--targetver \
+	5.1.1 \
+	--abi=i386 \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/MonoTouch.Dialog-1.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	/Users/sephiroth/Desktop/BubbleCell/BubbleCell/bin/iPhoneSimulator/Release//BubbleCell.exe \
