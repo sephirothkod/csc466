@@ -1,0 +1,7 @@
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/MonoTouch.Dialog-1.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/mscorlib.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/System.Core.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/Xamarin.iOS.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/BubbleCell.exe
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/System.Json.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/mtouch-cache/64/Link/System.dll

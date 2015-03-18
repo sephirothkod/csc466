@@ -1,17 +1,17 @@
-# Version: 8.6.1.26 (98ee412)
-# [first argument, ignore] # /Users/sephiroth/Desktop/BubbleCell/BubbleCell/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.1.26/bin/mtouch-64 \
+# Version: 8.8.0.2 (ccfcd59)
+# [first argument, ignore] # /Users/Korchinski/csc466/BubbleCell/BubbleCell/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.0.2/bin/mtouch-64 \
 	--cache \
-	/Users/sephiroth/Desktop/BubbleCell/BubbleCell/obj/iPhoneSimulator/Release/mtouch-cache \
+	/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhoneSimulator/Release/mtouch-cache \
 	--sim \
-	/Users/sephiroth/Desktop/BubbleCell/BubbleCell/bin/iPhoneSimulator/Release/BubbleCell.app \
+	/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhoneSimulator/Release/BubbleCell.app \
 	--executable \
 	BubbleCell \
 	--nolink \
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--sdk \
-	7.1 \
+	8.2 \
 	--targetver \
 	5.1.1 \
 	--abi=i386 \
@@ -24,7 +24,11 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Data.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Mono.Data.Sqlite.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
-	/Users/sephiroth/Desktop/BubbleCell/BubbleCell/bin/iPhoneSimulator/Release//BubbleCell.exe \
+	/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhoneSimulator/Release//BubbleCell.exe \

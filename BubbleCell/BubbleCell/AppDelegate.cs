@@ -79,13 +79,14 @@ namespace BubbleCell {
 			UIViewController main;
 
 			if (NSUserDefaults.StandardUserDefaults.BoolForKey ("xloggedIn")) {
-				UIApplication.Main (args, null, "AppDelegate");
+				string[] temp = new string[1];
+				UIApplication.Main (temp, null, "AppDelegate");
 				var dbName = "CurrentChats.db";
 				var documents = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
-				var dbPath = Path.Combine(documents, dbName);
-				if (!File.Exists (dbPath)) {
-					viewController = new CreateDatabaseWithSqliteNetViewController ();
-				}
+				//var dbPath = Path.Combine(documents, dbName);
+				//if (!File.Exists (dbPath)) {
+				//	viewController = new CreateDatabaseWithSqliteNetViewController ();
+				//}
 				main = MakeOptions ();
 			}
 			else

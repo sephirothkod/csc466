@@ -8,8 +8,12 @@
 // from https://github.com/acani/AcaniChat
 //
 using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using MonoTouch.Dialog;
 using Foundation;
 using UIKit;
@@ -29,13 +33,38 @@ namespace BubbleCell
 		const float messageFontSize = 16f;
 		const float maxContentHeight = 84f;
 		const int entryHeight = 40;
+		const int port = 54545;
+		const string broadcastAddress = "255.255.255.255";
 		nfloat previousContentHeight;
+
+		delegate void AddMessage(string message);
+
+		UdpClient receivingClient;
+		UdpClient sendingClient;
+
+		Thread receivingThread;
 
 		NSObject showObserver, hideObserver;
 
 		public ChatViewController (RootElement root)
 		{
 			this.root = root;
+		}
+
+		private void InitializeSender()
+		{
+			sendingClient = new UdpClient (broadcastAddress, port);
+			sendingClient.EnableBroadcast = true;
+		}
+
+		private void InitializeReceiver()
+		{
+			receivingClient = new UdpClient (port);
+
+			ThreadStart start = new ThreadStart (Receiver);
+			receivingThread = new Thread (start);
+			receivingThread.IsBackground = true;
+			receivingThread.Start ();
 		}
 
 		public override void ViewDidLoad ()
@@ -60,6 +89,9 @@ namespace BubbleCell
 			discussion = new DialogViewController (UITableViewStyle.Plain, root, true);
 			discussionHost.AddSubview (discussion.View);
 			discussion.View.BackgroundColor = backgroundColor;
+			
+			InitializeSender ();
+			InitializeReceiver ();
 
 			//
 			// Add styled entry
@@ -90,6 +122,7 @@ namespace BubbleCell
 			};
 			previousContentHeight = entry.ContentSize.Height;
 			chatBar.AddSubview (entry);
+
 
 			//
 			// The send button
@@ -146,19 +179,37 @@ namespace BubbleCell
 			sendButton.TitleLabel.Alpha = 0.5f;
 		}
 
-		bool side;
-		bool first;
-		 
 		// Just show messages alternating
 		void SendMessage (object sender, EventArgs args)
 		{
-			if (first = false) {
-				first = true;
-				side = !side;
+			entry.Text = entry.Text.TrimEnd ();
+			if (!string.IsNullOrEmpty (entry.Text)) 
+			{
+				discussion.Root [0].Add (new ChatBubble (false, entry.Text));
+				byte[] data = Encoding.ASCII.GetBytes (entry.Text);
+				sendingClient.Send (data, data.Length);
+				entry.Text = "";
 			}
-			discussion.Root [0].Add (new ChatBubble (side, entry.Text));
-			entry.Text = "";
 			ScrollToBottom (true);
+		}
+
+		private void Receiver()
+		{
+			IPEndPoint endPoint = new IPEndPoint (IPAddress.Any, port);
+			AddMessage messageDelegate = MessageReceived;
+			while (true) 
+			{
+				byte[] data = receivingClient.Receive (ref endPoint);
+				string message = Encoding.ASCII.GetString (data);
+					//.BeginInvokeOnMainThread (messageDelegate, message);
+				InvokeOnMainThread(delegate { MessageReceived(message);});
+			}
+
+		}
+
+		private void MessageReceived(string message)
+		{
+			discussion.Root [0].Add (new ChatBubble (true, entry.Text));
 		}
 
 		//

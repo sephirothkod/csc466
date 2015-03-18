@@ -77,8 +77,6 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Bubble.cs" />
     <Compile Include="ChatViewController.cs" />
-    <Compile Include="SQLite.cs" />
-    <Compile Include="CreateDatabaseWithSqliteNetViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="green.png" />
