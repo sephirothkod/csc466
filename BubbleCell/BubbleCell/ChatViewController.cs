@@ -37,8 +37,6 @@ namespace BubbleCell
 		const string broadcastAddress = "255.255.255.255";
 		nfloat previousContentHeight;
 
-		delegate void AddMessage(string message);
-
 		UdpClient receivingClient;
 		UdpClient sendingClient;
 
@@ -196,20 +194,18 @@ namespace BubbleCell
 		private void Receiver()
 		{
 			IPEndPoint endPoint = new IPEndPoint (IPAddress.Any, port);
-			AddMessage messageDelegate = MessageReceived;
+			//AddMessage messageDelegate = MessageReceived;
 			while (true) 
 			{
 				byte[] data = receivingClient.Receive (ref endPoint);
 				string message = Encoding.ASCII.GetString (data);
-					//.BeginInvokeOnMainThread (messageDelegate, message);
 				InvokeOnMainThread(delegate { MessageReceived(message);});
 			}
-
 		}
 
 		private void MessageReceived(string message)
 		{
-			discussion.Root [0].Add (new ChatBubble (true, entry.Text));
+			discussion.Root [0].Add (new ChatBubble (true, message));
 		}
 
 		//
