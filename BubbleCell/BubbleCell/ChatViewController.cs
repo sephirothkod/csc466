@@ -11,8 +11,6 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using MonoTouch.Dialog;
 using Foundation;
@@ -176,8 +174,7 @@ namespace BubbleCell
 			sendButton.Enabled = false;
 			sendButton.TitleLabel.Alpha = 0.5f;
 		}
-
-		// Just show messages alternating
+			
 		void SendMessage (object sender, EventArgs args)
 		{
 			entry.Text = entry.Text.TrimEnd ();

@@ -30,9 +30,7 @@ namespace BubbleCell {
 		{
 			var chatContent = new RootElement (title) {
 				new Section () {
-					new ChatBubble (true, "This is the pre-entered test for incoming messages"),
-					new ChatBubble (false, "This is the pre-entered test for outgoing messages"),
-					new ChatBubble (true, "Re-testing incoming."),
+
 				}
 			};
 			return new ChatViewController (chatContent);
@@ -40,33 +38,62 @@ namespace BubbleCell {
 
 		UIViewController MakeOptions ()
 		{
-			var options = new DialogViewController (new RootElement ("Options") {
+			
+
+			var options = new DialogViewController (new RootElement ("Chats") {
+				
 				new Section ("Active Chats"){
 					(Element)new RootElement ("Chat with a Robot", x=> MakeChat ("Robot")),
 					(Element)new RootElement ("Chat with Mom", x=> MakeChat ("Mom")),
+				},
+
+				new Section ("Create a New Chat"){
+					(Element)new RootElement ("New", x=> MakeNewChat ())
+
 				}
+
 			});
-			return new UINavigationController (options);
+			var controller = new UINavigationController (options);
+			controller.NavigationItem.SetHidesBackButton(false,false);
+			return controller;
+		}
+
+		UIViewController MakeNewChat ()
+		{
+			var userName = new EntryElement ("Username", "Enter Desired Name", "");
+
+			var createButton = new StringElement ("Create", delegate {
+				userName.FetchValue ();
+
+			});
+
+			var createChat = new DialogViewController (new RootElement ("New Chat") {
+
+				new Section ("Create Chat") {
+					userName
+				},
+				new Section () {
+					createButton
+				}
+			},true);
+			createChat.NavigationItem.SetHidesBackButton(false,false);
+			return createChat;
 		}
 
 		UIViewController MakeLogin ()
 		{
-			var login = new EntryElement ("Login", "Type 'Root'", "");
-			var pass = new EntryElement ("Password", "Type 'Root'", "");
+			var login = new EntryElement ("Login", "Enter Desired Name", "");
 
 			var loginButton = new StringElement ("Login", delegate {
 				login.FetchValue ();
-				pass.FetchValue ();
-				if (login.Value == "Root" && pass.Value == "Root"){
 					NSUserDefaults.StandardUserDefaults.SetBool (true, "loggedIn");
-
 					window.RootViewController.PresentViewController (MakeOptions (), true, delegate {});
-				}
+
 			});
 
 			return new DialogViewController (new RootElement ("Login"){
 				new Section ("Enter login and password"){
-					login, pass,
+					login
 				},
 				new Section (){
 					loginButton
@@ -88,6 +115,10 @@ namespace BubbleCell {
 				//	viewController = new CreateDatabaseWithSqliteNetViewController ();
 				//}
 				main = MakeOptions ();
+				main.NavigationItem.SetRightBarButtonItem(
+					new UIBarButtonItem(UIBarButtonSystemItem.Action, (sender, e) => {
+						main = MakeNewChat();
+					}),true);
 			}
 			else
 				main = MakeLogin ();
