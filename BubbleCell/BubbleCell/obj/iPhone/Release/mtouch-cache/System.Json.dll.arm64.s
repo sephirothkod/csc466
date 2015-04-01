@@ -156,7 +156,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -222,10 +222,10 @@ _System_Json_JsonArray_get_Item_int:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -258,7 +258,7 @@ _System_Json_JsonArray_set_Item_int_System_Json_JsonValue:
 .word 0xaa1703e1
 .word 0xaa1903e2
 .word 0xf9400063
-.word 0xf9403470
+.word 0xf9405c70
 .word 0xd63f0200
 .word 0xb9801f00
 .word 0x11000400
@@ -268,10 +268,10 @@ _System_Json_JsonArray_set_Item_int_System_Json_JsonValue:
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -317,7 +317,7 @@ ldr x0, [x16, #0]
 .word 0xd28001a1
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -520,6 +520,62 @@ ldr x3, [x16, #16]
 Lme_e:
 .text
 	.align 4
+	.no_dead_strip _System_Json_JsonArray_System_Collections_IEnumerable_GetEnumerator
+_System_Json_JsonArray_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400801
+.word 0x910063a8
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_14
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #40]
+bl _p_1
+.word 0x91004003
+.word 0xaa0303e1
+.word 0xf9400fa2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0x91002021
+.word 0xf94013a2
+.word 0xf9000022
+.word 0x91002022
+.word 0xf94017a1
+.word 0xf9000041
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0xaa0003e0
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_f:
+.text
+	.align 4
 	.no_dead_strip _System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
 _System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue:
 .word 0xa9bd7bfd
@@ -564,13 +620,13 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_f:
+Lme_10:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_get_Count
@@ -582,12 +638,12 @@ _System_Json_JsonObject_get_Count:
 .word 0xf9400800
 .word 0xaa0003e1
 .word 0xf940003e
-.word 0xb9804000
+.word 0xb9804800
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_10:
+Lme_11:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_GetEnumerator
@@ -657,7 +713,77 @@ ldr x3, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_11:
+Lme_12:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonObject_System_Collections_IEnumerable_GetEnumerator
+_System_Json_JsonObject_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9ba7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400801
+.word 0x910063a8
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_17
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #56]
+bl _p_1
+.word 0x91004003
+.word 0xaa0303e1
+.word 0xf9400fa2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0x91002021
+.word 0xf94013a2
+.word 0xf9000022
+.word 0x91002021
+.word 0xf94017a2
+.word 0xf9000022
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0x91002022
+.word 0xf9401ba1
+.word 0xf9000041
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0xaa0003e0
+.word 0x910003bf
+.word 0xa8c67bfd
+.word 0xd65f03c0
+
+Lme_13:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_get_Item_string
@@ -676,7 +802,7 @@ bl _p_18
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_12:
+Lme_14:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_get_JsonType
@@ -689,7 +815,7 @@ _System_Json_JsonObject_get_JsonType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_13:
+Lme_15:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_Add_string_System_Json_JsonValue
@@ -718,13 +844,13 @@ ldr x0, [x16, #0]
 .word 0xd28002e1
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_14:
+Lme_16:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_Add_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -752,7 +878,7 @@ bl _System_Json_JsonObject_Add_string_System_Json_JsonValue
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_15:
+Lme_17:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_AddRange_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -775,7 +901,7 @@ _System_Json_JsonObject_AddRange_System_Collections_Generic_IEnumerable_1_System
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #72]
-.word 0x92800ef0
+.word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -790,7 +916,7 @@ ldr x15, [x16, #72]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #80]
-.word 0x928004f0
+.word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -855,13 +981,13 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_16:
+Lme_18:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_Clear
@@ -878,7 +1004,7 @@ bl _p_20
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_17:
+Lme_19:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_Contains_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -898,7 +1024,7 @@ _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collection
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #104]
-.word 0x928005f0
+.word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
@@ -907,7 +1033,7 @@ ldr x15, [x16, #104]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_18:
+Lme_1a:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_Remove_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -927,7 +1053,7 @@ _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collection
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #112]
-.word 0x92800df0
+.word 0x92800cf0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
@@ -936,7 +1062,7 @@ ldr x15, [x16, #112]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_19:
+Lme_1b:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_ContainsKey_string
@@ -964,13 +1090,13 @@ ldr x0, [x16, #0]
 .word 0xd28002e1
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_1a:
+Lme_1c:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_CopyTo_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue___int
@@ -998,7 +1124,7 @@ ldr x15, [x16, #120]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_1b:
+Lme_1d:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_Remove_string
@@ -1026,13 +1152,13 @@ ldr x0, [x16, #0]
 .word 0xd28002e1
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_1c:
+Lme_1e:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_get_IsReadOnly
@@ -1045,7 +1171,29 @@ _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collection
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1d:
+Lme_1f:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonObject_TryGetValue_string_System_Json_JsonValue_
+_System_Json_JsonObject_TryGetValue_string_System_Json_JsonValue_:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xf9400ba0
+.word 0xf9400803
+.word 0xaa0303e0
+.word 0xf9400fa1
+.word 0xf94013a2
+.word 0xf940007e
+bl _p_23
+.word 0x53001c00
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_20:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_bool
@@ -1058,7 +1206,7 @@ _System_Json_JsonPrimitive__ctor_bool:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #128]
-bl _p_23
+bl _p_24
 .word 0x394063a1
 .word 0x39004001
 .word 0xf9400ba1
@@ -1079,7 +1227,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1e:
+Lme_21:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_byte
@@ -1092,7 +1240,7 @@ _System_Json_JsonPrimitive__ctor_byte:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #136]
-bl _p_23
+bl _p_24
 .word 0x394063a1
 .word 0x39004001
 .word 0xf9400ba1
@@ -1113,7 +1261,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1f:
+Lme_22:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_char
@@ -1126,7 +1274,7 @@ _System_Json_JsonPrimitive__ctor_char:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #144]
-bl _p_23
+bl _p_24
 .word 0x794033a1
 .word 0x79002001
 .word 0xf9400ba1
@@ -1147,7 +1295,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_20:
+Lme_23:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_System_Decimal
@@ -1161,7 +1309,7 @@ _System_Json_JsonPrimitive__ctor_System_Decimal:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #152]
-bl _p_23
+bl _p_24
 .word 0x91004001
 .word 0xf9400fa2
 .word 0xf9000022
@@ -1185,7 +1333,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_21:
+Lme_24:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_double
@@ -1200,7 +1348,7 @@ _System_Json_JsonPrimitive__ctor_double:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #160]
-bl _p_23
+bl _p_24
 .word 0xfd4013a0
 .word 0xfd000800
 .word 0xf9400ba1
@@ -1221,7 +1369,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_22:
+Lme_25:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_single
@@ -1237,7 +1385,7 @@ _System_Json_JsonPrimitive__ctor_single:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #168]
-bl _p_23
+bl _p_24
 .word 0xfd4013a0
 .word 0x1e624010
 .word 0xbd001010
@@ -1259,7 +1407,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_23:
+Lme_26:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_int
@@ -1272,7 +1420,7 @@ _System_Json_JsonPrimitive__ctor_int:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #176]
-bl _p_23
+bl _p_24
 .word 0xb9801ba1
 .word 0xb9001001
 .word 0xf9400ba1
@@ -1293,7 +1441,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_24:
+Lme_27:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_long
@@ -1306,7 +1454,7 @@ _System_Json_JsonPrimitive__ctor_long:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #184]
-bl _p_23
+bl _p_24
 .word 0xf9400fa1
 .word 0xf9000801
 .word 0xf9400ba1
@@ -1327,7 +1475,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_25:
+Lme_28:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_sbyte
@@ -1340,7 +1488,7 @@ _System_Json_JsonPrimitive__ctor_sbyte:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #192]
-bl _p_23
+bl _p_24
 .word 0x398063a1
 .word 0x39004001
 .word 0xf9400ba1
@@ -1361,7 +1509,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_26:
+Lme_29:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_int16
@@ -1374,7 +1522,7 @@ _System_Json_JsonPrimitive__ctor_int16:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #200]
-bl _p_23
+bl _p_24
 .word 0x798033a1
 .word 0x79002001
 .word 0xf9400ba1
@@ -1395,7 +1543,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_27:
+Lme_2a:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_string
@@ -1423,7 +1571,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_28:
+Lme_2b:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_System_DateTime
@@ -1436,7 +1584,7 @@ _System_Json_JsonPrimitive__ctor_System_DateTime:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #208]
-bl _p_23
+bl _p_24
 .word 0x91004001
 .word 0xf9400fa2
 .word 0xf9000022
@@ -1458,7 +1606,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_29:
+Lme_2c:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_uint
@@ -1471,7 +1619,7 @@ _System_Json_JsonPrimitive__ctor_uint:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #216]
-bl _p_23
+bl _p_24
 .word 0xb9401ba1
 .word 0xb9001001
 .word 0xf9400ba1
@@ -1492,7 +1640,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2a:
+Lme_2d:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_ulong
@@ -1505,7 +1653,7 @@ _System_Json_JsonPrimitive__ctor_ulong:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #224]
-bl _p_23
+bl _p_24
 .word 0xf9400fa1
 .word 0xf9000801
 .word 0xf9400ba1
@@ -1526,7 +1674,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2b:
+Lme_2e:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_uint16
@@ -1539,7 +1687,7 @@ _System_Json_JsonPrimitive__ctor_uint16:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #232]
-bl _p_23
+bl _p_24
 .word 0x794033a1
 .word 0x79002001
 .word 0xf9400ba1
@@ -1560,7 +1708,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2c:
+Lme_2f:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_System_DateTimeOffset
@@ -1574,7 +1722,7 @@ _System_Json_JsonPrimitive__ctor_System_DateTimeOffset:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #240]
-bl _p_23
+bl _p_24
 .word 0x91004001
 .word 0xf9400fa2
 .word 0xf9000022
@@ -1598,7 +1746,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2d:
+Lme_30:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_System_Guid
@@ -1612,7 +1760,7 @@ _System_Json_JsonPrimitive__ctor_System_Guid:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #248]
-bl _p_23
+bl _p_24
 .word 0x91004001
 .word 0xf9400fa2
 .word 0xf9000022
@@ -1636,7 +1784,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2e:
+Lme_31:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_System_TimeSpan
@@ -1649,7 +1797,7 @@ _System_Json_JsonPrimitive__ctor_System_TimeSpan:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #256]
-bl _p_23
+bl _p_24
 .word 0x91004001
 .word 0xf9400fa2
 .word 0xf9000022
@@ -1671,7 +1819,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2f:
+Lme_32:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__ctor_System_Uri
@@ -1699,7 +1847,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_30:
+Lme_33:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive_get_Value
@@ -1713,7 +1861,7 @@ _System_Json_JsonPrimitive_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_31:
+Lme_34:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive_get_JsonType
@@ -1729,7 +1877,7 @@ _System_Json_JsonPrimitive_get_JsonType:
 .word 0xf9400b40
 .word 0xf9400000
 .word 0xf9400c00
-bl _p_24
+bl _p_25
 .word 0x93407c00
 .word 0xaa0003fa
 .word 0xaa1a03e0
@@ -1769,7 +1917,7 @@ ldr x0, [x16, #272]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_32:
+Lme_35:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive_GetFormattedString
@@ -1781,7 +1929,7 @@ _System_Json_JsonPrimitive_GetFormattedString:
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9404030
+.word 0xf9404430
 .word 0xd63f0200
 .word 0x93407c00
 .word 0xaa0003f9
@@ -1835,9 +1983,9 @@ bl _p_3
 .word 0xf9400c21
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_25
+bl _p_26
 .word 0xaa0003e1
-.word 0xd2803800
+.word 0xd2805460
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -1907,7 +2055,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #312]
 .word 0xf9001ba0
-bl _p_26
+bl _p_27
 .word 0xaa0003e2
 .word 0xf9401ba1
 .word 0xaa1903e0
@@ -1957,7 +2105,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #328]
 .word 0xf9001ba0
-bl _p_26
+bl _p_27
 .word 0xaa0003e2
 .word 0xf9401ba1
 .word 0xaa1903e0
@@ -1979,7 +2127,7 @@ add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #336]
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_27
+bl _p_28
 .word 0x53001c00
 .word 0x35000220
 
@@ -1988,7 +2136,7 @@ add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #344]
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_27
+bl _p_28
 .word 0x53001c00
 .word 0x35000120
 
@@ -1997,7 +2145,7 @@ add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #352]
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_27
+bl _p_28
 .word 0x53001c00
 .word 0x34000180
 
@@ -2011,7 +2159,7 @@ ldr x2, [x16, #360]
 .word 0xaa0003e0
 .word 0xaa1a03e1
 .word 0xaa0203e2
-bl _p_28
+bl _p_29
 .word 0x14000002
 .word 0xaa1a03e0
 .word 0xa94167b8
@@ -2019,22 +2167,22 @@ bl _p_28
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_4
-.word 0xd2803520
+.word 0xd2805180
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_33:
+Lme_36:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonPrimitive__cctor
 _System_Json_JsonPrimitive__cctor:
 .word 0xa9bf7bfd
 .word 0x910003fd
-bl _p_30
+bl _p_31
 .word 0xaa0003e2
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -2043,7 +2191,7 @@ ldr x1, [x16, #368]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf9405c50
+.word 0xf9409850
 .word 0xd63f0200
 .word 0xaa0003e1
 
@@ -2051,7 +2199,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xf9000001
-bl _p_30
+bl _p_31
 .word 0xaa0003e2
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -2060,7 +2208,7 @@ ldr x1, [x16, #384]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf9405c50
+.word 0xf9409850
 .word 0xd63f0200
 .word 0xaa0003e1
 
@@ -2072,7 +2220,7 @@ ldr x0, [x16, #392]
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_34:
+Lme_37:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ctor
@@ -2084,7 +2232,7 @@ _System_Json_JsonValue__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_35:
+Lme_38:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_Load_System_IO_TextReader
@@ -2103,13 +2251,13 @@ bl _p_1
 .word 0xaa0003e0
 .word 0xaa1a03e1
 .word 0xd2800022
-bl _p_31
+bl _p_32
 .word 0xf94013a0
 .word 0xaa0003e0
-bl _p_32
+bl _p_33
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_33
+bl _p_34
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -2121,13 +2269,13 @@ ldr x0, [x16, #0]
 .word 0xd28016e1
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_36:
+Lme_39:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_ToJsonPairEnumerable_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object
@@ -2162,7 +2310,7 @@ ldr x3, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_37:
+Lme_3a:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_ToJsonValueEnumerable_System_Collections_Generic_IEnumerable_1_object
@@ -2197,7 +2345,7 @@ ldr x3, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_38:
+Lme_3b:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_ToJsonValue_object
@@ -2245,7 +2393,7 @@ ldr x1, [x16, #424]
 .word 0xaa1803f9
 .word 0xb4000218
 .word 0xaa1903e0
-bl _p_34
+bl _p_35
 .word 0xf90047a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -2256,7 +2404,7 @@ bl _p_1
 .word 0xf90043a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_35
+bl _p_36
 .word 0xf94043a0
 .word 0xaa0003e0
 .word 0x140004c3
@@ -2271,12 +2419,12 @@ ldr x2, [x16, #448]
 .word 0xaa1a03e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_36
+bl _p_37
 .word 0xaa0003f9
 .word 0xaa1903e0
 .word 0xb4000200
 .word 0xaa1903e0
-bl _p_37
+bl _p_38
 .word 0xf90047a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -2287,7 +2435,7 @@ bl _p_1
 .word 0xf90043a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_38
+bl _p_39
 .word 0xf94043a0
 .word 0xaa0003e0
 .word 0x140004a7
@@ -2338,7 +2486,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #128]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2406,7 +2554,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #136]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2474,7 +2622,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #144]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2542,7 +2690,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #152]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2614,7 +2762,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #160]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2686,7 +2834,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #168]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2755,7 +2903,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #176]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2823,7 +2971,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #184]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2891,7 +3039,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #192]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -2959,7 +3107,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #200]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3076,7 +3224,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #216]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3144,7 +3292,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #224]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3212,7 +3360,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #232]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3278,7 +3426,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #208]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3347,7 +3495,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #240]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3418,7 +3566,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #248]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3487,7 +3635,7 @@ bl _p_1
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #256]
-bl _p_23
+bl _p_24
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
@@ -3568,9 +3716,9 @@ bl _p_3
 .word 0xf9400c21
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_39
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -3580,11 +3728,11 @@ bl _p_4
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2803520
+.word 0xd2805180
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_39:
+Lme_3c:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_get_Count
@@ -3592,7 +3740,7 @@ _System_Json_JsonValue_get_Count:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_4
@@ -3600,7 +3748,7 @@ bl _p_4
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3a:
+Lme_3d:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_get_Item_int
@@ -3609,7 +3757,7 @@ _System_Json_JsonValue_get_Item_int:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_4
@@ -3617,7 +3765,7 @@ bl _p_4
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3c:
+Lme_3f:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_set_Item_int_System_Json_JsonValue
@@ -3627,7 +3775,7 @@ _System_Json_JsonValue_set_Item_int_System_Json_JsonValue:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_4
@@ -3635,7 +3783,7 @@ bl _p_4
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_3d:
+Lme_40:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_get_Item_string
@@ -3644,7 +3792,7 @@ _System_Json_JsonValue_get_Item_string:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_4
@@ -3652,7 +3800,7 @@ bl _p_4
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3e:
+Lme_41:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_ContainsKey_string
@@ -3661,7 +3809,7 @@ _System_Json_JsonValue_ContainsKey_string:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_4
@@ -3669,7 +3817,7 @@ bl _p_4
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3f:
+Lme_42:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_Save_System_IO_TextWriter
@@ -3682,7 +3830,7 @@ _System_Json_JsonValue_Save_System_IO_TextWriter:
 .word 0xb40000e0
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_40
+bl _p_41
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3693,13 +3841,13 @@ ldr x0, [x16, #0]
 .word 0xd2802261
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_40:
+Lme_43:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_SaveInternal_System_IO_TextWriter
@@ -3718,7 +3866,7 @@ _System_Json_JsonValue_SaveInternal_System_IO_TextWriter:
 .word 0xf9002bbf
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9404030
+.word 0xf9404430
 .word 0xd63f0200
 .word 0x93407c00
 .word 0xaa0003f8
@@ -3754,7 +3902,7 @@ ldr x1, [x16, #608]
 .word 0x10000011
 .word 0x540024c1
 .word 0xaa1703e0
-bl _p_41
+bl _p_42
 .word 0xf90027a0
 .word 0x1400004a
 .word 0xf94027a1
@@ -3766,7 +3914,7 @@ bl _p_41
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #80]
-.word 0x928004f0
+.word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3795,7 +3943,7 @@ ldr x0, [x16, #64]
 .word 0xf9401fa1
 .word 0xaa1903e0
 .word 0xaa0103e1
-bl _p_42
+bl _p_43
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
@@ -3835,7 +3983,7 @@ ldr x0, [x16, #64]
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf940005e
-bl _p_40
+bl _p_41
 .word 0xd2800038
 .word 0xf94027a1
 .word 0xaa0103e0
@@ -3899,7 +4047,7 @@ ldr x1, [x16, #640]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #648]
-.word 0x92800ef0
+.word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3912,7 +4060,7 @@ ldr x15, [x16, #648]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #656]
-.word 0x928004f0
+.word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3931,7 +4079,7 @@ ldr x1, [x16, #616]
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xf940033e
-bl _p_40
+bl _p_41
 .word 0x14000009
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -3981,7 +4129,7 @@ ldr x15, [x16, #96]
 .word 0xd63f0200
 .word 0x1400004d
 .word 0xaa1903e0
-bl _p_43
+bl _p_44
 .word 0x53001c00
 .word 0xaa1a03f9
 .word 0x340000a0
@@ -4021,11 +4169,11 @@ ldr x1, [x16, #664]
 .word 0x10000011
 .word 0x540005c1
 .word 0xaa1603e0
-bl _p_44
+bl _p_45
 .word 0xaa0003e1
 .word 0xaa1703e0
 .word 0xaa0103e1
-bl _p_42
+bl _p_43
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xaa0103e1
@@ -4053,7 +4201,7 @@ ldr x1, [x16, #664]
 .word 0x10000011
 .word 0x540001e1
 .word 0xaa1a03e0
-bl _p_44
+bl _p_45
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xaa0103e1
@@ -4066,11 +4214,11 @@ bl _p_44
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2803520
+.word 0xd2805180
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_41:
+Lme_44:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_ToString
@@ -4085,7 +4233,7 @@ ldr x0, [x16, #672]
 bl _p_1
 .word 0xf90017a0
 .word 0xaa0003e0
-bl _p_45
+bl _p_46
 .word 0xf94017a1
 .word 0xaa0103e1
 .word 0xf9400ba0
@@ -4093,7 +4241,7 @@ bl _p_45
 .word 0xaa0103e1
 .word 0xf9400ba2
 .word 0xf9400042
-.word 0xf9402c50
+.word 0xf9403050
 .word 0xd63f0200
 .word 0xf94013a1
 .word 0xaa0103e0
@@ -4104,7 +4252,23 @@ bl _p_45
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_42:
+Lme_45:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue_System_Collections_IEnumerable_GetEnumerator
+_System_Json_JsonValue_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd28051a0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_0
+bl _p_4
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_46:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_EscapeString_string
@@ -4149,7 +4313,7 @@ ldr x0, [x16, #680]
 bl _p_1
 .word 0xf9001ba0
 .word 0xaa0003e0
-bl _p_46
+bl _p_47
 .word 0xf9401ba0
 .word 0xaa0003f7
 .word 0x6b1f031f
@@ -4159,7 +4323,7 @@ bl _p_46
 .word 0xd2800002
 .word 0xaa1803e3
 .word 0xf94002fe
-bl _p_47
+bl _p_48
 .word 0xf94017a0
 .word 0xaa1703e1
 .word 0xaa1a03e2
@@ -4176,11 +4340,11 @@ bl _System_Json_JsonValue_DoEscapeString_System_Text_StringBuilder_string_int
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2803480
+.word 0xd28050e0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_43:
+Lme_47:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_DoEscapeString_System_Text_StringBuilder_string_int
@@ -4224,11 +4388,11 @@ _System_Json_JsonValue_DoEscapeString_System_Text_StringBuilder_string_int:
 .word 0xaa1703e2
 .word 0xaa0303e3
 .word 0xf940031e
-bl _p_47
+bl _p_48
 .word 0xaa1803e0
 .word 0xd2800b81
 .word 0xf940031e
-bl _p_48
+bl _p_49
 .word 0x93407ec0
 .word 0xb9801321
 .word 0xeb00003f
@@ -4240,7 +4404,7 @@ bl _p_48
 .word 0xaa1803e0
 .word 0xaa0103e1
 .word 0xf940031e
-bl _p_48
+bl _p_49
 .word 0x110006d7
 .word 0x110006d6
 .word 0xb9801320
@@ -4253,7 +4417,7 @@ bl _p_48
 .word 0xaa1703e2
 .word 0xaa0303e3
 .word 0xf940031e
-bl _p_47
+bl _p_48
 .word 0xaa1803e0
 .word 0xf9400301
 .word 0xf9401c30
@@ -4263,11 +4427,11 @@ bl _p_47
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2803480
+.word 0xd28050e0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_44:
+Lme_48:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_op_Implicit_System_Json_JsonValue
@@ -4295,12 +4459,12 @@ ldr x1, [x16, #664]
 .word 0xf940033e
 .word 0xf9400b20
 .word 0xf90013a0
-bl _p_26
+bl _p_27
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_49
+bl _p_50
 .word 0x53001c00
 .word 0xf9400bb9
 .word 0x910003bf
@@ -4313,16 +4477,16 @@ ldr x0, [x16, #0]
 .word 0xd2802821
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd2803520
+.word 0xd2805180
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_45:
+Lme_49:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue_op_Implicit_System_Json_JsonValue_0
@@ -4366,11 +4530,11 @@ ldr x1, [x16, #280]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2803520
+.word 0xd2805180
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_46:
+Lme_4a:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0__ctor
@@ -4382,7 +4546,7 @@ _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_47:
+Lme_4b:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_MoveNext
@@ -4422,7 +4586,7 @@ ldr x0, [x16, #688]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #696]
-.word 0x92800ef0
+.word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -4468,7 +4632,7 @@ ldr x0, [x16, #704]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #712]
-.word 0x928004f0
+.word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -4528,7 +4692,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #720]
 .word 0xf9400400
-bl _p_33
+bl _p_34
 .word 0xaa0003e2
 .word 0xf94047a1
 .word 0xd2800000
@@ -4542,7 +4706,7 @@ ldr x15, [x16, #64]
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_50
+bl _p_51
 .word 0xf94043a0
 .word 0xf94027a1
 .word 0xf90017a1
@@ -4636,11 +4800,11 @@ ldr x15, [x16, #96]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2803840
+.word 0xd28054a0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_48:
+Lme_4c:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Generic_IEnumerator_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_get_Current
@@ -4660,7 +4824,60 @@ _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Gene
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_49:
+Lme_4d:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_IEnumerator_get_Current
+_System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_IEnumerator_get_Current:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0x9100c000
+.word 0xf9400001
+.word 0xf9000fa1
+.word 0xf9400400
+.word 0xf90013a0
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #64]
+bl _p_1
+.word 0x91004003
+.word 0xaa0303e1
+.word 0xf9400fa2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0x91002022
+.word 0xf94013a1
+.word 0xf9000041
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0xaa0003e0
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_4e:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_Dispose
@@ -4715,7 +4932,37 @@ ldr x15, [x16, #96]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_4a:
+Lme_4f:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_Reset
+_System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_Reset:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd2805480
+.word 0xf2a04000
+bl _mono_create_corlib_exception_0
+bl _p_4
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_50:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_IEnumerable_GetEnumerator
+_System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+bl _p_52
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_51:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_GetEnumerator
@@ -4768,11 +5015,11 @@ ldr x3, [x16, #16]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2803840
+.word 0xd28054a0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_4b:
+Lme_52:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1__ctor
@@ -4784,7 +5031,7 @@ _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_4c:
+Lme_53:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_MoveNext
@@ -4824,7 +5071,7 @@ ldr x0, [x16, #736]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #744]
-.word 0x92800ef0
+.word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -4868,7 +5115,7 @@ ldr x0, [x16, #752]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #760]
-.word 0x928004f0
+.word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -4890,7 +5137,7 @@ ldr x2, [x16, #16]
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9401000
-bl _p_33
+bl _p_34
 .word 0xf9402ba1
 .word 0xf9001420
 .word 0x9100a021
@@ -4965,7 +5212,7 @@ ldr x15, [x16, #96]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_4d:
+Lme_54:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Generic_IEnumerator_System_Json_JsonValue_get_Current
@@ -4979,7 +5226,21 @@ _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Gen
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_4e:
+Lme_55:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_IEnumerator_get_Current
+_System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_IEnumerator_get_Current:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401400
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_56:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_Dispose
@@ -5034,7 +5295,37 @@ ldr x15, [x16, #96]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_4f:
+Lme_57:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_Reset
+_System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_Reset:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd2805480
+.word 0xf2a04000
+bl _mono_create_corlib_exception_0
+bl _p_4
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_58:
+.text
+	.align 4
+	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_IEnumerable_GetEnumerator
+_System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+bl _p_53
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_59:
 .text
 	.align 4
 	.no_dead_strip _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Generic_IEnumerable_System_Json_JsonValue_GetEnumerator
@@ -5087,11 +5378,11 @@ ldr x3, [x16, #16]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2803840
+.word 0xd28054a0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_50:
+Lme_5a:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader__ctor_System_IO_TextReader_bool
@@ -5111,7 +5402,7 @@ ldr x0, [x16, #680]
 bl _p_1
 .word 0xf9001ba0
 .word 0xaa0003e0
-bl _p_46
+bl _p_47
 .word 0xf9401ba0
 .word 0xf9000f20
 .word 0x91006321
@@ -5153,13 +5444,13 @@ ldr x0, [x16, #0]
 .word 0xd28029a1
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_51:
+Lme_5b:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_Read
@@ -5169,10 +5460,10 @@ _System_Runtime_Serialization_Json_JavaScriptReader_Read:
 .word 0xf9000bba
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_51
+bl _p_54
 .word 0xf9000fa0
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0x93407c00
@@ -5195,19 +5486,19 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #776]
 .word 0xd2800001
-bl _p_53
+bl _p_56
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_54
+bl _p_57
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
-Lme_52:
+Lme_5c:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_ReadCore
@@ -5226,7 +5517,7 @@ _System_Runtime_Serialization_Json_JavaScriptReader_ReadCore:
 .word 0xf9001fa0
 .word 0xf90023a0
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -5264,7 +5555,7 @@ bl _p_1
 .word 0xf90043a0
 .word 0xaa0003e0
 .word 0xf90047a0
-bl _p_56
+bl _p_59
 .word 0xf94043a0
 .word 0xf94047a2
 
@@ -5287,7 +5578,7 @@ ldr x3, [x16, #16]
 .word 0x3900005e
 .word 0xaa0003f8
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -5300,14 +5591,14 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1803e0
 .word 0x140000f9
 .word 0xaa1a03e0
-bl _p_51
+bl _p_54
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xaa0103e1
 .word 0xf940031e
-bl _p_57
+bl _p_60
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -5328,7 +5619,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0x54001da1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_58
+bl _p_61
 .word 0x140000da
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
@@ -5340,11 +5631,11 @@ ldr x0, [x16, #800]
 bl _p_1
 .word 0xf90043a0
 .word 0xaa0003e0
-bl _p_59
+bl _p_62
 .word 0xf94043a0
 .word 0xaa0003f8
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -5357,7 +5648,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1803e0
 .word 0x140000c1
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -5369,25 +5660,25 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0x93407c00
 .word 0x14000020
 .word 0xaa1a03e0
-bl _p_60
+bl _p_63
 .word 0xaa0003f9
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 .word 0xd2800741
 bl _System_Runtime_Serialization_Json_JavaScriptReader_Expect_char
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
-bl _p_51
+bl _p_54
 .word 0xaa0003e2
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xaa0203e2
 .word 0xf940031e
-bl _p_61
+bl _p_64
 .word 0xaa1a03e0
-bl _p_52
+bl _p_55
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0x93407c00
@@ -5401,18 +5692,18 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0x54fffac1
 .word 0xd280001a
 .word 0xf940031e
-.word 0xb9804301
+.word 0xb9804b01
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #808]
 .word 0xaa0103e1
-bl _p_53
+bl _p_56
 .word 0xaa0003f9
 .word 0x9100a3a8
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_62
+bl _p_65
 .word 0x1400002d
 .word 0x9100a3a0
 
@@ -5467,7 +5758,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #816]
 .word 0xaa0003e0
-bl _p_63
+bl _p_66
 .word 0x53001c00
 .word 0x35fff9a0
 .word 0x94000002
@@ -5496,7 +5787,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_Expect_string
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #128]
-bl _p_23
+bl _p_24
 .word 0xd280003e
 .word 0x3900401e
 .word 0xaa0003e0
@@ -5512,7 +5803,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_Expect_string
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #128]
-bl _p_23
+bl _p_24
 .word 0x3900401f
 .word 0xaa0003e0
 .word 0x1400002b
@@ -5526,7 +5817,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_Expect_string
 .word 0xd2800000
 .word 0x14000023
 .word 0xaa1a03e0
-bl _p_60
+bl _p_63
 .word 0x14000020
 .word 0xd2800600
 .word 0x6b19001f
@@ -5538,7 +5829,7 @@ bl _p_60
 .word 0x6b1e033f
 .word 0x54000081
 .word 0xaa1a03e0
-bl _p_64
+bl _p_67
 .word 0x14000014
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -5547,18 +5838,18 @@ ldr x0, [x16, #0]
 .word 0xd2803fe1
 bl _p_3
 .word 0xf90043a0
-.word 0xd2802d80
-bl _p_65
+.word 0xd28049c0
+bl _p_68
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0x79002039
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_39
+bl _p_40
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 .word 0xa94167b8
 .word 0xf94013ba
@@ -5574,7 +5865,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -5585,13 +5876,13 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
-.word 0xd2803480
+.word 0xd28050e0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_53:
+Lme_5d:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
@@ -5605,7 +5896,7 @@ _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar:
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9403030
+.word 0xf9403c30
 .word 0xd63f0200
 .word 0x93407c00
 .word 0xb9002b40
@@ -5617,7 +5908,7 @@ _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_54:
+Lme_5e:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
@@ -5634,7 +5925,7 @@ _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar:
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9403030
+.word 0xf9403c30
 .word 0xd63f0200
 .word 0x93407c00
 .word 0xaa0003f9
@@ -5662,7 +5953,7 @@ _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_55:
+Lme_5f:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_SkipSpaces
@@ -5703,7 +5994,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_56:
+Lme_60:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_ReadNumericLiteral
@@ -5727,7 +6018,7 @@ ldr x0, [x16, #680]
 bl _p_1
 .word 0xf90063a0
 .word 0xaa0003e0
-bl _p_46
+bl _p_47
 .word 0xf94063a0
 .word 0xaa0003f9
 .word 0xaa1a03e0
@@ -5743,7 +6034,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0xd2800018
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
@@ -5769,7 +6060,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0x34000097
 .word 0xd280003e
 .word 0x6b1e031f
@@ -5793,7 +6084,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -5817,7 +6108,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0x110006f7
 .word 0x17ffffec
 .word 0x34002317
@@ -5838,7 +6129,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0xf9401c30
 .word 0xd63f0200
 .word 0xf90063a0
-bl _p_66
+bl _p_69
 .word 0xf94063a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -5850,7 +6141,7 @@ ldr x1, [x16, #832]
 .word 0xd28014e1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_67
+bl _p_70
 .word 0x53001c00
 .word 0x34000160
 .word 0xb9808ba0
@@ -5859,7 +6150,7 @@ bl _p_67
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #176]
-bl _p_23
+bl _p_24
 .word 0xf94063a1
 .word 0xb9001001
 .word 0xaa0003e0
@@ -5869,7 +6160,7 @@ bl _p_23
 .word 0xf9401c30
 .word 0xd63f0200
 .word 0xf90063a0
-bl _p_66
+bl _p_69
 .word 0xf94063a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -5881,7 +6172,7 @@ ldr x1, [x16, #832]
 .word 0xd28014e1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_68
+bl _p_71
 .word 0x53001c00
 .word 0x34000160
 .word 0xf9404ba0
@@ -5890,7 +6181,7 @@ bl _p_68
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #184]
-bl _p_23
+bl _p_24
 .word 0xf94063a1
 .word 0xf9000801
 .word 0xaa0003e0
@@ -5900,7 +6191,7 @@ bl _p_23
 .word 0xf9401c30
 .word 0xd63f0200
 .word 0xf90063a0
-bl _p_66
+bl _p_69
 .word 0xf94063a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -5912,7 +6203,7 @@ ldr x1, [x16, #832]
 .word 0xd28014e1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_69
+bl _p_72
 .word 0x53001c00
 .word 0x34000160
 .word 0xf9404fa0
@@ -5921,7 +6212,7 @@ bl _p_69
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #224]
-bl _p_23
+bl _p_24
 .word 0xf94063a1
 .word 0xf9000801
 .word 0xaa0003e0
@@ -5931,7 +6222,7 @@ bl _p_23
 .word 0xf9401c30
 .word 0xd63f0200
 .word 0xf90063a0
-bl _p_66
+bl _p_69
 .word 0xf94063a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -5943,7 +6234,7 @@ ldr x1, [x16, #832]
 .word 0xd28014e1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_70
+bl _p_73
 .word 0x53001c00
 .word 0x34000ce0
 .word 0xf9403fa0
@@ -5955,7 +6246,7 @@ bl _p_70
 .word 0xf9003ba0
 .word 0x9101a3a0
 .word 0xd2800001
-bl _p_71
+bl _p_74
 .word 0xf94037a0
 .word 0xf90027a0
 .word 0xf9403ba0
@@ -5964,7 +6255,7 @@ bl _p_71
 .word 0xf94033a1
 .word 0xf94027a2
 .word 0xf9402ba3
-bl _p_72
+bl _p_75
 .word 0x53001c00
 .word 0x34000a40
 .word 0xf9403fa0
@@ -5975,7 +6266,7 @@ bl _p_72
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #152]
-bl _p_23
+bl _p_24
 .word 0x91004001
 .word 0xf9401fa2
 .word 0xf9000022
@@ -5990,7 +6281,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -6011,7 +6302,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0x1400000c
 .word 0xd280057e
 .word 0x6b1e02df
@@ -6023,7 +6314,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_PeekChar
 .word 0x93407c00
@@ -6047,14 +6338,14 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa1903e0
 .word 0xaa0103e1
 .word 0xf940033e
-bl _p_48
+bl _p_49
 .word 0x17ffffed
 .word 0xaa1903e0
 .word 0xf9400321
 .word 0xf9401c30
 .word 0xd63f0200
 .word 0xf9006ba0
-bl _p_66
+bl _p_69
 .word 0xf9406ba0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6064,13 +6355,13 @@ ldr x1, [x16, #832]
 .word 0xaa0003e0
 .word 0xd28014e1
 .word 0xaa0203e2
-bl _p_73
+bl _p_76
 .word 0xfd0067a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #160]
-bl _p_23
+bl _p_24
 .word 0xfd4067a0
 .word 0xfd000800
 .word 0xaa0003e0
@@ -6089,7 +6380,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6100,7 +6391,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6111,7 +6402,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6122,7 +6413,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6131,7 +6422,7 @@ ldr x0, [x16, #0]
 .word 0xd2806361
 bl _p_3
 .word 0xaa0003e1
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -6145,10 +6436,10 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
-Lme_57:
+Lme_61:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_ReadStringLiteral
@@ -6171,7 +6462,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_74
+bl _p_77
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0x93407c00
@@ -6196,7 +6487,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffffe7
 .word 0xaa1a03e0
 bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
@@ -6242,37 +6533,37 @@ ldr x0, [x16, #840]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffffba
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xd2800101
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffffb4
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xd2800181
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffffae
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xd2800141
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffffa8
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xd28001a1
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffffa2
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xd2800121
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffff9c
 .word 0xd2800018
 .word 0xd2800017
@@ -6329,7 +6620,7 @@ bl _System_Runtime_Serialization_Json_JavaScriptReader_ReadChar
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0xf940005e
-bl _p_48
+bl _p_49
 .word 0x17ffff63
 .word 0xa94163b7
 .word 0xa9426bb9
@@ -6345,7 +6636,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6356,7 +6647,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6367,7 +6658,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6378,7 +6669,7 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6389,10 +6680,10 @@ bl _p_3
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 
-Lme_58:
+Lme_62:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_Expect_char
@@ -6420,13 +6711,13 @@ ldr x0, [x16, #0]
 .word 0xd280a661
 bl _p_3
 .word 0xf9001ba0
-.word 0xd2802d80
-bl _p_65
+.word 0xd28049c0
+bl _p_68
 .word 0x794033a1
 .word 0x79002001
 .word 0xf9001fa0
-.word 0xd2802d80
-bl _p_65
+.word 0xd28049c0
+bl _p_68
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -6435,15 +6726,15 @@ bl _p_65
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_75
+bl _p_78
 .word 0xaa0003e1
 .word 0xf9400ba0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
 .word 0x17ffffe2
 
-Lme_59:
+Lme_63:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_Expect_string
@@ -6485,25 +6776,25 @@ ldr x0, [x16, #0]
 .word 0xd280ace1
 bl _p_3
 .word 0xf9001ba0
-.word 0xd28034c0
-bl _p_65
+.word 0xd2805120
+bl _p_68
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xb9001058
 .word 0xaa0003e0
 .word 0xaa1a03e1
 .word 0xaa0203e2
-bl _p_75
+bl _p_78
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xaa0103e1
-bl _p_55
+bl _p_58
 bl _p_4
-.word 0xd2803480
+.word 0xd28050e0
 .word 0xaa1103e1
-bl _p_29
+bl _p_30
 
-Lme_5a:
+Lme_64:
 .text
 	.align 4
 	.no_dead_strip _System_Runtime_Serialization_Json_JavaScriptReader_JsonError_string
@@ -6524,7 +6815,7 @@ ldr x0, [x16, #848]
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #176]
-bl _p_23
+bl _p_24
 .word 0xf94027a1
 .word 0xb9001001
 .word 0xf90023a0
@@ -6535,7 +6826,7 @@ bl _p_23
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x0, [x16, #176]
-bl _p_23
+bl _p_24
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -6545,7 +6836,7 @@ bl _p_23
 .word 0xf9400fa1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_76
+bl _p_79
 .word 0xf90017a0
 
 adrp x16, _mono_aot_System_Json_got@PAGE+0
@@ -6556,14 +6847,14 @@ bl _p_1
 .word 0xf90013a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_77
+bl _p_80
 .word 0xf94013a0
 .word 0xaa0003e0
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_5b:
+Lme_65:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__Insert_T_int_T
@@ -6575,15 +6866,15 @@ _System_Array_InternalArray__Insert_T_int_T:
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf94017a0
-bl _p_78
+bl _p_81
 .word 0xf9001ba0
 .word 0xf9401ba0
 .word 0xb9800000
 .word 0xf9001bbf
-.word 0xd28c08e0
+.word 0xd29a0ca0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -6592,7 +6883,7 @@ bl _p_4
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_5d:
+Lme_67:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__RemoveAt_int
@@ -6601,10 +6892,10 @@ _System_Array_InternalArray__RemoveAt_int:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28c08e0
+.word 0xd29a0ca0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -6613,7 +6904,7 @@ bl _p_4
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5e:
+Lme_68:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__IndexOf_T_T
@@ -6626,7 +6917,7 @@ _System_Array_InternalArray__IndexOf_T_T:
 .word 0xaa0003fa
 .word 0xf90017a1
 .word 0xf9401ba0
-bl _p_79
+bl _p_82
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001fbf
@@ -6642,10 +6933,10 @@ bl _p_79
 .word 0x910103a0
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_80
+bl _p_83
 .word 0xf9002fa0
 .word 0xf9401ba0
-bl _p_81
+bl _p_84
 .word 0xaa0003e3
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -6699,17 +6990,17 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
-bl _p_82
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_5f:
+Lme_69:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__get_Item_T_int
@@ -6720,7 +7011,7 @@ _System_Array_InternalArray__get_Item_T_int:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_83
+bl _p_86
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
@@ -6734,10 +7025,10 @@ bl _p_83
 .word 0x9100c3a0
 .word 0xf90023a0
 .word 0xf94013a0
-bl _p_84
+bl _p_87
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_85
+bl _p_88
 .word 0xaa0003e3
 .word 0xf94023a2
 .word 0xf94027af
@@ -6750,16 +7041,16 @@ bl _p_85
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_60:
+Lme_6a:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__set_Item_T_int_T
@@ -6773,7 +7064,7 @@ _System_Array_InternalArray__set_Item_T_int_T:
 .word 0xf9001ba1
 .word 0xf9001fa2
 .word 0xf94023a0
-bl _p_86
+bl _p_89
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf90027bf
@@ -6813,16 +7104,16 @@ ldr x0, [x16, #872]
 .word 0xb98033a1
 .word 0xaa0203e2
 .word 0xf9400303
-.word 0xf9403470
+.word 0xf9405c70
 .word 0xd63f0200
 .word 0x14000010
 .word 0x9100e3a0
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_87
+bl _p_90
 .word 0xf9002fa0
 .word 0xf94023a0
-bl _p_88
+bl _p_91
 .word 0xaa0003e3
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -6836,16 +7127,16 @@ bl _p_88
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_61:
+Lme_6b:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_get_Count
@@ -6859,7 +7150,7 @@ _System_Array_InternalArray__ICollection_get_Count:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_62:
+Lme_6c:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_get_IsReadOnly
@@ -6872,7 +7163,7 @@ _System_Array_InternalArray__ICollection_get_IsReadOnly:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_63:
+Lme_6d:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Clear
@@ -6880,10 +7171,10 @@ _System_Array_InternalArray__ICollection_Clear:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28c02e0
+.word 0xd29a06a0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -6892,7 +7183,7 @@ bl _p_4
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_64:
+Lme_6e:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Add_T_T
@@ -6903,15 +7194,15 @@ _System_Array_InternalArray__ICollection_Add_T_T:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_89
+bl _p_92
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
 .word 0xf90017bf
-.word 0xd28c08e0
+.word 0xd29a0ca0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -6920,7 +7211,7 @@ bl _p_4
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_65:
+Lme_6f:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Remove_T_T
@@ -6931,15 +7222,15 @@ _System_Array_InternalArray__ICollection_Remove_T_T:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_90
+bl _p_93
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
 .word 0xf90017bf
-.word 0xd28c08e0
+.word 0xd29a0ca0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -6948,7 +7239,7 @@ bl _p_4
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_66:
+Lme_70:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Contains_T_T
@@ -6961,7 +7252,7 @@ _System_Array_InternalArray__ICollection_Contains_T_T:
 .word 0xaa0003fa
 .word 0xf90017a1
 .word 0xf9401ba0
-bl _p_91
+bl _p_94
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001fbf
@@ -6977,10 +7268,10 @@ bl _p_91
 .word 0x910103a0
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_92
+bl _p_95
 .word 0xf9002fa0
 .word 0xf9401ba0
-bl _p_93
+bl _p_96
 .word 0xaa0003e3
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -7015,17 +7306,17 @@ bl _p_93
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
-bl _p_82
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_67:
+Lme_71:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_CopyTo_T_T___int
@@ -7041,7 +7332,7 @@ _System_Array_InternalArray__ICollection_CopyTo_T_T___int:
 .word 0xaa0103f9
 .word 0xaa0203fa
 .word 0xf94027a0
-bl _p_94
+bl _p_97
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0xf9002bbf
@@ -7104,7 +7395,7 @@ bl _p_94
 .word 0xaa1503e2
 .word 0xaa1903e3
 .word 0xaa1803e4
-bl _p_95
+bl _p_98
 .word 0xa94157b4
 .word 0xa9425fb6
 .word 0xa94367b8
@@ -7112,56 +7403,56 @@ bl _p_95
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
-bl _p_82
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28c1b60
+.word 0xd29a1f20
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
-bl _p_82
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xf90033a0
-.word 0xd28c33c0
+.word 0xd29a3780
 bl _p_5
-bl _p_82
+bl _p_85
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 .word 0xaa0203e2
 bl _mono_create_corlib_exception_2
 bl _p_4
-.word 0xd281e6c0
+.word 0xd286b360
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_68:
+Lme_72:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__IEnumerable_GetEnumerator_T
@@ -7171,7 +7462,7 @@ _System_Array_InternalArray__IEnumerable_GetEnumerator_T:
 .word 0xf9001faf
 .word 0xf9000ba0
 .word 0xf9401fa0
-bl _p_96
+bl _p_99
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0xb9800000
@@ -7182,10 +7473,10 @@ bl _p_96
 .word 0x9100a3a0
 .word 0xf9002ba0
 .word 0xf9401fa0
-bl _p_97
+bl _p_100
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_98
+bl _p_101
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -7198,8 +7489,8 @@ bl _p_98
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_97
-bl _p_99
+bl _p_100
+bl _p_102
 .word 0x91004003
 .word 0xaa0303e1
 .word 0xf9400fa2
@@ -7223,7 +7514,7 @@ ldr x4, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_69:
+Lme_73:
 .text
 	.align 4
 	.no_dead_strip _wrapper_delegate_invoke_System_Comparison_1_System_Json_JsonValue_invoke_int_T_T_System_Json_JsonValue_System_Json_JsonValue
@@ -7269,10 +7560,10 @@ ldr x0, [x16, #880]
 .word 0xd63f0200
 .word 0x93407c00
 .word 0x17ffffe7
-bl _p_100
+bl _p_103
 .word 0x17ffffe2
 
-Lme_6a:
+Lme_74:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Add_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -7282,10 +7573,10 @@ _System_Array_InternalArray__ICollection_Add_System_Collections_Generic_KeyValue
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd28c08e0
+.word 0xd29a0ca0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -7294,7 +7585,7 @@ bl _p_4
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_72:
+Lme_7c:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Remove_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -7304,10 +7595,10 @@ _System_Array_InternalArray__ICollection_Remove_System_Collections_Generic_KeyVa
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd28c08e0
+.word 0xd29a0ca0
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
@@ -7316,7 +7607,7 @@ bl _p_4
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_73:
+Lme_7d:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Contains_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -7452,16 +7743,16 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_74:
+Lme_7e:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_CopyTo_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue___int
@@ -7534,7 +7825,7 @@ _System_Array_InternalArray__ICollection_CopyTo_System_Collections_Generic_KeyVa
 .word 0xaa1503e2
 .word 0xaa1903e3
 .word 0xaa1803e4
-bl _p_95
+bl _p_98
 .word 0xa94157b4
 .word 0xa9425fb6
 .word 0xa94367b8
@@ -7542,55 +7833,55 @@ bl _p_95
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd281e6c0
+.word 0xd286b360
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28c1b60
+.word 0xd29a1f20
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28c1060
+.word 0xd29a1420
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xf9002ba0
-.word 0xd28c33c0
+.word 0xd29a3780
 bl _p_5
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 .word 0xaa0203e2
 bl _mono_create_corlib_exception_2
 bl _p_4
 
-Lme_75:
+Lme_7f:
 .text
-ut_119:
+ut_129:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_System_Array
 .text
@@ -7622,9 +7913,9 @@ ldr x3, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_77:
+Lme_81:
 .text
-ut_120:
+ut_130:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_Dispose
 .text
@@ -7642,9 +7933,9 @@ _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_str
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_78:
+Lme_82:
 .text
-ut_121:
+ut_131:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_MoveNext
 .text
@@ -7687,9 +7978,9 @@ _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_str
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_79:
+Lme_83:
 .text
-ut_122:
+ut_132:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_get_Current
 .text
@@ -7726,7 +8017,7 @@ ldr x15, [x16, #896]
 .word 0xf90017a2
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_101
+bl _p_104
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -7736,24 +8027,106 @@ bl _p_101
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd28d0140
+.word 0xd29b1280
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28d0c00
+.word 0xd29b1d40
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_7a:
+Lme_84:
+.text
+ut_133:
+add x0, x0, 16
+b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_Reset
+.text
+	.align 4
+	.no_dead_strip _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_Reset
+_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_Reset:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0x9280003e
+.word 0xf2bffffe
+.word 0xb900081e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_85:
+.text
+ut_134:
+add x0, x0, 16
+b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_get_Current
+.text
+	.align 4
+	.no_dead_strip _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_get_Current
+_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_get_Current:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x15, [x16, #904]
+.word 0x910063a0
+.word 0xf90017a0
+.word 0xf9400ba0
+bl _p_105
+.word 0xf94017be
+.word 0xf90003c0
+.word 0xf90007c1
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #64]
+bl _p_1
+.word 0x91004003
+.word 0xaa0303e1
+.word 0xf9400fa2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0x91002022
+.word 0xf94013a1
+.word 0xf9000041
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0xaa0003e0
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_86:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__IEnumerable_GetEnumerator_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
@@ -7771,7 +8144,7 @@ add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #904]
 .word 0xaa0003e0
 .word 0xf9400ba1
-bl _p_102
+bl _p_106
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -7804,9 +8177,72 @@ ldr x4, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_7b:
+Lme_87:
 .text
-ut_126:
+	.align 4
+	.no_dead_strip _wrapper_delegate_invoke_System_Collections_Generic_Dictionary_2_Transform_1_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_invoke_TRet_TKey_TValue_string_System_Json_JsonValue
+_wrapper_delegate_invoke_System_Collections_Generic_Dictionary_2_Transform_1_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_invoke_TRet_TKey_TValue_string_System_Json_JsonValue:
+.word 0xa9ba7bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xaa0003f8
+.word 0xf9001ba1
+.word 0xf9001fa2
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #880]
+.word 0xb9400000
+.word 0x35000580
+.word 0xf9402f17
+.word 0xaa1703e0
+.word 0xb50003c0
+.word 0xf9401317
+.word 0xaa1703e0
+.word 0xb4000180
+.word 0xf9400b03
+.word 0x910083a0
+.word 0xf9002ba0
+.word 0xaa1703e0
+.word 0xf9401ba1
+.word 0xf9401fa2
+.word 0xd63f0060
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0x1400000a
+.word 0xf9400b02
+.word 0x910083a0
+.word 0xf9002ba0
+.word 0xf9401ba0
+.word 0xf9401fa1
+.word 0xd63f0040
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xa94163b7
+.word 0xf94013a0
+.word 0xf94017a1
+.word 0x910003bf
+.word 0xa8c67bfd
+.word 0xd65f03c0
+.word 0x910103a0
+.word 0xf9002ba0
+.word 0xaa1703e0
+.word 0xf9401ba1
+.word 0xf9401fa2
+.word 0xf9400ef0
+.word 0xd63f0200
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0x17ffffd9
+bl _p_103
+.word 0x17ffffd4
+
+Lme_8c:
+.text
+ut_143:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Array
 .text
@@ -7838,9 +8274,9 @@ ldr x3, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7e:
+Lme_8f:
 .text
-ut_127:
+ut_144:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_Dispose
 .text
@@ -7858,9 +8294,9 @@ _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_str
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7f:
+Lme_90:
 .text
-ut_128:
+ut_145:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_MoveNext
 .text
@@ -7903,9 +8339,9 @@ _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_str
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_80:
+Lme_91:
 .text
-ut_129:
+ut_146:
 add x0, x0, 16
 b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_get_Current
 .text
@@ -7942,7 +8378,7 @@ ldr x15, [x16, #912]
 .word 0xf90017a2
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_103
+bl _p_107
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -7952,24 +8388,106 @@ bl _p_103
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd28d0140
+.word 0xd29b1280
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
-.word 0xd28d0c00
+.word 0xd29b1d40
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2803540
+.word 0xd28051a0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_81:
+Lme_92:
+.text
+ut_147:
+add x0, x0, 16
+b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_Reset
+.text
+	.align 4
+	.no_dead_strip _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_Reset
+_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_Reset:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0x9280003e
+.word 0xf2bffffe
+.word 0xb900081e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_93:
+.text
+ut_148:
+add x0, x0, 16
+b _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_get_Current
+.text
+	.align 4
+	.no_dead_strip _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_get_Current
+_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_get_Current:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x15, [x16, #920]
+.word 0x910063a0
+.word 0xf90017a0
+.word 0xf9400ba0
+bl _p_108
+.word 0xf94017be
+.word 0xf90003c0
+.word 0xf90007c1
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #720]
+bl _p_1
+.word 0x91004003
+.word 0xaa0303e1
+.word 0xf9400fa2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0x91002022
+.word 0xf94013a1
+.word 0xf9000041
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0xaa0003e0
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_94:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__IEnumerable_GetEnumerator_System_Collections_Generic_KeyValuePair_2_string_object
@@ -7987,7 +8505,7 @@ add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x15, [x16, #920]
 .word 0xaa0003e0
 .word 0xf9400ba1
-bl _p_104
+bl _p_109
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -8020,7 +8538,7 @@ ldr x4, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_82:
+Lme_95:
 .text
 	.align 4
 	.no_dead_strip _wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
@@ -8066,10 +8584,73 @@ ldr x0, [x16, #880]
 .word 0xd63f0200
 .word 0x93407c00
 .word 0x17ffffe7
-bl _p_100
+bl _p_103
 .word 0x17ffffe2
 
-Lme_84:
+Lme_97:
+.text
+	.align 4
+	.no_dead_strip _wrapper_delegate_invoke_System_Collections_Generic_Dictionary_2_Transform_1_string_object_System_Collections_Generic_KeyValuePair_2_string_object_invoke_TRet_TKey_TValue_string_object
+_wrapper_delegate_invoke_System_Collections_Generic_Dictionary_2_Transform_1_string_object_System_Collections_Generic_KeyValuePair_2_string_object_invoke_TRet_TKey_TValue_string_object:
+.word 0xa9ba7bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xaa0003f8
+.word 0xf9001ba1
+.word 0xf9001fa2
+
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x0, [x16, #880]
+.word 0xb9400000
+.word 0x35000580
+.word 0xf9402f17
+.word 0xaa1703e0
+.word 0xb50003c0
+.word 0xf9401317
+.word 0xaa1703e0
+.word 0xb4000180
+.word 0xf9400b03
+.word 0x910083a0
+.word 0xf9002ba0
+.word 0xaa1703e0
+.word 0xf9401ba1
+.word 0xf9401fa2
+.word 0xd63f0060
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0x1400000a
+.word 0xf9400b02
+.word 0x910083a0
+.word 0xf9002ba0
+.word 0xf9401ba0
+.word 0xf9401fa1
+.word 0xd63f0040
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xa94163b7
+.word 0xf94013a0
+.word 0xf94017a1
+.word 0x910003bf
+.word 0xa8c67bfd
+.word 0xd65f03c0
+.word 0x910103a0
+.word 0xf9002ba0
+.word 0xaa1703e0
+.word 0xf9401ba1
+.word 0xf9401fa2
+.word 0xf9400ef0
+.word 0xd63f0200
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0x17ffffd9
+bl _p_103
+.word 0x17ffffd4
+
+Lme_9c:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_int
@@ -8109,16 +8690,16 @@ ldr x0, [x16, #888]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_85:
+Lme_9d:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_object_int
@@ -8158,16 +8739,16 @@ ldr x0, [x16, #928]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd281e840
+.word 0xd2862920
 bl _p_5
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
 bl _p_4
 
-Lme_86:
+Lme_9e:
 .text
 	.align 3
 methods_end:
@@ -8192,9 +8773,11 @@ bl _System_Json_JsonArray_Insert_int_System_Json_JsonValue
 bl _System_Json_JsonArray_Remove_System_Json_JsonValue
 bl _System_Json_JsonArray_RemoveAt_int
 bl _System_Json_JsonArray_System_Collections_Generic_IEnumerable_System_Json_JsonValue_GetEnumerator
+bl _System_Json_JsonArray_System_Collections_IEnumerable_GetEnumerator
 bl _System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
 bl _System_Json_JsonObject_get_Count
 bl _System_Json_JsonObject_GetEnumerator
+bl _System_Json_JsonObject_System_Collections_IEnumerable_GetEnumerator
 bl _System_Json_JsonObject_get_Item_string
 bl _System_Json_JsonObject_get_JsonType
 bl _System_Json_JsonObject_Add_string_System_Json_JsonValue
@@ -8207,6 +8790,7 @@ bl _System_Json_JsonObject_ContainsKey_string
 bl _System_Json_JsonObject_CopyTo_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue___int
 bl _System_Json_JsonObject_Remove_string
 bl _System_Json_JsonObject_System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_get_IsReadOnly
+bl _System_Json_JsonObject_TryGetValue_string_System_Json_JsonValue_
 bl _System_Json_JsonPrimitive__ctor_bool
 bl _System_Json_JsonPrimitive__ctor_byte
 bl _System_Json_JsonPrimitive__ctor_char
@@ -8244,6 +8828,7 @@ bl _System_Json_JsonValue_ContainsKey_string
 bl _System_Json_JsonValue_Save_System_IO_TextWriter
 bl _System_Json_JsonValue_SaveInternal_System_IO_TextWriter
 bl _System_Json_JsonValue_ToString
+bl _System_Json_JsonValue_System_Collections_IEnumerable_GetEnumerator
 bl _System_Json_JsonValue_EscapeString_string
 bl _System_Json_JsonValue_DoEscapeString_System_Text_StringBuilder_string_int
 bl _System_Json_JsonValue_op_Implicit_System_Json_JsonValue
@@ -8251,12 +8836,18 @@ bl _System_Json_JsonValue_op_Implicit_System_Json_JsonValue_0
 bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0__ctor
 bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_MoveNext
 bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Generic_IEnumerator_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_get_Current
+bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_IEnumerator_get_Current
 bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_Dispose
+bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_Reset
+bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_IEnumerable_GetEnumerator
 bl _System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_GetEnumerator
 bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1__ctor
 bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_MoveNext
 bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Generic_IEnumerator_System_Json_JsonValue_get_Current
+bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_IEnumerator_get_Current
 bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_Dispose
+bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_Reset
+bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_IEnumerable_GetEnumerator
 bl _System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Generic_IEnumerable_System_Json_JsonValue_GetEnumerator
 bl _System_Runtime_Serialization_Json_JavaScriptReader__ctor_System_IO_TextReader_bool
 bl _System_Runtime_Serialization_Json_JavaScriptReader_Read
@@ -8300,16 +8891,30 @@ bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_Dispose
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_MoveNext
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_get_Current
+bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_Reset
+bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_System_Collections_IEnumerator_get_Current
 bl _System_Array_InternalArray__IEnumerable_GetEnumerator_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _wrapper_delegate_invoke_System_Collections_Generic_Dictionary_2_Transform_1_string_System_Json_JsonValue_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_invoke_TRet_TKey_TValue_string_System_Json_JsonValue
 bl method_addresses
 bl method_addresses
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Array
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_Dispose
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_MoveNext
 bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_get_Current
+bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_Reset
+bl _System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_IEnumerator_get_Current
 bl _System_Array_InternalArray__IEnumerable_GetEnumerator_System_Collections_Generic_KeyValuePair_2_string_object
 bl method_addresses
 bl _wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl method_addresses
+bl _wrapper_delegate_invoke_System_Collections_Generic_Dictionary_2_Transform_1_string_object_System_Collections_Generic_KeyValuePair_2_string_object_invoke_TRet_TKey_TValue_string_object
 bl _System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_int
 bl _System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_object_int
 method_addresses_end:
@@ -8323,29 +8928,41 @@ code_offsets:
 	.align 3
 unbox_trampolines:
 
-	.long 119
-bl ut_119
-
-	.long 120
-bl ut_120
-
-	.long 121
-bl ut_121
-
-	.long 122
-bl ut_122
-
-	.long 126
-bl ut_126
-
-	.long 127
-bl ut_127
-
-	.long 128
-bl ut_128
-
 	.long 129
 bl ut_129
+
+	.long 130
+bl ut_130
+
+	.long 131
+bl ut_131
+
+	.long 132
+bl ut_132
+
+	.long 133
+bl ut_133
+
+	.long 134
+bl ut_134
+
+	.long 143
+bl ut_143
+
+	.long 144
+bl ut_144
+
+	.long 145
+bl ut_145
+
+	.long 146
+bl ut_146
+
+	.long 147
+bl ut_147
+
+	.long 148
+bl ut_148
 unbox_trampolines_end:
 
 	.long 0
@@ -8353,64 +8970,70 @@ unbox_trampolines_end:
 	.align 3
 method_info_offsets:
 
-	.long 135,10,14,2
-	.short 0, 10, 20, 30, 40, 50, 65, 76
-	.short 87, 98, 114, 129, 145, 161
-	.byte 1,3,2,2,2,2,2,2,2,2,22,2,2,2,2,3,3,2,3,2,45,2,4,8,2,3,3,2,3,2,76,4
-	.byte 4,4,4,4,4,4,4,4,116,3,4,4,4,4,4,4,4,3,128,153,5,20,7,2,3,3,3,82,255,255,255,254
-	.byte 234,129,24,2,2,2,2,2,24,3,3,2,129,69,4,2,11,2,4,3,2,8,2,129,111,3,3,3,14,2,2,3
-	.byte 13,3,129,159,2,255,255,255,254,95,129,167,2,2,2,2,4,2,129,183,2,2,2,2,2,2,255,255,255,254,61,0
-	.byte 0,0,0,0,0,129,198,2,2,5,255,255,255,254,49,129,209,129,211,2,2,3,255,255,255,254,38,0,129,222,2,2
-	.byte 2,129,231,255,255,255,254,25,129,235,3,3
+	.long 159,10,16,2
+	.short 0, 10, 20, 30, 40, 50, 61, 77
+	.short 88, 99, 110, 126, 141, 157, 172, 188
+	.byte 1,3,2,2,2,2,2,2,2,2,22,2,2,2,2,3,3,3,2,3,47,2,2,2,4,8,2,3,3,2,78,2
+	.byte 2,2,4,4,4,4,4,4,112,4,4,4,3,4,4,4,4,4,128,151,4,3,3,5,20,7,2,3,3,128,204,82
+	.byte 255,255,255,254,226,129,32,2,2,2,2,2,24,129,69,2,3,2,3,4,2,11,2,3,129,105,2,2,3,2,8,2
+	.byte 2,4,2,129,134,3,3,3,14,2,2,3,13,3,129,182,2,255,255,255,254,72,129,190,2,2,2,2,4,2,129,206
+	.byte 2,2,2,2,2,2,255,255,255,254,38,0,0,0,0,0,0,129,221,2,2,5,255,255,255,254,26,129,232,129,234,2
+	.byte 2,3,2,4,255,255,255,254,9,0,0,0,129,251,255,255,255,254,5,0,129,254,2,2,2,3,2,4,0,130,17,255
+	.byte 255,255,253,239,0,0,0,130,20,3,3
 .section __TEXT, __const
 	.align 3
 extra_method_table:
 
-	.long 73,632,98,0,0,0,0,0
+	.long 73,673,108,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 657,101,0,843,115,0,0,0
-	.long 0,0,0,0,0,0,0,1150
-	.long 133,78,636,99,0,0,0,0
+	.long 698,111,0,884,125,0,0,0
+	.long 0,0,0,0,0,0,0,1325
+	.long 157,81,677,109,0,0,0,0
+	.long 0,0,0,0,0,0,1115,140
+	.long 0,590,105,0,978,130,75,654
+	.long 107,0,0,0,0,926,127,0
+	.long 1136,143,0,0,0,0,0,0
+	.long 0,0,0,0,905,126,78,1315
+	.long 156,0,0,0,0,0,0,0
+	.long 0,0,0,0,0,0,573,104
 	.long 0,0,0,0,0,0,0,0
-	.long 0,549,95,0,937,120,75,613
-	.long 97,0,0,0,0,885,117,0
-	.long 1029,126,0,0,0,0,0,0
-	.long 0,0,0,0,864,116,0,0
-	.long 0,0,0,0,0,0,0,0
-	.long 0,0,0,0,0,0,532,94
-	.long 0,0,0,0,0,0,0,0
-	.long 0,0,513,93,0,0,0,0
-	.long 0,0,0,0,0,0,997,123
-	.long 76,0,0,0,753,104,0,0
-	.long 0,0,0,0,0,957,121,77
-	.long 0,0,0,640,100,73,0,0
-	.long 0,0,0,0,721,103,74,0
+	.long 0,0,554,103,0,0,0,0
+	.long 0,0,0,0,0,0,1078,135
+	.long 79,0,0,0,794,114,0,0
+	.long 0,0,0,0,0,998,131,80
+	.long 0,0,0,681,110,73,0,0
+	.long 0,1216,147,0,762,113,74,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0,1069,128,0,0,0,0,689
-	.long 102,0,0,0,0,0,0,0
-	.long 785,105,0,581,96,0,0,0
-	.long 0,0,0,0,0,0,0,822
-	.long 114,0,0,0,0,1089,129,0
+	.long 0,1176,145,0,0,0,0,730
+	.long 112,0,0,0,0,0,0,0
+	.long 826,115,0,622,106,0,0,0
+	.long 0,0,0,0,0,0,0,863
+	.long 124,76,0,0,0,1038,133,77
 	.long 0,0,0,0,0,0,0,0
-	.long 0,1049,127,0,812,106,0,917
-	.long 119,0,977,122,0,1109,130,0
-	.long 1140,132,0,1171,134,0
+	.long 0,1156,144,0,853,116,0,958
+	.long 129,0,1018,132,0,1058,134,0
+	.long 1196,146,0,1236,148,0,1256,149
+	.long 0,1287,151,0,1346,158,0
 .section __TEXT, __const
 	.align 3
 extra_method_info_offsets:
 
-	.long 42,93,513,94,532,95,549,96
-	.long 581,97,613,98,632,99,636,100
-	.long 640,101,657,102,689,103,721,104
-	.long 753,105,785,106,812,107,0,108
-	.long 0,109,0,110,0,111,0,112
-	.long 0,113,0,114,822,115,843,116
-	.long 864,117,885,118,0,119,917,120
-	.long 937,121,957,122,977,123,997,124
-	.long 0,125,0,126,1029,127,1049,128
-	.long 1069,129,1089,130,1109,131,0,132
-	.long 1140,133,1150,134,1171
+	.long 56,103,554,104,573,105,590,106
+	.long 622,107,654,108,673,109,677,110
+	.long 681,111,698,112,730,113,762,114
+	.long 794,115,826,116,853,117,0,118
+	.long 0,119,0,120,0,121,0,122
+	.long 0,123,0,124,863,125,884,126
+	.long 905,127,926,128,0,129,958,130
+	.long 978,131,998,132,1018,133,1038,134
+	.long 1058,135,1078,136,0,137,0,138
+	.long 0,139,0,140,1115,141,0,142
+	.long 0,143,1136,144,1156,145,1176,146
+	.long 1196,147,1216,148,1236,149,1256,150
+	.long 0,151,1287,152,0,153,0,154
+	.long 0,155,0,156,1315,157,1325,158
+	.long 1346
 .section __TEXT, __const
 	.align 3
 class_name_table:
@@ -8428,24 +9051,25 @@ got_info_offsets:
 	.long 117,10,12,2
 	.short 0, 11, 22, 33, 44, 55, 66, 77
 	.short 88, 99, 110, 121
-	.byte 132,168,2,1,1,1,6,6,6,6,6,132,214,11,5,5,11,11,11,5,5,5,133,32,5,5,5,5,5,5,5,5
-	.byte 5,133,82,5,5,5,9,8,5,5,5,5,133,137,5,3,3,3,4,4,4,4,4,133,175,3,3,3,6,3,6,2
-	.byte 3,5,133,212,5,5,5,5,5,5,5,5,5,134,6,5,5,5,5,4,11,3,4,4,134,56,3,11,11,3,5,5
-	.byte 5,11,4,134,125,6,5,5,11,4,11,5,7,16,134,201,6,8,6,7,6,10,4,5,5,135,7,1,22,22,4,22
+	.byte 133,87,2,1,1,1,6,6,6,6,6,133,133,11,5,5,11,11,11,5,5,5,133,207,5,5,5,5,5,5,5,5
+	.byte 5,134,1,5,5,5,9,8,5,5,5,5,134,56,5,3,3,3,4,4,4,4,4,134,94,3,3,3,6,3,6,2
+	.byte 3,5,134,131,5,5,5,5,5,5,5,5,5,134,181,5,5,5,5,5,11,3,4,4,134,232,3,11,11,3,5,5
+	.byte 5,11,4,135,45,6,5,5,11,4,11,5,7,16,135,121,6,8,6,7,7,10,4,5,5,135,184,1,22,22,4,22
 	.byte 4
 .section __TEXT, __const
 	.align 3
 ex_info_offsets:
 
-	.long 135,10,14,2
-	.short 0, 11, 22, 33, 44, 55, 70, 81
-	.short 92, 103, 119, 134, 150, 166
-	.byte 141,100,3,3,3,3,3,3,3,3,3,141,130,3,3,3,3,3,3,3,3,3,141,160,3,3,13,3,3,3,3,3
-	.byte 3,141,200,3,3,3,3,3,3,3,3,3,141,230,3,3,3,3,3,3,3,3,3,142,4,3,4,4,3,4,3,3
-	.byte 4,255,255,255,241,224,142,35,3,3,3,3,3,27,3,4,4,142,92,3,3,15,3,12,4,3,15,3,142,165,4,4
-	.byte 4,15,4,3,3,4,4,142,214,4,255,255,255,241,38,142,221,32,3,32,31,32,3,143,101,3,31,31,32,32,31,255
-	.byte 255,255,239,251,0,0,0,0,0,0,144,9,3,3,4,255,255,255,239,237,144,23,144,26,3,4,4,255,255,255,239,219
-	.byte 0,144,41,3,3,4,144,55,255,255,255,239,201,144,59,4,4
+	.long 159,10,16,2
+	.short 0, 11, 22, 33, 44, 55, 66, 82
+	.short 93, 104, 115, 131, 146, 162, 177, 193
+	.byte 142,79,3,3,3,3,3,3,3,3,3,142,109,3,3,3,3,3,3,3,3,3,142,139,3,3,3,3,13,3,3,3
+	.byte 3,142,179,3,3,3,3,3,3,3,3,3,142,209,3,3,3,3,3,3,3,3,3,142,239,3,3,3,3,4,4,3
+	.byte 4,3,143,16,4,255,255,255,240,236,143,23,3,3,3,3,3,27,143,68,3,4,4,4,3,3,15,3,3,143,122,3
+	.byte 3,4,3,15,3,3,12,3,143,174,4,4,4,15,4,3,3,4,4,143,223,4,255,255,255,240,29,143,230,32,3,32
+	.byte 31,32,3,144,110,3,31,31,32,32,31,255,255,255,238,242,0,0,0,0,0,0,145,18,3,3,4,255,255,255,238,228
+	.byte 145,32,145,35,3,4,4,3,3,255,255,255,238,204,0,0,0,145,56,255,255,255,238,200,0,145,60,3,3,4,4,3
+	.byte 3,0,145,84,255,255,255,238,172,0,0,0,145,88,4,4
 .section __TEXT, __const
 	.align 3
 unwind_info:
@@ -8469,14 +9093,14 @@ unwind_info:
 	.byte 7,31,12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,149,11,68,150,10,151,9,68,152,8,153,7,68,154
 	.byte 6,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,22,12,31,0,68,14,128,1,157,16,158,15
 	.byte 68,13,29,68,152,14,153,13,68,154,12,31,12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9,68,150
-	.byte 8,151,7,68,152,6,153,5,68,154,4
+	.byte 8,151,7,68,152,6,153,5,68,154,4,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9
 .section __TEXT, __const
 	.align 3
 class_info_offsets:
 
 	.long 9,10,1,2
 	.short 0
-	.byte 144,71,7,40,37,28,39,27,27,27
+	.byte 145,100,7,41,39,29,99,28,30,30
 
 .text
 	.align 4
@@ -8489,7 +9113,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 1896
+.word 2073
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue__ctor_System_Collections_Generic_IEnumerable_1_System_Json_JsonValue
 plt_System_Collections_Generic_List_1_System_Json_JsonValue__ctor_System_Collections_Generic_IEnumerable_1_System_Json_JsonValue:
 _p_2:
@@ -8497,7 +9121,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 1919
+.word 2096
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_3:
@@ -8505,7 +9129,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 1930
+.word 2107
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_4:
@@ -8513,7 +9137,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 1950
+.word 2127
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_5:
@@ -8521,7 +9145,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 1978
+.word 2155
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_Add_System_Json_JsonValue
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_Add_System_Json_JsonValue:
 _p_6:
@@ -8529,7 +9153,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 2007
+.word 2184
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_Clear
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_Clear:
 _p_7:
@@ -8537,7 +9161,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 2018
+.word 2195
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_Contains_System_Json_JsonValue
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_Contains_System_Json_JsonValue:
 _p_8:
@@ -8545,7 +9169,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 2029
+.word 2206
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_CopyTo_System_Json_JsonValue___int
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_CopyTo_System_Json_JsonValue___int:
 _p_9:
@@ -8553,7 +9177,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 2040
+.word 2217
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_IndexOf_System_Json_JsonValue
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_IndexOf_System_Json_JsonValue:
 _p_10:
@@ -8561,7 +9185,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 2051
+.word 2228
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_Insert_int_System_Json_JsonValue
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_Insert_int_System_Json_JsonValue:
 _p_11:
@@ -8569,7 +9193,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 2062
+.word 2239
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_Remove_System_Json_JsonValue
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_Remove_System_Json_JsonValue:
 _p_12:
@@ -8577,7 +9201,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 2073
+.word 2250
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_RemoveAt_int
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_RemoveAt_int:
 _p_13:
@@ -8585,7 +9209,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 2084
+.word 2261
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Json_JsonValue_GetEnumerator
 plt_System_Collections_Generic_List_1_System_Json_JsonValue_GetEnumerator:
 _p_14:
@@ -8593,7 +9217,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 2095
+.word 2272
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue__ctor
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue__ctor:
 _p_15:
@@ -8601,7 +9225,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 2106
+.word 2283
 	.no_dead_strip plt_System_Json_JsonObject_AddRange_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
 plt_System_Json_JsonObject_AddRange_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue:
 _p_16:
@@ -8609,7 +9233,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 2117
+.word 2294
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_GetEnumerator
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_GetEnumerator:
 _p_17:
@@ -8617,7 +9241,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 2119
+.word 2296
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_get_Item_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_get_Item_string:
 _p_18:
@@ -8625,7 +9249,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 2130
+.word 2307
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_Add_string_System_Json_JsonValue
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_Add_string_System_Json_JsonValue:
 _p_19:
@@ -8633,7 +9257,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 2141
+.word 2318
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_Clear
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_Clear:
 _p_20:
@@ -8641,7 +9265,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 2152
+.word 2329
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_ContainsKey_string:
 _p_21:
@@ -8649,7 +9273,7 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 2163
+.word 2340
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_Remove_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_Remove_string:
 _p_22:
@@ -8657,663 +9281,703 @@ adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 2174
-	.no_dead_strip plt__jit_icall_mono_object_new_ptrfree_box
-plt__jit_icall_mono_object_new_ptrfree_box:
+.word 2351
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_TryGetValue_string_System_Json_JsonValue_
+plt_System_Collections_Generic_Dictionary_2_string_System_Json_JsonValue_TryGetValue_string_System_Json_JsonValue_:
 _p_23:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 2185
-	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
-plt_System_Type_GetTypeCode_System_Type:
+.word 2362
+	.no_dead_strip plt__jit_icall_mono_object_new_ptrfree_box
+plt__jit_icall_mono_object_new_ptrfree_box:
 _p_24:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 2215
-	.no_dead_strip plt_string_Concat_object_object
-plt_string_Concat_object_object:
+.word 2373
+	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
+plt_System_Type_GetTypeCode_System_Type:
 _p_25:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 2220
-	.no_dead_strip plt_System_Globalization_NumberFormatInfo_get_InvariantInfo
-plt_System_Globalization_NumberFormatInfo_get_InvariantInfo:
+.word 2403
+	.no_dead_strip plt_string_Concat_object_object
+plt_string_Concat_object_object:
 _p_26:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 2225
-	.no_dead_strip plt_string_op_Equality_string_string
-plt_string_op_Equality_string_string:
+.word 2408
+	.no_dead_strip plt_System_Globalization_NumberFormatInfo_get_InvariantInfo
+plt_System_Globalization_NumberFormatInfo_get_InvariantInfo:
 _p_27:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 2230
-	.no_dead_strip plt_string_Concat_string_string_string
-plt_string_Concat_string_string_string:
+.word 2413
+	.no_dead_strip plt_string_op_Equality_string_string
+plt_string_op_Equality_string_string:
 _p_28:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 2235
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
+.word 2418
+	.no_dead_strip plt_string_Concat_string_string_string
+plt_string_Concat_string_string_string:
 _p_29:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 2240
-	.no_dead_strip plt_System_Text_Encoding_get_UTF8
-plt_System_Text_Encoding_get_UTF8:
+.word 2423
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_30:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 2275
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader__ctor_System_IO_TextReader_bool
-plt_System_Runtime_Serialization_Json_JavaScriptReader__ctor_System_IO_TextReader_bool:
+.word 2428
+	.no_dead_strip plt_System_Text_Encoding_get_UTF8
+plt_System_Text_Encoding_get_UTF8:
 _p_31:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 2280
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_Read
-plt_System_Runtime_Serialization_Json_JavaScriptReader_Read:
+.word 2463
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader__ctor_System_IO_TextReader_bool
+plt_System_Runtime_Serialization_Json_JavaScriptReader__ctor_System_IO_TextReader_bool:
 _p_32:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 2282
-	.no_dead_strip plt_System_Json_JsonValue_ToJsonValue_object
-plt_System_Json_JsonValue_ToJsonValue_object:
+.word 2468
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_Read
+plt_System_Runtime_Serialization_Json_JavaScriptReader_Read:
 _p_33:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 2284
-	.no_dead_strip plt_System_Json_JsonValue_ToJsonPairEnumerable_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object
-plt_System_Json_JsonValue_ToJsonPairEnumerable_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object:
+.word 2470
+	.no_dead_strip plt_System_Json_JsonValue_ToJsonValue_object
+plt_System_Json_JsonValue_ToJsonValue_object:
 _p_34:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 2286
-	.no_dead_strip plt_System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
-plt_System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue:
+.word 2472
+	.no_dead_strip plt_System_Json_JsonValue_ToJsonPairEnumerable_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object
+plt_System_Json_JsonValue_ToJsonPairEnumerable_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object:
 _p_35:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 2288
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+.word 2474
+	.no_dead_strip plt_System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue
+plt_System_Json_JsonObject__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue:
 _p_36:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 2290
-	.no_dead_strip plt_System_Json_JsonValue_ToJsonValueEnumerable_System_Collections_Generic_IEnumerable_1_object
-plt_System_Json_JsonValue_ToJsonValueEnumerable_System_Collections_Generic_IEnumerable_1_object:
+.word 2476
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_37:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 2298
-	.no_dead_strip plt_System_Json_JsonArray__ctor_System_Collections_Generic_IEnumerable_1_System_Json_JsonValue
-plt_System_Json_JsonArray__ctor_System_Collections_Generic_IEnumerable_1_System_Json_JsonValue:
+.word 2478
+	.no_dead_strip plt_System_Json_JsonValue_ToJsonValueEnumerable_System_Collections_Generic_IEnumerable_1_object
+plt_System_Json_JsonValue_ToJsonValueEnumerable_System_Collections_Generic_IEnumerable_1_object:
 _p_38:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 2300
-	.no_dead_strip plt_string_Format_string_object
-plt_string_Format_string_object:
+.word 2486
+	.no_dead_strip plt_System_Json_JsonArray__ctor_System_Collections_Generic_IEnumerable_1_System_Json_JsonValue
+plt_System_Json_JsonArray__ctor_System_Collections_Generic_IEnumerable_1_System_Json_JsonValue:
 _p_39:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 2302
-	.no_dead_strip plt_System_Json_JsonValue_SaveInternal_System_IO_TextWriter
-plt_System_Json_JsonValue_SaveInternal_System_IO_TextWriter:
+.word 2488
+	.no_dead_strip plt_string_Format_string_object
+plt_string_Format_string_object:
 _p_40:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 2307
-	.no_dead_strip plt_System_Json_JsonObject_GetEnumerator
-plt_System_Json_JsonObject_GetEnumerator:
+.word 2490
+	.no_dead_strip plt_System_Json_JsonValue_SaveInternal_System_IO_TextWriter
+plt_System_Json_JsonValue_SaveInternal_System_IO_TextWriter:
 _p_41:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 2309
-	.no_dead_strip plt_System_Json_JsonValue_EscapeString_string
-plt_System_Json_JsonValue_EscapeString_string:
+.word 2495
+	.no_dead_strip plt_System_Json_JsonObject_GetEnumerator
+plt_System_Json_JsonObject_GetEnumerator:
 _p_42:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 2311
-	.no_dead_strip plt_System_Json_JsonValue_op_Implicit_System_Json_JsonValue
-plt_System_Json_JsonValue_op_Implicit_System_Json_JsonValue:
+.word 2497
+	.no_dead_strip plt_System_Json_JsonValue_EscapeString_string
+plt_System_Json_JsonValue_EscapeString_string:
 _p_43:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 2313
-	.no_dead_strip plt_System_Json_JsonPrimitive_GetFormattedString
-plt_System_Json_JsonPrimitive_GetFormattedString:
+.word 2499
+	.no_dead_strip plt_System_Json_JsonValue_op_Implicit_System_Json_JsonValue
+plt_System_Json_JsonValue_op_Implicit_System_Json_JsonValue:
 _p_44:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 2315
-	.no_dead_strip plt_System_IO_StringWriter__ctor
-plt_System_IO_StringWriter__ctor:
+.word 2501
+	.no_dead_strip plt_System_Json_JsonPrimitive_GetFormattedString
+plt_System_Json_JsonPrimitive_GetFormattedString:
 _p_45:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 2317
-	.no_dead_strip plt_System_Text_StringBuilder__ctor
-plt_System_Text_StringBuilder__ctor:
+.word 2503
+	.no_dead_strip plt_System_IO_StringWriter__ctor
+plt_System_IO_StringWriter__ctor:
 _p_46:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 2322
-	.no_dead_strip plt_System_Text_StringBuilder_Append_string_int_int
-plt_System_Text_StringBuilder_Append_string_int_int:
+.word 2505
+	.no_dead_strip plt_System_Text_StringBuilder__ctor
+plt_System_Text_StringBuilder__ctor:
 _p_47:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 2327
-	.no_dead_strip plt_System_Text_StringBuilder_Append_char
-plt_System_Text_StringBuilder_Append_char:
+.word 2510
+	.no_dead_strip plt_System_Text_StringBuilder_Append_string_int_int
+plt_System_Text_StringBuilder_Append_string_int_int:
 _p_48:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 2332
-	.no_dead_strip plt_System_Convert_ToBoolean_object_System_IFormatProvider
-plt_System_Convert_ToBoolean_object_System_IFormatProvider:
+.word 2515
+	.no_dead_strip plt_System_Text_StringBuilder_Append_char
+plt_System_Text_StringBuilder_Append_char:
 _p_49:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 2337
-	.no_dead_strip plt_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_string_System_Json_JsonValue
-plt_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_string_System_Json_JsonValue:
+.word 2520
+	.no_dead_strip plt_System_Convert_ToBoolean_object_System_IFormatProvider
+plt_System_Convert_ToBoolean_object_System_IFormatProvider:
 _p_50:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 2342
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadCore
-plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadCore:
+.word 2525
+	.no_dead_strip plt_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_string_System_Json_JsonValue
+plt_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_string_System_Json_JsonValue:
 _p_51:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 2353
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_SkipSpaces
-plt_System_Runtime_Serialization_Json_JavaScriptReader_SkipSpaces:
+.word 2530
+	.no_dead_strip plt_System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_GetEnumerator
+plt_System_Json_JsonValue__ToJsonPairEnumerablec__Iterator0_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_string_System_Json_JsonValue_GetEnumerator:
 _p_52:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 2355
-	.no_dead_strip plt__jit_icall_mono_array_new_specific
-plt__jit_icall_mono_array_new_specific:
+.word 2541
+	.no_dead_strip plt_System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Generic_IEnumerable_System_Json_JsonValue_GetEnumerator
+plt_System_Json_JsonValue__ToJsonValueEnumerablec__Iterator1_System_Collections_Generic_IEnumerable_System_Json_JsonValue_GetEnumerator:
 _p_53:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 2357
-	.no_dead_strip plt_string_Format_string_object__
-plt_string_Format_string_object__:
+.word 2543
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadCore
+plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadCore:
 _p_54:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 2383
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_JsonError_string
-plt_System_Runtime_Serialization_Json_JavaScriptReader_JsonError_string:
+.word 2545
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_SkipSpaces
+plt_System_Runtime_Serialization_Json_JavaScriptReader_SkipSpaces:
 _p_55:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 2388
-	.no_dead_strip plt__class_init_System_EmptyArray_System_Object_
-plt__class_init_System_EmptyArray_System_Object_:
+.word 2547
+	.no_dead_strip plt__jit_icall_mono_array_new_specific
+plt__jit_icall_mono_array_new_specific:
 _p_56:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 2390
-	.no_dead_strip plt_System_Collections_Generic_List_1_object_Add_object
-plt_System_Collections_Generic_List_1_object_Add_object:
+.word 2549
+	.no_dead_strip plt_string_Format_string_object__
+plt_string_Format_string_object__:
 _p_57:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 2394
-	.no_dead_strip plt_System_Collections_Generic_List_1_object_ToArray
-plt_System_Collections_Generic_List_1_object_ToArray:
+.word 2575
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_JsonError_string
+plt_System_Runtime_Serialization_Json_JavaScriptReader_JsonError_string:
 _p_58:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 2405
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_object__ctor
-plt_System_Collections_Generic_Dictionary_2_string_object__ctor:
+.word 2580
+	.no_dead_strip plt__class_init_System_EmptyArray_System_Object_
+plt__class_init_System_EmptyArray_System_Object_:
 _p_59:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 2416
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadStringLiteral
-plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadStringLiteral:
+.word 2582
+	.no_dead_strip plt_System_Collections_Generic_List_1_object_Add_object
+plt_System_Collections_Generic_List_1_object_Add_object:
 _p_60:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 2427
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_object_set_Item_string_object
-plt_System_Collections_Generic_Dictionary_2_string_object_set_Item_string_object:
+.word 2586
+	.no_dead_strip plt_System_Collections_Generic_List_1_object_ToArray
+plt_System_Collections_Generic_List_1_object_ToArray:
 _p_61:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 2429
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator
-plt_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator:
+.word 2597
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_object__ctor
+plt_System_Collections_Generic_Dictionary_2_string_object__ctor:
 _p_62:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 2440
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext
-plt_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext:
+.word 2608
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadStringLiteral
+plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadStringLiteral:
 _p_63:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 2451
-	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadNumericLiteral
-plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadNumericLiteral:
+.word 2619
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_object_set_Item_string_object
+plt_System_Collections_Generic_Dictionary_2_string_object_set_Item_string_object:
 _p_64:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 2462
-	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
-plt__jit_icall_mono_helper_newobj_mscorlib:
+.word 2621
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator
+plt_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator:
 _p_65:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 2464
-	.no_dead_strip plt__class_init_System_Globalization_CultureInfo
-plt__class_init_System_Globalization_CultureInfo:
+.word 2632
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext
+plt_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext:
 _p_66:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 2494
-	.no_dead_strip plt_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int_
-plt_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int_:
+.word 2643
+	.no_dead_strip plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadNumericLiteral
+plt_System_Runtime_Serialization_Json_JavaScriptReader_ReadNumericLiteral:
 _p_67:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 2498
-	.no_dead_strip plt_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long_
-plt_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long_:
+.word 2654
+	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
+plt__jit_icall_mono_helper_newobj_mscorlib:
 _p_68:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 2503
-	.no_dead_strip plt_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong_
-plt_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong_:
+.word 2656
+	.no_dead_strip plt__class_init_System_Globalization_CultureInfo
+plt__class_init_System_Globalization_CultureInfo:
 _p_69:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 2508
-	.no_dead_strip plt_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal_
-plt_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal_:
+.word 2686
+	.no_dead_strip plt_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int_
+plt_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int_:
 _p_70:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 2513
-	.no_dead_strip plt_System_Decimal__ctor_int
-plt_System_Decimal__ctor_int:
+.word 2691
+	.no_dead_strip plt_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long_
+plt_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long_:
 _p_71:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 2518
-	.no_dead_strip plt_System_Decimal_op_Inequality_System_Decimal_System_Decimal
-plt_System_Decimal_op_Inequality_System_Decimal_System_Decimal:
+.word 2696
+	.no_dead_strip plt_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong_
+plt_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong_:
 _p_72:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 2523
-	.no_dead_strip plt_double_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider
-plt_double_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider:
+.word 2701
+	.no_dead_strip plt_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal_
+plt_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal_:
 _p_73:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 2528
-	.no_dead_strip plt_System_Text_StringBuilder_set_Length_int
-plt_System_Text_StringBuilder_set_Length_int:
+.word 2706
+	.no_dead_strip plt_System_Decimal__ctor_int
+plt_System_Decimal__ctor_int:
 _p_74:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 2533
-	.no_dead_strip plt_string_Format_string_object_object
-plt_string_Format_string_object_object:
+.word 2711
+	.no_dead_strip plt_System_Decimal_op_Inequality_System_Decimal_System_Decimal
+plt_System_Decimal_op_Inequality_System_Decimal_System_Decimal:
 _p_75:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 2538
-	.no_dead_strip plt_string_Format_string_object_object_object
-plt_string_Format_string_object_object_object:
+.word 2716
+	.no_dead_strip plt_double_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider
+plt_double_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider:
 _p_76:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 2543
-	.no_dead_strip plt_System_ArgumentException__ctor_string
-plt_System_ArgumentException__ctor_string:
+.word 2721
+	.no_dead_strip plt_System_Text_StringBuilder_set_Length_int
+plt_System_Text_StringBuilder_set_Length_int:
 _p_77:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 2548
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
+.word 2726
+	.no_dead_strip plt_string_Format_string_object_object
+plt_string_Format_string_object_object:
 _p_78:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 2572
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
+.word 2731
+	.no_dead_strip plt_string_Format_string_object_object_object
+plt_string_Format_string_object_object_object:
 _p_79:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 2618
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
+.word 2736
+	.no_dead_strip plt_System_ArgumentException__ctor_string
+plt_System_ArgumentException__ctor_string:
 _p_80:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 2645
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
+.word 2741
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
 _p_81:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 2669
-	.no_dead_strip plt_Locale_GetText_string
-plt_Locale_GetText_string:
+.word 2765
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
 _p_82:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 2710
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
+.word 2811
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
 _p_83:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 2734
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
+.word 2838
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
 _p_84:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 2761
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
+.word 2862
+	.no_dead_strip plt_Locale_GetText_string
+plt_Locale_GetText_string:
 _p_85:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 2785
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
+.word 2903
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
 _p_86:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 2845
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
+.word 2927
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
 _p_87:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 2872
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
+.word 2954
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
 _p_88:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 2896
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
+.word 2978
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
 _p_89:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 2956
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
+.word 3038
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
 _p_90:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 3002
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
+.word 3065
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
 _p_91:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 3048
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
+.word 3089
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
 _p_92:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 3075
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
+.word 3149
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
 _p_93:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 3099
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
+.word 3195
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
 _p_94:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 3159
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+.word 3241
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
 _p_95:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 3186
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
+.word 3268
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
 _p_96:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 3210
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
+.word 3292
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
 _p_97:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 3246
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
+.word 3352
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_98:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 3254
-	.no_dead_strip plt__jit_icall_mono_object_new_specific
-plt__jit_icall_mono_object_new_specific:
+.word 3379
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
 _p_99:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 3277
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 3403
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
 _p_100:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 3304
-	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_int
-plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_int:
+.word 3439
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
 _p_101:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 3342
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_System_Array:
+.word 3447
+	.no_dead_strip plt__jit_icall_mono_object_new_specific
+plt__jit_icall_mono_object_new_specific:
 _p_102:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 3364
-	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_object_int
-plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_object_int:
+.word 3470
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_103:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 3385
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Array:
+.word 3497
+	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_int
+plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_int:
 _p_104:
 adrp x16, _mono_aot_System_Json_got@PAGE+0
 add x16, x16, _mono_aot_System_Json_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 3407
+.word 3535
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_get_Current
+plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue_get_Current:
+_p_105:
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x16, [x16, #1776]
+br x16
+.word 3557
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_System_Json_JsonValue__ctor_System_Array:
+_p_106:
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x16, [x16, #1784]
+br x16
+.word 3578
+	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_object_int
+plt_System_Array_InternalArray__get_Item_System_Collections_Generic_KeyValuePair_2_string_object_int:
+_p_107:
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x16, [x16, #1792]
+br x16
+.word 3599
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_get_Current
+plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object_get_Current:
+_p_108:
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x16, [x16, #1800]
+br x16
+.word 3621
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Array:
+_p_109:
+adrp x16, _mono_aot_System_Json_got@PAGE+0
+add x16, x16, _mono_aot_System_Json_got@PAGEOFF
+ldr x16, [x16, #1808]
+br x16
+.word 3642
 plt_end:
 .section __TEXT, __const
 	.align 3
@@ -9344,7 +10008,7 @@ image_table:
 .data
 	.align 3
 _mono_aot_System_Json_got:
-	.space 1776
+	.space 1816
 got_end:
 .section __TEXT, __const
 	.align 2
@@ -9424,7 +10088,7 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampolines_end
 
-	.long 117,1776,105,135,10,387000831,0,4422
+	.long 117,1816,110,159,10,387000831,0,4778
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,128,8,8,14
 	.long 0,0,0,0,0
@@ -9438,144 +10102,155 @@ _mono_aot_module_System_Json_info:
 blob:
 
 	.byte 0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-	.byte 5,0,1,6,0,0,0,1,7,0,0,0,0,0,0,0,2,8,8,0,6,9,10,8,8,11,12,0,0,0,1,13
-	.byte 0,1,14,0,0,0,1,15,0,0,0,0,1,4,1,16,1,4,1,17,1,4,1,18,1,4,1,19,1,4,1,20
-	.byte 1,4,1,21,1,4,1,22,1,4,1,23,1,4,1,24,1,4,1,25,1,4,0,1,4,1,26,1,4,1,27,1
-	.byte 4,1,28,1,4,1,29,1,4,1,30,1,4,1,31,1,4,1,32,1,4,0,1,4,0,1,4,2,33,34,1,4
-	.byte 17,35,35,36,37,38,38,39,40,38,38,41,40,42,43,44,45,45,1,4,4,46,47,48,49,0,0,0,1,50,0,1
-	.byte 51,0,1,52,0,80,53,53,54,55,56,57,58,58,59,16,60,60,59,17,61,61,59,18,62,62,59,19,37,37,59,20
-	.byte 36,36,59,21,63,63,59,22,64,64,59,23,65,65,59,24,66,66,59,25,35,35,59,67,67,59,27,68,68,59,28,69
-	.byte 69,59,29,70,70,59,26,71,71,59,30,72,72,59,31,73,73,59,32,74,74,59,0,0,0,0,0,0,0,0,0,0
-	.byte 0,0,0,22,75,76,10,77,8,78,8,79,8,11,12,80,81,82,77,79,11,12,46,48,83,83,0,1,84,0,1,85
-	.byte 0,0,0,1,83,0,2,83,35,0,0,0,9,86,87,88,89,90,90,8,11,12,0,0,0,2,91,12,0,1,51,0
-	.byte 0,0,6,92,93,94,95,11,12,0,0,0,2,96,12,0,1,52,0,1,85,0,1,97,0,12,98,99,100,101,102,102
-	.byte 102,46,16,48,16,79,0,0,0,0,0,1,103,0,11,85,104,22,104,23,104,28,104,19,104,20,0,1,105,0,0,0
-	.byte 0,0,4,106,22,22,107,0,0,0,0,0,0,0,0,0,2,108,109,0,0,0,0,0,0,0,0,0,0,0,0,0
-	.byte 0,0,0,0,1,110,0,0,0,0,0,3,111,8,8,0,0,0,0,0,0,0,0,0,1,112,0,2,113,113,0,0
-	.byte 0,0,0,0,0,1,114,0,2,115,115,0,1,110,0,1,111,0,1,116,5,30,0,1,255,255,255,255,255,193,0,6
-	.byte 152,255,253,0,0,0,2,129,91,1,1,198,0,6,152,0,1,7,129,244,193,0,6,153,5,30,0,1,255,255,255,255
-	.byte 255,193,0,6,154,255,253,0,0,0,2,129,91,1,1,198,0,6,154,0,1,7,130,24,5,30,0,1,255,255,255,255
-	.byte 255,193,0,6,155,255,253,0,0,0,2,129,91,1,1,198,0,6,155,0,1,7,130,56,5,30,0,1,255,255,255,255
-	.byte 255,193,0,6,156,255,253,0,0,0,2,129,91,1,1,198,0,6,156,0,1,7,130,88,193,0,6,142,193,0,6,143
-	.byte 193,0,6,145,5,30,0,1,255,255,255,255,255,193,0,6,146,255,253,0,0,0,2,129,91,1,1,198,0,6,146,0
-	.byte 1,7,130,132,5,30,0,1,255,255,255,255,255,193,0,6,147,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0
-	.byte 1,7,130,164,5,30,0,1,255,255,255,255,255,193,0,6,148,255,253,0,0,0,2,129,91,1,1,198,0,6,148,0
-	.byte 1,7,130,196,5,30,0,1,255,255,255,255,255,193,0,6,149,255,253,0,0,0,2,129,91,1,1,198,0,6,149,0
-	.byte 1,7,130,228,5,30,0,1,255,255,255,255,255,193,0,6,144,255,253,0,0,0,2,129,91,1,1,198,0,6,144,0
-	.byte 1,7,131,4,4,2,129,110,1,1,1,6,255,252,0,0,0,1,1,7,131,36,255,253,0,0,0,2,129,91,1,1
-	.byte 198,0,6,146,0,1,3,219,0,0,11,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,3,219,0,0,11
-	.byte 255,253,0,0,0,2,129,91,1,1,198,0,6,148,0,1,3,219,0,0,11,255,253,0,0,0,2,129,91,1,1,198
-	.byte 0,6,149,0,1,3,219,0,0,11,4,2,129,92,1,1,3,219,0,0,11,255,253,0,0,0,7,131,138,1,198,0
-	.byte 6,211,1,3,219,0,0,11,0,255,253,0,0,0,7,131,138,1,198,0,6,212,1,3,219,0,0,11,0,255,253,0
-	.byte 0,0,7,131,138,1,198,0,6,213,1,3,219,0,0,11,0,255,253,0,0,0,7,131,138,1,198,0,6,214,1,3
-	.byte 219,0,0,11,0,255,253,0,0,0,2,129,91,1,1,198,0,6,144,0,1,3,219,0,0,11,4,2,129,92,1,1
-	.byte 3,219,0,0,17,255,253,0,0,0,7,131,250,1,198,0,6,211,1,3,219,0,0,17,0,255,253,0,0,0,7,131
-	.byte 250,1,198,0,6,212,1,3,219,0,0,17,0,255,253,0,0,0,7,131,250,1,198,0,6,213,1,3,219,0,0,17
-	.byte 0,255,253,0,0,0,7,131,250,1,198,0,6,214,1,3,219,0,0,17,0,255,253,0,0,0,2,129,91,1,1,198
-	.byte 0,6,144,0,1,3,219,0,0,17,4,2,129,110,1,1,2,129,198,1,255,252,0,0,0,1,1,7,132,106,255,253
-	.byte 0,0,0,2,129,91,1,1,198,0,6,155,0,1,3,219,0,0,11,255,253,0,0,0,2,129,91,1,1,198,0,6
-	.byte 155,0,1,3,219,0,0,17,12,0,39,42,47,14,3,219,0,0,4,14,3,219,0,0,5,14,3,219,0,0,9,14
-	.byte 3,219,0,0,10,14,3,219,0,0,11,6,255,254,0,0,0,0,202,0,0,23,6,255,254,0,0,0,0,202,0,0
-	.byte 24,6,193,0,1,101,6,193,0,8,91,6,255,254,0,0,0,0,202,0,0,28,6,255,254,0,0,0,0,202,0,0
-	.byte 29,6,255,254,0,0,0,0,202,0,0,31,14,2,129,103,1,14,2,129,105,1,14,2,129,108,1,14,2,129,123,1
-	.byte 14,2,129,128,1,14,2,129,213,1,14,2,129,166,1,14,2,129,167,1,14,2,129,210,1,14,2,129,165,1,14,2
-	.byte 129,117,1,14,2,129,233,1,14,2,129,234,1,14,2,129,232,1,14,2,129,120,1,14,2,129,151,1,14,2,129,220
-	.byte 1,8,4,128,164,108,128,156,128,164,8,3,128,164,128,172,128,164,11,2,129,215,1,11,2,129,213,1,11,2,129,128
-	.byte 1,23,2,129,163,1,17,0,103,6,193,0,8,94,17,0,107,17,0,111,17,0,119,17,0,128,137,17,0,128,157,17
-	.byte 0,128,161,16,1,4,4,17,0,128,171,16,1,4,5,14,1,9,14,1,7,14,1,8,23,3,219,0,0,13,14,1
-	.byte 3,11,3,219,0,0,14,43,0,14,1,2,11,2,129,103,1,14,1,4,11,2,129,105,1,11,2,129,108,1,11,2
-	.byte 129,123,1,11,2,129,166,1,11,2,129,167,1,11,2,129,210,1,11,2,129,165,1,11,2,129,233,1,11,2,129,234
-	.byte 1,11,2,129,232,1,11,2,129,117,1,11,2,129,120,1,11,2,129,151,1,11,2,129,220,1,11,2,33,2,8,5
-	.byte 132,80,132,228,116,130,124,132,8,11,1,3,17,0,129,41,17,0,129,47,17,0,129,55,11,1,2,6,255,254,0,0
-	.byte 0,0,202,0,0,15,6,255,254,0,0,0,0,202,0,0,50,11,1,4,14,2,128,130,1,14,2,129,46,1,8,2
-	.byte 96,128,208,6,255,254,0,0,0,0,202,0,0,59,8,1,130,240,6,255,254,0,0,0,0,202,0,0,60,14,3,219
-	.byte 0,0,17,8,2,128,176,100,8,2,96,128,208,6,255,254,0,0,0,0,202,0,0,65,8,1,129,220,6,255,254,0
-	.byte 0,0,0,202,0,0,66,8,2,128,176,100,14,6,1,2,129,198,1,14,3,219,0,0,19,4,2,129,130,1,1,2
-	.byte 129,198,1,16,7,134,185,133,245,14,3,219,0,0,20,14,6,1,3,219,0,0,17,14,3,219,0,0,21,8,5,100
-	.byte 100,88,88,100,16,2,88,1,129,4,8,4,129,176,129,0,129,200,129,224,17,0,133,167,14,2,129,87,1,11,2,129
-	.byte 239,1,11,2,129,137,1,33,34,255,253,0,0,0,2,129,91,1,1,198,0,6,157,0,1,3,219,0,0,11,34,255
-	.byte 253,0,0,0,2,129,91,1,1,198,0,6,155,0,1,3,219,0,0,11,14,7,131,138,34,255,253,0,0,0,2,129
-	.byte 91,1,1,198,0,6,155,0,1,3,219,0,0,17,14,7,131,250,34,255,253,0,0,0,2,129,91,1,1,198,0,6
-	.byte 157,0,1,3,219,0,0,17,7,20,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119,95,102,97,115,116,0,3
-	.byte 255,254,0,0,0,0,202,0,0,2,7,17,109,111,110,111,95,104,101,108,112,101,114,95,108,100,115,116,114,0,7,25
-	.byte 109,111,110,111,95,97,114,99,104,95,116,104,114,111,119,95,101,120,99,101,112,116,105,111,110,0,7,26,109,111,110,111
-	.byte 95,104,101,108,112,101,114,95,108,100,115,116,114,95,109,115,99,111,114,108,105,98,0,3,255,254,0,0,0,0,202,0
-	.byte 0,6,3,255,254,0,0,0,0,202,0,0,7,3,255,254,0,0,0,0,202,0,0,8,3,255,254,0,0,0,0,202
-	.byte 0,0,9,3,255,254,0,0,0,0,202,0,0,10,3,255,254,0,0,0,0,202,0,0,11,3,255,254,0,0,0,0
-	.byte 202,0,0,12,3,255,254,0,0,0,0,202,0,0,13,3,255,254,0,0,0,0,202,0,0,14,3,255,254,0,0,0
-	.byte 0,202,0,0,16,3,23,3,255,254,0,0,0,0,202,0,0,18,3,255,254,0,0,0,0,202,0,0,19,3,255,254
-	.byte 0,0,0,0,202,0,0,20,3,255,254,0,0,0,0,202,0,0,27,3,255,254,0,0,0,0,202,0,0,30,3,255
-	.byte 254,0,0,0,0,202,0,0,32,7,27,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119,95,112,116,114,102,114
-	.byte 101,101,95,98,111,120,0,3,193,0,10,155,3,193,0,10,3,3,193,0,2,43,3,193,0,9,192,3,193,0,10,6
-	.byte 7,32,109,111,110,111,95,97,114,99,104,95,116,104,114,111,119,95,99,111,114,108,105,98,95,101,120,99,101,112,116,105
-	.byte 111,110,0,3,193,0,5,147,3,82,3,83,3,58,3,56,3,16,3,255,252,0,0,0,19,10,3,57,3,1,3,193
-	.byte 0,9,253,3,66,3,18,3,68,3,70,3,52,3,193,0,2,240,3,193,0,5,160,3,193,0,5,177,3,193,0,5
-	.byte 174,3,193,0,7,79,3,255,254,0,0,0,0,202,0,0,63,3,84,3,87,7,23,109,111,110,111,95,97,114,114,97
-	.byte 121,95,110,101,119,95,115,112,101,99,105,102,105,99,0,3,193,0,10,0,3,92,15,7,134,185,3,255,254,0,0,0
-	.byte 0,202,0,0,69,3,255,254,0,0,0,0,202,0,0,70,3,255,254,0,0,0,0,202,0,0,71,3,89,3,255,254
-	.byte 0,0,0,0,202,0,0,72,3,255,254,0,0,0,0,202,0,0,74,3,255,254,0,0,0,0,202,0,0,76,3,88
+	.byte 5,0,1,5,0,1,6,0,0,0,1,7,0,1,7,0,0,0,0,0,0,0,2,8,8,0,6,9,10,8,8,11
+	.byte 12,0,0,0,1,13,0,1,14,0,0,0,1,15,0,0,0,0,0,0,1,4,1,16,1,4,1,17,1,4,1,18
+	.byte 1,4,1,19,1,4,1,20,1,4,1,21,1,4,1,22,1,4,1,23,1,4,1,24,1,4,1,25,1,4,0,1
+	.byte 4,1,26,1,4,1,27,1,4,1,28,1,4,1,29,1,4,1,30,1,4,1,31,1,4,1,32,1,4,0,1,4
+	.byte 0,1,4,2,33,34,1,4,17,35,35,36,37,38,38,39,40,38,38,41,40,42,43,44,45,45,1,4,4,46,47,48
+	.byte 49,0,0,0,1,50,0,1,51,0,1,52,0,80,53,53,54,55,56,57,58,58,59,16,60,60,59,17,61,61,59,18
+	.byte 62,62,59,19,37,37,59,20,36,36,59,21,63,63,59,22,64,64,59,23,65,65,59,24,66,66,59,25,35,35,59,67
+	.byte 67,59,27,68,68,59,28,69,69,59,29,70,70,59,26,71,71,59,30,72,72,59,31,73,73,59,32,74,74,59,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,22,75,76,10,77,8,78,8,79,8,11,12,80,81,82,77,79,11,12,46,48
+	.byte 83,83,0,1,84,0,0,0,1,85,0,0,0,1,83,0,2,83,35,0,0,0,9,86,87,88,89,90,90,8,11,12
+	.byte 0,0,0,1,8,0,2,91,12,0,0,0,0,0,1,51,0,0,0,6,92,93,94,95,11,12,0,0,0,0,0,2
+	.byte 96,12,0,0,0,0,0,1,52,0,1,85,0,1,97,0,12,98,99,100,101,102,102,102,46,16,48,16,79,0,0,0
+	.byte 0,0,1,103,0,11,85,104,22,104,23,104,28,104,19,104,20,0,1,105,0,0,0,0,0,4,106,22,22,107,0,0
+	.byte 0,0,0,0,0,0,0,2,108,109,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,110,0,0,0
+	.byte 0,0,3,111,8,8,0,0,0,0,0,0,0,0,0,1,112,0,0,0,2,113,8,0,2,113,113,0,1,110,0,0
+	.byte 0,0,0,0,0,1,114,0,0,0,2,115,90,0,2,115,115,0,1,110,0,1,110,0,1,111,0,1,116,5,30,0
+	.byte 1,255,255,255,255,255,193,0,13,213,255,253,0,0,0,2,130,58,1,1,198,0,13,213,0,1,7,130,29,193,0,13
+	.byte 214,5,30,0,1,255,255,255,255,255,193,0,13,215,255,253,0,0,0,2,130,58,1,1,198,0,13,215,0,1,7,130
+	.byte 65,5,30,0,1,255,255,255,255,255,193,0,13,216,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1,7,130
+	.byte 97,5,30,0,1,255,255,255,255,255,193,0,13,217,255,253,0,0,0,2,130,58,1,1,198,0,13,217,0,1,7,130
+	.byte 129,193,0,13,203,193,0,13,204,193,0,13,206,5,30,0,1,255,255,255,255,255,193,0,13,207,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,207,0,1,7,130,173,5,30,0,1,255,255,255,255,255,193,0,13,208,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,208,0,1,7,130,205,5,30,0,1,255,255,255,255,255,193,0,13,209,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,209,0,1,7,130,237,5,30,0,1,255,255,255,255,255,193,0,13,210,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,210,0,1,7,131,13,5,30,0,1,255,255,255,255,255,193,0,13,205,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,205,0,1,7,131,45,4,2,130,80,1,1,1,6,255,252,0,0,0,1,1,7,131,77,255
+	.byte 253,0,0,0,2,130,58,1,1,198,0,13,207,0,1,3,219,0,0,11,255,253,0,0,0,2,130,58,1,1,198,0
+	.byte 13,208,0,1,3,219,0,0,11,255,253,0,0,0,2,130,58,1,1,198,0,13,209,0,1,3,219,0,0,11,255,253
+	.byte 0,0,0,2,130,58,1,1,198,0,13,210,0,1,3,219,0,0,11,4,2,130,59,1,1,3,219,0,0,11,255,253
+	.byte 0,0,0,7,131,179,1,198,0,14,31,1,3,219,0,0,11,0,255,253,0,0,0,7,131,179,1,198,0,14,32,1
+	.byte 3,219,0,0,11,0,255,253,0,0,0,7,131,179,1,198,0,14,33,1,3,219,0,0,11,0,255,253,0,0,0,7
+	.byte 131,179,1,198,0,14,34,1,3,219,0,0,11,0,255,253,0,0,0,7,131,179,1,198,0,14,35,1,3,219,0,0
+	.byte 11,0,255,253,0,0,0,7,131,179,1,198,0,14,36,1,3,219,0,0,11,0,255,253,0,0,0,2,130,58,1,1
+	.byte 198,0,13,205,0,1,3,219,0,0,11,4,2,100,1,3,2,130,190,1,1,6,3,219,0,0,11,255,252,0,0,0
+	.byte 1,1,7,132,75,4,2,130,59,1,1,3,219,0,0,17,255,253,0,0,0,7,132,101,1,198,0,14,31,1,3,219
+	.byte 0,0,17,0,255,253,0,0,0,7,132,101,1,198,0,14,32,1,3,219,0,0,17,0,255,253,0,0,0,7,132,101
+	.byte 1,198,0,14,33,1,3,219,0,0,17,0,255,253,0,0,0,7,132,101,1,198,0,14,34,1,3,219,0,0,17,0
+	.byte 255,253,0,0,0,7,132,101,1,198,0,14,35,1,3,219,0,0,17,0,255,253,0,0,0,7,132,101,1,198,0,14
+	.byte 36,1,3,219,0,0,17,0,255,253,0,0,0,2,130,58,1,1,198,0,13,205,0,1,3,219,0,0,17,4,2,130
+	.byte 80,1,1,2,130,169,1,255,252,0,0,0,1,1,7,132,253,4,2,100,1,3,2,130,190,1,2,130,169,1,3,219
+	.byte 0,0,17,255,252,0,0,0,1,1,7,133,17,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1,3,219,0
+	.byte 0,11,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1,3,219,0,0,17,12,0,39,42,47,14,3,219,0
+	.byte 0,4,14,3,219,0,0,5,14,3,219,0,0,9,14,3,219,0,0,10,14,3,219,0,0,11,6,255,254,0,0,0
+	.byte 0,202,0,0,24,6,255,254,0,0,0,0,202,0,0,25,6,193,0,4,216,6,193,0,17,206,6,255,254,0,0,0
+	.byte 0,202,0,0,29,6,255,254,0,0,0,0,202,0,0,30,6,255,254,0,0,0,0,202,0,0,32,14,2,130,73,1
+	.byte 14,2,130,75,1,14,2,130,78,1,14,2,130,93,1,14,2,130,98,1,14,2,130,188,1,14,2,130,137,1,14,2
+	.byte 130,138,1,14,2,130,185,1,14,2,130,136,1,14,2,130,87,1,14,2,130,215,1,14,2,130,216,1,14,2,130,214
+	.byte 1,14,2,130,90,1,14,2,130,121,1,14,2,130,199,1,8,4,128,164,108,128,156,128,164,8,3,128,164,128,172,128
+	.byte 164,11,2,130,190,1,11,2,130,188,1,11,2,130,98,1,23,2,130,133,1,17,0,103,6,193,0,17,209,17,0,107
+	.byte 17,0,111,17,0,119,17,0,128,137,17,0,128,157,17,0,128,161,16,1,4,4,17,0,128,171,16,1,4,5,14,1
+	.byte 9,14,1,7,14,1,8,23,3,219,0,0,13,14,1,3,11,3,219,0,0,14,43,0,14,1,2,11,2,130,73,1
+	.byte 14,1,4,11,2,130,75,1,11,2,130,78,1,11,2,130,93,1,11,2,130,137,1,11,2,130,138,1,11,2,130,185
+	.byte 1,11,2,130,136,1,11,2,130,215,1,11,2,130,216,1,11,2,130,214,1,11,2,130,87,1,11,2,130,90,1,11
+	.byte 2,130,121,1,11,2,130,199,1,11,2,129,106,2,8,5,132,80,132,228,116,130,124,132,8,11,1,3,17,0,129,41
+	.byte 17,0,129,47,17,0,129,55,11,1,2,6,255,254,0,0,0,0,202,0,0,15,6,255,254,0,0,0,0,202,0,0
+	.byte 52,11,1,4,14,2,128,233,1,14,2,130,5,1,8,2,96,128,208,6,255,254,0,0,0,0,202,0,0,61,8,1
+	.byte 130,240,6,255,254,0,0,0,0,202,0,0,62,14,3,219,0,0,17,8,2,128,176,100,8,2,96,128,208,6,255,254
+	.byte 0,0,0,0,202,0,0,69,8,1,129,220,6,255,254,0,0,0,0,202,0,0,70,8,2,128,176,100,14,6,1,2
+	.byte 130,169,1,14,3,219,0,0,19,4,2,130,100,1,1,2,130,169,1,16,7,135,105,136,247,14,3,219,0,0,20,14
+	.byte 6,1,3,219,0,0,17,14,3,219,0,0,21,8,5,100,100,88,88,100,16,2,128,186,1,130,117,8,4,129,176,129
+	.byte 0,129,200,129,224,17,0,133,167,14,2,130,54,1,11,2,130,221,1,11,2,130,107,1,33,34,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,218,0,1,3,219,0,0,11,34,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1
+	.byte 3,219,0,0,11,14,7,131,179,34,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1,3,219,0,0,17,14
+	.byte 7,132,101,34,255,253,0,0,0,2,130,58,1,1,198,0,13,218,0,1,3,219,0,0,17,7,20,109,111,110,111,95
+	.byte 111,98,106,101,99,116,95,110,101,119,95,102,97,115,116,0,3,255,254,0,0,0,0,202,0,0,2,7,17,109,111,110
+	.byte 111,95,104,101,108,112,101,114,95,108,100,115,116,114,0,7,25,109,111,110,111,95,97,114,99,104,95,116,104,114,111,119
+	.byte 95,101,120,99,101,112,116,105,111,110,0,7,26,109,111,110,111,95,104,101,108,112,101,114,95,108,100,115,116,114,95,109
+	.byte 115,99,111,114,108,105,98,0,3,255,254,0,0,0,0,202,0,0,6,3,255,254,0,0,0,0,202,0,0,7,3,255
+	.byte 254,0,0,0,0,202,0,0,8,3,255,254,0,0,0,0,202,0,0,9,3,255,254,0,0,0,0,202,0,0,10,3
+	.byte 255,254,0,0,0,0,202,0,0,11,3,255,254,0,0,0,0,202,0,0,12,3,255,254,0,0,0,0,202,0,0,13
+	.byte 3,255,254,0,0,0,0,202,0,0,14,3,255,254,0,0,0,0,202,0,0,17,3,25,3,255,254,0,0,0,0,202
+	.byte 0,0,19,3,255,254,0,0,0,0,202,0,0,20,3,255,254,0,0,0,0,202,0,0,21,3,255,254,0,0,0,0
+	.byte 202,0,0,28,3,255,254,0,0,0,0,202,0,0,31,3,255,254,0,0,0,0,202,0,0,33,3,255,254,0,0,0
+	.byte 0,202,0,0,35,7,27,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119,95,112,116,114,102,114,101,101,95,98
+	.byte 111,120,0,3,193,0,20,251,3,193,0,20,33,3,193,0,5,252,3,193,0,19,198,3,193,0,20,36,7,32,109,111
+	.byte 110,111,95,97,114,99,104,95,116,104,114,111,119,95,99,111,114,108,105,98,95,101,120,99,101,112,116,105,111,110,0,3
+	.byte 193,0,12,79,3,92,3,93,3,61,3,59,3,17,3,255,252,0,0,0,19,10,3,60,3,1,3,193,0,20,27,3
+	.byte 69,3,19,3,72,3,74,3,55,3,193,0,7,66,3,193,0,12,117,3,193,0,12,141,3,193,0,12,138,3,193,0
+	.byte 15,18,3,255,254,0,0,0,0,202,0,0,65,3,83,3,91,3,94,3,97,7,23,109,111,110,111,95,97,114,114,97
+	.byte 121,95,110,101,119,95,115,112,101,99,105,102,105,99,0,3,193,0,20,30,3,102,15,7,135,105,3,255,254,0,0,0
+	.byte 0,202,0,0,73,3,255,254,0,0,0,0,202,0,0,74,3,255,254,0,0,0,0,202,0,0,75,3,99,3,255,254
+	.byte 0,0,0,0,202,0,0,76,3,255,254,0,0,0,0,202,0,0,78,3,255,254,0,0,0,0,202,0,0,80,3,98
 	.byte 7,27,109,111,110,111,95,104,101,108,112,101,114,95,110,101,119,111,98,106,95,109,115,99,111,114,108,105,98,0,15,2
-	.byte 88,1,3,193,0,8,123,3,193,0,8,136,3,193,0,10,242,3,193,0,7,191,3,193,0,7,178,3,193,0,7,181
-	.byte 3,193,0,7,223,3,193,0,5,164,3,193,0,9,254,3,193,0,9,255,3,193,0,6,125,255,253,0,0,0,2,129
-	.byte 91,1,1,198,0,6,152,0,1,7,129,244,35,137,249,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6
-	.byte 152,0,1,7,129,244,0,255,253,0,0,0,2,129,91,1,1,198,0,6,154,0,1,7,130,24,35,138,39,192,0,92
-	.byte 41,255,253,0,0,0,2,129,91,1,1,198,0,6,154,0,1,7,130,24,0,35,138,39,140,17,255,253,0,0,0,2
-	.byte 129,91,1,1,198,0,6,157,0,1,7,130,24,35,138,39,192,0,90,33,16,1,3,1,18,2,129,91,1,8,16,30
-	.byte 7,130,24,255,253,0,0,0,2,129,91,1,1,198,0,6,157,0,1,7,130,24,3,193,0,0,23,255,253,0,0,0
-	.byte 2,129,91,1,1,198,0,6,155,0,1,7,130,56,35,138,155,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198
-	.byte 0,6,155,0,1,7,130,56,0,35,138,155,140,17,255,253,0,0,0,2,129,91,1,1,198,0,6,157,0,1,7,130
-	.byte 56,35,138,155,192,0,90,33,16,1,3,1,18,2,129,91,1,8,16,30,7,130,56,255,253,0,0,0,2,129,91,1
-	.byte 1,198,0,6,157,0,1,7,130,56,255,253,0,0,0,2,129,91,1,1,198,0,6,156,0,1,7,130,88,35,139,10
-	.byte 192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6,156,0,1,7,130,88,0,35,139,10,140,17,255,253,0
-	.byte 0,0,2,129,91,1,1,198,0,6,158,0,1,7,130,88,35,139,10,192,0,90,33,16,1,3,1,18,2,129,91,1
-	.byte 8,16,30,7,130,88,255,253,0,0,0,2,129,91,1,1,198,0,6,158,0,1,7,130,88,255,253,0,0,0,2,129
-	.byte 91,1,1,198,0,6,146,0,1,7,130,132,35,139,121,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6
-	.byte 146,0,1,7,130,132,0,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,7,130,164,35,139,167,192,0,92
-	.byte 41,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,7,130,164,0,255,253,0,0,0,2,129,91,1,1,198
-	.byte 0,6,148,0,1,7,130,196,35,139,213,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6,148,0,1,7
-	.byte 130,196,0,35,139,213,140,17,255,253,0,0,0,2,129,91,1,1,198,0,6,157,0,1,7,130,196,35,139,213,192,0
-	.byte 90,33,16,1,3,1,18,2,129,91,1,8,16,30,7,130,196,255,253,0,0,0,2,129,91,1,1,198,0,6,157,0
-	.byte 1,7,130,196,255,253,0,0,0,2,129,91,1,1,198,0,6,149,0,1,7,130,228,35,140,68,192,0,92,41,255,253
-	.byte 0,0,0,2,129,91,1,1,198,0,6,149,0,1,7,130,228,0,3,193,0,6,176,255,253,0,0,0,2,129,91,1
-	.byte 1,198,0,6,144,0,1,7,131,4,35,140,119,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6,144,0
-	.byte 1,7,131,4,0,4,2,129,92,1,1,7,131,4,35,140,119,150,5,7,140,165,35,140,119,140,13,255,253,0,0,0
-	.byte 7,140,165,1,198,0,6,211,1,7,131,4,0,7,24,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119,95,115
-	.byte 112,101,99,105,102,105,99,0,7,35,109,111,110,111,95,116,104,114,101,97,100,95,105,110,116,101,114,114,117,112,116,105
-	.byte 111,110,95,99,104,101,99,107,112,111,105,110,116,0,3,255,253,0,0,0,2,129,91,1,1,198,0,6,155,0,1,3
-	.byte 219,0,0,11,3,255,253,0,0,0,7,131,138,1,198,0,6,211,1,3,219,0,0,11,0,3,255,253,0,0,0,2
-	.byte 129,91,1,1,198,0,6,155,0,1,3,219,0,0,17,3,255,253,0,0,0,7,131,250,1,198,0,6,211,1,3,219
-	.byte 0,0,17,0,2,0,0,2,14,0,2,14,0,2,28,0,2,50,0,2,14,0,2,14,0,2,14,0,2,14,0,2
-	.byte 0,0,2,14,0,2,0,0,2,14,0,2,14,0,2,72,0,2,0,0,2,14,0,2,86,0,2,14,0,2,14,0
-	.byte 2,0,0,2,0,0,6,100,1,2,80,129,68,88,129,8,129,8,0,2,14,0,2,0,0,2,0,0,2,14,0,2
-	.byte 0,0,2,14,0,2,14,0,2,14,0,2,14,0,2,14,0,2,0,0,2,0,0,2,0,0,2,14,0,2,14,0
-	.byte 2,14,0,2,14,0,2,14,0,2,0,0,2,14,0,2,14,0,2,14,0,2,0,0,2,0,0,2,0,0,2,14
-	.byte 0,2,14,0,2,117,0,2,128,136,0,2,128,158,0,2,14,0,2,128,172,0,2,14,0,2,14,0,2,128,189,0
-	.byte 2,14,0,2,14,0,2,0,0,2,14,0,2,14,0,2,14,0,6,128,214,2,2,128,144,130,100,128,200,130,40,130
-	.byte 40,2,128,160,131,240,130,236,131,180,131,180,0,2,0,0,2,128,242,0,2,129,8,0,2,129,32,0,2,117,0,2
-	.byte 14,0,6,129,49,1,2,120,131,128,128,208,131,44,131,44,0,2,0,0,6,129,69,1,2,48,128,176,100,108,108,0
-	.byte 2,129,83,0,2,14,0,6,129,100,1,2,64,130,108,128,208,130,24,130,24,0,2,14,0,6,129,69,1,2,48,128
-	.byte 176,100,108,108,0,2,129,83,0,2,129,119,0,2,128,172,0,6,129,136,1,2,112,132,20,131,16,131,236,131,236,0
-	.byte 2,129,83,0,2,28,0,2,28,0,2,129,159,0,2,129,187,0,2,129,69,0,2,128,136,0,2,72,0,3,129,69
-	.byte 0,1,29,40,19,255,253,0,0,0,2,129,91,1,1,198,0,6,152,0,1,7,129,244,1,0,1,0,0,2,14,0
-	.byte 3,129,211,0,1,29,48,19,255,253,0,0,0,2,129,91,1,1,198,0,6,154,0,1,7,130,24,1,0,1,0,0
-	.byte 3,72,0,1,29,32,19,255,253,0,0,0,2,129,91,1,1,198,0,6,155,0,1,7,130,56,1,0,1,0,0,3
-	.byte 129,233,0,1,29,64,19,255,253,0,0,0,2,129,91,1,1,198,0,6,156,0,1,7,130,88,1,0,1,0,0,2
-	.byte 14,0,2,14,0,2,14,0,3,0,0,1,29,32,19,255,253,0,0,0,2,129,91,1,1,198,0,6,146,0,1,7
-	.byte 130,132,1,0,1,0,0,3,0,0,1,29,32,19,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,7,130
-	.byte 164,1,0,1,0,0,3,129,211,0,1,29,48,19,255,253,0,0,0,2,129,91,1,1,198,0,6,148,0,1,7,130
-	.byte 196,1,0,1,0,0,3,130,1,0,1,29,72,19,255,253,0,0,0,2,129,91,1,1,198,0,6,149,0,1,7,130
-	.byte 228,1,0,1,0,0,3,86,0,1,29,56,19,255,253,0,0,0,2,129,91,1,1,198,0,6,144,0,1,7,131,4
-	.byte 1,0,1,0,0,2,130,33,0,2,0,0,2,0,0,2,130,52,0,2,130,75,0,2,14,0,2,14,0,2,129,83
-	.byte 0,2,128,172,0,2,129,69,0,2,14,0,2,14,0,2,129,83,0,2,128,172,0,2,129,69,0,2,130,33,0,2
-	.byte 129,69,0,2,129,69,0,0,128,144,16,0,0,1,24,128,160,24,0,0,8,67,193,0,9,130,193,0,9,129,193,0
-	.byte 9,127,65,64,63,5,4,6,2,11,12,14,4,5,2,3,7,8,9,10,13,15,21,128,160,24,0,0,8,67,193,0
-	.byte 9,130,193,0,9,129,193,0,9,127,65,27,19,62,61,20,17,29,17,30,22,24,25,28,26,18,21,11,128,228,53,24
-	.byte 16,0,8,67,193,0,9,130,193,0,9,129,193,0,9,127,65,64,63,62,61,51,59,8,128,144,20,0,0,4,193,0
-	.byte 8,8,193,0,8,13,193,0,9,129,193,0,8,11,193,0,8,7,193,0,7,255,193,0,8,9,193,0,7,254,11,128
-	.byte 152,16,0,0,1,67,193,0,9,130,193,0,9,129,193,0,9,127,65,64,63,62,61,0,59,8,128,160,72,0,0,8
-	.byte 193,0,9,133,193,0,9,130,193,0,9,129,193,0,9,127,76,73,75,74,8,128,160,56,0,0,8,193,0,9,133,193
-	.byte 0,9,130,193,0,9,129,193,0,9,127,81,78,80,79,4,128,160,48,0,0,8,193,0,9,133,193,0,9,130,193,0
-	.byte 9,129,193,0,9,127,115,103,101,110,0
+	.byte 128,186,1,3,193,0,18,7,3,193,0,18,39,3,193,0,21,138,3,193,0,16,177,3,193,0,16,110,3,193,0,16
+	.byte 150,3,193,0,16,245,3,193,0,12,125,3,193,0,20,28,3,193,0,20,29,3,193,0,13,180,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,213,0,1,7,130,29,35,138,186,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0
+	.byte 13,213,0,1,7,130,29,0,255,253,0,0,0,2,130,58,1,1,198,0,13,215,0,1,7,130,65,35,138,232,192,0
+	.byte 92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,215,0,1,7,130,65,0,35,138,232,140,17,255,253,0,0,0
+	.byte 2,130,58,1,1,198,0,13,218,0,1,7,130,65,35,138,232,192,0,90,33,16,1,3,1,18,2,130,58,1,8,16
+	.byte 30,7,130,65,255,253,0,0,0,2,130,58,1,1,198,0,13,218,0,1,7,130,65,3,193,0,0,149,255,253,0,0
+	.byte 0,2,130,58,1,1,198,0,13,216,0,1,7,130,97,35,139,92,192,0,92,41,255,253,0,0,0,2,130,58,1,1
+	.byte 198,0,13,216,0,1,7,130,97,0,35,139,92,140,17,255,253,0,0,0,2,130,58,1,1,198,0,13,218,0,1,7
+	.byte 130,97,35,139,92,192,0,90,33,16,1,3,1,18,2,130,58,1,8,16,30,7,130,97,255,253,0,0,0,2,130,58
+	.byte 1,1,198,0,13,218,0,1,7,130,97,255,253,0,0,0,2,130,58,1,1,198,0,13,217,0,1,7,130,129,35,139
+	.byte 203,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,217,0,1,7,130,129,0,35,139,203,140,17,255,253
+	.byte 0,0,0,2,130,58,1,1,198,0,13,219,0,1,7,130,129,35,139,203,192,0,90,33,16,1,3,1,18,2,130,58
+	.byte 1,8,16,30,7,130,129,255,253,0,0,0,2,130,58,1,1,198,0,13,219,0,1,7,130,129,255,253,0,0,0,2
+	.byte 130,58,1,1,198,0,13,207,0,1,7,130,173,35,140,58,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0
+	.byte 13,207,0,1,7,130,173,0,255,253,0,0,0,2,130,58,1,1,198,0,13,208,0,1,7,130,205,35,140,104,192,0
+	.byte 92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,208,0,1,7,130,205,0,255,253,0,0,0,2,130,58,1,1
+	.byte 198,0,13,209,0,1,7,130,237,35,140,150,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,209,0,1
+	.byte 7,130,237,0,35,140,150,140,17,255,253,0,0,0,2,130,58,1,1,198,0,13,218,0,1,7,130,237,35,140,150,192
+	.byte 0,90,33,16,1,3,1,18,2,130,58,1,8,16,30,7,130,237,255,253,0,0,0,2,130,58,1,1,198,0,13,218
+	.byte 0,1,7,130,237,255,253,0,0,0,2,130,58,1,1,198,0,13,210,0,1,7,131,13,35,141,5,192,0,92,41,255
+	.byte 253,0,0,0,2,130,58,1,1,198,0,13,210,0,1,7,131,13,0,3,193,0,13,249,255,253,0,0,0,2,130,58
+	.byte 1,1,198,0,13,205,0,1,7,131,45,35,141,56,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,205
+	.byte 0,1,7,131,45,0,4,2,130,59,1,1,7,131,45,35,141,56,150,5,7,141,102,35,141,56,140,13,255,253,0,0
+	.byte 0,7,141,102,1,198,0,14,31,1,7,131,45,0,7,24,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119,95
+	.byte 115,112,101,99,105,102,105,99,0,7,35,109,111,110,111,95,116,104,114,101,97,100,95,105,110,116,101,114,114,117,112,116
+	.byte 105,111,110,95,99,104,101,99,107,112,111,105,110,116,0,3,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1
+	.byte 3,219,0,0,11,3,255,253,0,0,0,7,131,179,1,198,0,14,34,1,3,219,0,0,11,0,3,255,253,0,0,0
+	.byte 7,131,179,1,198,0,14,31,1,3,219,0,0,11,0,3,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1
+	.byte 3,219,0,0,17,3,255,253,0,0,0,7,132,101,1,198,0,14,34,1,3,219,0,0,17,0,3,255,253,0,0,0
+	.byte 7,132,101,1,198,0,14,31,1,3,219,0,0,17,0,2,0,0,2,14,0,2,14,0,2,28,0,2,50,0,2,14
+	.byte 0,2,14,0,2,14,0,2,14,0,2,0,0,2,14,0,2,0,0,2,14,0,2,14,0,2,72,0,2,72,0,2
+	.byte 0,0,2,14,0,2,86,0,2,86,0,2,14,0,2,14,0,2,0,0,2,0,0,6,100,1,2,80,129,68,88,129
+	.byte 8,129,8,0,2,14,0,2,0,0,2,0,0,2,14,0,2,0,0,2,14,0,2,14,0,2,0,0,2,14,0,2
+	.byte 14,0,2,14,0,2,0,0,2,0,0,2,0,0,2,14,0,2,14,0,2,14,0,2,14,0,2,14,0,2,0,0
+	.byte 2,14,0,2,14,0,2,14,0,2,0,0,2,0,0,2,0,0,2,14,0,2,14,0,2,117,0,2,128,136,0,2
+	.byte 128,158,0,2,14,0,2,128,172,0,2,14,0,2,14,0,2,128,189,0,2,14,0,2,14,0,2,0,0,2,14,0
+	.byte 2,14,0,2,14,0,6,128,214,2,2,128,144,130,100,128,200,130,40,130,40,2,128,160,131,240,130,236,131,180,131,180
+	.byte 0,2,0,0,2,14,0,2,128,242,0,2,129,8,0,2,129,32,0,2,117,0,2,14,0,6,129,49,1,2,120,131
+	.byte 128,128,208,131,44,131,44,0,2,0,0,2,0,0,6,129,69,1,2,48,128,176,100,108,108,0,2,14,0,2,14,0
+	.byte 2,129,83,0,2,14,0,6,129,100,1,2,64,130,108,128,208,130,24,130,24,0,2,14,0,2,14,0,6,129,69,1
+	.byte 2,48,128,176,100,108,108,0,2,14,0,2,14,0,2,129,83,0,2,129,119,0,2,128,172,0,6,129,136,1,2,112
+	.byte 132,20,131,16,131,236,131,236,0,2,129,83,0,2,28,0,2,28,0,2,129,159,0,2,129,187,0,2,129,69,0,2
+	.byte 128,136,0,2,72,0,3,129,69,0,1,29,40,19,255,253,0,0,0,2,130,58,1,1,198,0,13,213,0,1,7,130
+	.byte 29,1,0,1,0,0,2,14,0,3,129,211,0,1,29,48,19,255,253,0,0,0,2,130,58,1,1,198,0,13,215,0
+	.byte 1,7,130,65,1,0,1,0,0,3,72,0,1,29,32,19,255,253,0,0,0,2,130,58,1,1,198,0,13,216,0,1
+	.byte 7,130,97,1,0,1,0,0,3,129,233,0,1,29,64,19,255,253,0,0,0,2,130,58,1,1,198,0,13,217,0,1
+	.byte 7,130,129,1,0,1,0,0,2,14,0,2,14,0,2,14,0,3,0,0,1,29,32,19,255,253,0,0,0,2,130,58
+	.byte 1,1,198,0,13,207,0,1,7,130,173,1,0,1,0,0,3,0,0,1,29,32,19,255,253,0,0,0,2,130,58,1
+	.byte 1,198,0,13,208,0,1,7,130,205,1,0,1,0,0,3,129,211,0,1,29,48,19,255,253,0,0,0,2,130,58,1
+	.byte 1,198,0,13,209,0,1,7,130,237,1,0,1,0,0,3,130,1,0,1,29,72,19,255,253,0,0,0,2,130,58,1
+	.byte 1,198,0,13,210,0,1,7,131,13,1,0,1,0,0,3,86,0,1,29,56,19,255,253,0,0,0,2,130,58,1,1
+	.byte 198,0,13,205,0,1,7,131,45,1,0,1,0,0,2,130,33,0,2,0,0,2,0,0,2,130,52,0,2,130,75,0
+	.byte 2,14,0,2,14,0,2,129,83,0,2,128,172,0,2,14,0,2,0,0,2,129,69,0,2,130,107,0,2,14,0,2
+	.byte 14,0,2,129,83,0,2,128,172,0,2,14,0,2,0,0,2,129,69,0,2,130,33,0,2,130,107,0,2,129,69,0
+	.byte 2,129,69,0,0,128,144,16,0,0,1,25,128,160,24,0,0,8,70,193,0,19,80,193,0,19,79,193,0,19,77,16
+	.byte 68,67,66,5,4,6,2,11,12,14,4,5,2,3,7,8,9,10,13,15,23,128,160,24,0,0,8,70,193,0,19,80
+	.byte 193,0,19,79,193,0,19,77,20,68,29,21,65,64,22,18,31,33,18,32,24,26,27,30,28,19,23,12,128,228,56,24
+	.byte 16,0,8,70,193,0,19,80,193,0,19,79,193,0,19,77,71,68,67,66,65,64,54,62,23,128,144,20,0,0,4,193
+	.byte 0,17,66,193,0,17,80,193,0,19,79,193,0,17,78,193,0,17,65,193,0,17,36,193,0,17,37,193,0,17,38,193
+	.byte 0,17,39,193,0,17,40,193,0,17,41,193,0,17,42,193,0,17,43,193,0,17,44,193,0,17,45,193,0,17,46,193
+	.byte 0,17,47,193,0,17,67,193,0,17,48,193,0,17,49,193,0,17,50,193,0,17,51,193,0,17,68,12,128,152,16,0
+	.byte 0,1,70,193,0,19,80,193,0,19,79,193,0,19,77,71,68,67,66,65,64,0,62,11,128,160,72,0,0,8,193,0
+	.byte 19,83,193,0,19,80,193,0,19,79,193,0,19,77,82,83,79,77,81,80,78,11,128,160,56,0,0,8,193,0,19,83
+	.byte 193,0,19,80,193,0,19,79,193,0,19,77,90,91,87,85,89,88,86,4,128,160,48,0,0,8,193,0,19,83,193,0
+	.byte 19,80,193,0,19,79,193,0,19,77,115,103,101,110,0
 .section __TEXT, __const
 	.align 3
 Lglobals_hash:

@@ -69,14 +69,25 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Data" />
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="MySql.Data.CF">
+      <HintPath>..\..\..\Downloads\MySql.Data.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="I18N">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
+    <None Include="MySql.Data.CF.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Bubble.cs" />
     <Compile Include="ChatViewController.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="green.png" />

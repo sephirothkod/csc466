@@ -116,16 +116,485 @@ methods:
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__ctor
 _BubbleCell_AppDelegate__ctor:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xf9001b5f
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #32]
+.word 0xf90013a0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #40]
+.word 0xd2800001
+bl _p_1
+.word 0xaa0003e1
+.word 0xf94013a0
+.word 0xaa0003e0
+.word 0xaa0103e1
+bl _p_2
+.word 0xf9002740
+.word 0x91012341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x3901635f
+.word 0xaa1a03e0
+bl _p_3
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_0:
+.text
+	.align 4
+	.no_dead_strip _BubbleCell_AppDelegate_get_MyIp
+_BubbleCell_AppDelegate_get_MyIp:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_1
+.word 0xf9401c00
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_0:
+Lme_1:
+.text
+	.align 4
+	.no_dead_strip _BubbleCell_AppDelegate_set_MyIp_string
+_BubbleCell_AppDelegate_set_MyIp_string:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001c20
+.word 0x9100e021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_2:
+.text
+	.align 4
+	.no_dead_strip _BubbleCell_AppDelegate_get_UserName
+_BubbleCell_AppDelegate_get_UserName:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9402000
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_3:
+.text
+	.align 4
+	.no_dead_strip _BubbleCell_AppDelegate_set_UserName_string
+_BubbleCell_AppDelegate_set_UserName_string:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9002020
+.word 0x91010021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_4:
+.text
+	.align 4
+	.no_dead_strip _BubbleCell_AppDelegate_UpdateIp
+_BubbleCell_AppDelegate_UpdateIp:
+.word 0xa9ad7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xf90013a0
+.word 0xf90017bf
+.word 0xf9001bbf
+.word 0xf9001fbf
+.word 0xf90023bf
+.word 0xb9004bbf
+.word 0xf9002bbf
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #48]
+bl _p_4
+.word 0xaa0003e0
+bl _p_5
+bl _p_6
+bl _p_7
+.word 0xaa0003fa
+.word 0xd2800019
+.word 0x1400001f
+.word 0x93407f20
+.word 0xb9801b41
+.word 0xeb00003f
+.word 0x10000011
+.word 0x540025e9
+.word 0xd37df000
+.word 0x8b000340
+.word 0x91008000
+.word 0xf940001a
+.word 0xf94013a0
+.word 0xf90063a0
+.word 0xaa1a03e0
+.word 0xf9400341
+.word 0xf9401c30
+.word 0xd63f0200
+.word 0xf94063a2
+.word 0xaa0203e1
+.word 0xf9001c40
+.word 0x9100e021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x14000004
+.word 0xb9801b40
+.word 0x6b00033f
+.word 0x54fffc0b
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xd28000a1
+bl _p_1
+.word 0xaa0003e3
+.word 0xaa0303e0
+.word 0xf90097a0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #64]
+.word 0xaa0303e0
+.word 0xd2800001
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf94097a3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf90093a0
+.word 0xf94013a0
+.word 0xf9402002
+.word 0xaa0303e0
+.word 0xd2800021
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf94093a3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf9008fa0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #72]
+.word 0xaa0303e0
+.word 0xd2800041
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf9408fa3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf9008ba0
+.word 0xf94013a0
+.word 0xf9401c02
+.word 0xaa0303e0
+.word 0xd2800061
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf9408ba3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf90087a0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #80]
+.word 0xaa0303e0
+.word 0xd2800081
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf94087a0
+.word 0xaa0003e0
+bl _p_8
+.word 0xaa0003fa
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xd28000a1
+bl _p_1
+.word 0xaa0003e3
+.word 0xaa0303e0
+.word 0xf90083a0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #88]
+.word 0xaa0303e0
+.word 0xd2800001
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf94083a3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf9007fa0
+.word 0xf94013a0
+.word 0xf9401c02
+.word 0xaa0303e0
+.word 0xd2800021
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf9407fa3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf9007ba0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #96]
+.word 0xaa0303e0
+.word 0xd2800041
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf9407ba3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf90077a0
+.word 0xf94013a0
+.word 0xf9402002
+.word 0xaa0303e0
+.word 0xd2800061
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf94077a3
+.word 0xaa0303e3
+.word 0xaa0303e0
+.word 0xf90073a0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #104]
+.word 0xaa0303e0
+.word 0xd2800081
+.word 0xaa0203e2
+.word 0xf9400063
+.word 0xf9405c70
+.word 0xd63f0200
+.word 0xf94073a0
+.word 0xaa0003e0
+bl _p_8
+.word 0xf90017a0
+.word 0xf94013a0
+.word 0xf9402400
+.word 0xf9006fa0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #112]
+bl _p_9
+.word 0xf9406fa1
+.word 0xf9006ba0
+.word 0xaa0003e0
+.word 0xaa0103e1
+bl _p_10
+.word 0xf9406ba0
+.word 0xf9001ba0
+.word 0xf9401ba1
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9404030
+.word 0xd63f0200
+.word 0xf9401ba0
+.word 0xf90067a0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #120]
+bl _p_9
+.word 0xf94067a2
+.word 0xf90063a0
+.word 0xaa0003e0
+.word 0xaa1a03e1
+.word 0xaa0203e2
+bl _p_11
+.word 0xf94063a0
+.word 0xf9001fa0
+.word 0xf9401fa1
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9404c30
+.word 0xd63f0200
+.word 0x93407c00
+.word 0xaa0003fa
+.word 0x14000058
+.word 0xf94033a0
+.word 0xf94033a0
+.word 0xf90023a0
+.word 0xf94023a1
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9404830
+.word 0xd63f0200
+.word 0xaa0003e2
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x1, [x16, #128]
+.word 0xaa0203e0
+.word 0xaa0103e1
+.word 0xf940005e
+bl _p_12
+.word 0x53001c00
+.word 0x340007e0
+.word 0xf94017a0
+.word 0xf90067a0
+.word 0xf9401ba0
+.word 0xf9006ba0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #120]
+bl _p_9
+.word 0xf94067a1
+.word 0xf9406ba2
+.word 0xf90063a0
+.word 0xaa0003e0
+.word 0xaa0103e1
+.word 0xaa0203e2
+bl _p_11
+.word 0xf94063a0
+.word 0xf9001fa0
+.word 0xf9401fa1
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9404c30
+.word 0xd63f0200
+.word 0x93407c00
+.word 0xb9004ba0
+bl _p_13
+.word 0xf90053a0
+.word 0xf94053a0
+.word 0xb4000060
+.word 0xf94053a0
+bl _p_14
+.word 0x14000020
+.word 0xf9402fa0
+.word 0xf9402fa0
+.word 0xf9002ba0
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x0, [x16, #136]
+.word 0xf94013a1
+.word 0xf9003ba1
+.word 0xf9403ba1
+.word 0xf9402021
+.word 0xf90037a1
+.word 0xf94037a1
+.word 0xf9402ba2
+.word 0xaa0003e0
+.word 0xaa0103e1
+.word 0xaa0203e2
+bl _p_15
+bl _p_16
+bl _p_13
+.word 0xf90057a0
+.word 0xf94057a0
+.word 0xb4000060
+.word 0xf94057a0
+bl _p_14
+bl _p_13
+.word 0xf9005ba0
+.word 0xf9405ba0
+.word 0xb4000060
+.word 0xf9405ba0
+bl _p_14
+.word 0x14000001
+bl _p_13
+.word 0xf9005fa0
+.word 0xf9405fa0
+.word 0xb4000060
+.word 0xf9405fa0
+bl _p_14
+.word 0x14000001
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8d37bfd
+.word 0xd65f03c0
+.word 0xd28050e0
+.word 0xaa1103e1
+bl _p_17
+
+Lme_5:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate_Main_string__
@@ -136,16 +605,16 @@ _BubbleCell_AppDelegate_Main_string__:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x2, [x16, #32]
+ldr x2, [x16, #144]
 .word 0xf9400ba0
 .word 0xd2800001
 .word 0xaa0203e2
-bl _p_2
+bl _p_18
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1:
+Lme_6:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate_MakeChat_string
@@ -157,12 +626,12 @@ _BubbleCell_AppDelegate_MakeChat_string:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf90033a0
 .word 0xaa0003e0
 .word 0xf9400fa1
-bl _p_4
+bl _p_19
 .word 0xf94033a0
 .word 0xaa0003e0
 .word 0xf90017a0
@@ -171,8 +640,8 @@ bl _p_4
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf90027a1
 .word 0xf9001fa0
@@ -181,12 +650,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf9001ba0
 .word 0xaa0003e0
 .word 0xf9002fa0
-bl _p_5
+bl _p_20
 .word 0xf9401ba0
 .word 0xf9401fa1
 .word 0xf94023a2
@@ -196,7 +665,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x5, [x16, #64]
+ldr x5, [x16, #176]
 .word 0xf94000a5
 .word 0xf9000805
 .word 0x910040c6
@@ -241,12 +710,12 @@ ldr x4, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #72]
-bl _p_7
+ldr x0, [x16, #184]
+bl _p_9
 .word 0xf94017a1
 .word 0xf90013a0
 .word 0xaa0003e0
@@ -258,7 +727,7 @@ bl _BubbleCell_ChatViewController__ctor_MonoTouch_Dialog_RootElement
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_2:
+Lme_7:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate_MakeOptions
@@ -270,18 +739,18 @@ _BubbleCell_AppDelegate_MakeOptions:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #80]
+ldr x0, [x16, #192]
 .word 0xf900a3a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf940a3a1
 .word 0xf9009fa0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_4
+bl _p_19
 .word 0xf9409fa0
 .word 0xaa0003e0
 .word 0xf9002ba0
@@ -290,13 +759,13 @@ bl _p_4
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #88]
+ldr x0, [x16, #200]
 .word 0xf9009ba0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xf9409ba1
 .word 0xaa0003e2
 .word 0xf9008ba2
@@ -308,12 +777,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf9008fa0
 .word 0xaa0003e0
 .word 0xf90097a0
-bl _p_5
+bl _p_20
 .word 0xf94083a0
 .word 0xf94087a1
 .word 0xf9408ba2
@@ -323,7 +792,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x5, [x16, #64]
+ldr x5, [x16, #176]
 .word 0xf94000a5
 .word 0xf9000865
 .word 0x910040c6
@@ -371,7 +840,7 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #96]
+ldr x0, [x16, #208]
 .word 0xf9007ba0
 .word 0xeb1f035f
 .word 0x10000011
@@ -379,8 +848,8 @@ ldr x0, [x16, #96]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #104]
-bl _p_3
+ldr x0, [x16, #216]
+bl _p_4
 .word 0xf900101a
 .word 0x91008001
 .word 0xd349fc21
@@ -397,17 +866,17 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #112]
+ldr x1, [x16, #224]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #120]
+ldr x1, [x16, #232]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #128]
+ldr x1, [x16, #240]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -416,25 +885,25 @@ ldr x1, [x16, #128]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf9407ba1
 .word 0xf9407fa2
 .word 0xf90073a0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_8
+bl _p_22
 .word 0xf94073a1
 .word 0xf94077a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_9
+bl _p_23
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #136]
+ldr x0, [x16, #248]
 .word 0xf9006ba0
 .word 0xeb1f035f
 .word 0x10000011
@@ -442,8 +911,8 @@ ldr x0, [x16, #136]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #104]
-bl _p_3
+ldr x0, [x16, #216]
+bl _p_4
 .word 0xf900101a
 .word 0x91008001
 .word 0xd349fc21
@@ -460,17 +929,17 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #144]
+ldr x1, [x16, #256]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #152]
+ldr x1, [x16, #264]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #160]
+ldr x1, [x16, #272]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -479,38 +948,38 @@ ldr x1, [x16, #160]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf9406ba1
 .word 0xf9406fa2
 .word 0xf90063a0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_8
+bl _p_22
 .word 0xf94063a1
 .word 0xf94067a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
 .word 0xf9005ba2
-bl _p_9
+bl _p_23
 .word 0xf9405ba1
 .word 0xf9405fa2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #168]
+ldr x0, [x16, #280]
 .word 0xf90057a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xf94057a1
 .word 0xaa0003e2
 .word 0xf90047a2
@@ -522,12 +991,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf9004ba0
 .word 0xaa0003e0
 .word 0xf90053a0
-bl _p_5
+bl _p_20
 .word 0xf9403fa0
 .word 0xf94043a1
 .word 0xf94047a2
@@ -537,7 +1006,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x5, [x16, #64]
+ldr x5, [x16, #176]
 .word 0xf94000a5
 .word 0xf9000865
 .word 0x910040c6
@@ -585,7 +1054,7 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #176]
+ldr x0, [x16, #288]
 .word 0xf90037a0
 .word 0xeb1f035f
 .word 0x10000011
@@ -593,8 +1062,8 @@ ldr x0, [x16, #176]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #104]
-bl _p_3
+ldr x0, [x16, #216]
+bl _p_4
 .word 0xf900101a
 .word 0x91008001
 .word 0xd349fc21
@@ -611,17 +1080,17 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #184]
+ldr x1, [x16, #296]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #192]
+ldr x1, [x16, #304]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #200]
+ldr x1, [x16, #312]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -630,58 +1099,58 @@ ldr x1, [x16, #200]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf94037a1
 .word 0xf9403ba2
 .word 0xf9002fa0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_8
+bl _p_22
 .word 0xf9402fa1
 .word 0xf94033a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_9
+bl _p_23
 .word 0xf94027a1
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
 .word 0xf90023a2
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #208]
-bl _p_7
+ldr x0, [x16, #320]
+bl _p_9
 .word 0xf94023a1
 .word 0xf9001fa0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_10
+bl _p_24
 .word 0xf9401fa0
 .word 0xaa0003e0
 .word 0xf9001ba0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #216]
-bl _p_7
+ldr x0, [x16, #328]
+bl _p_9
 .word 0xf9401ba1
 .word 0xf90017a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_11
+bl _p_25
 .word 0xf94017a0
 .word 0xaa0003e0
 .word 0xf90013a0
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9410c30
+.word 0xf9411030
 .word 0xd63f0200
 .word 0xaa0003e3
 .word 0xaa0303e0
@@ -696,11 +1165,11 @@ bl _p_11
 .word 0x910003bf
 .word 0xa8d57bfd
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_3:
+Lme_8:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate_MakeNewChat
@@ -711,8 +1180,8 @@ _BubbleCell_AppDelegate_MakeNewChat:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #224]
-bl _p_3
+ldr x0, [x16, #336]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf9007fa1
 .word 0xf9008ba0
@@ -721,23 +1190,23 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #344]
 .word 0xf9008fa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #352]
 .word 0xf90093a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #360]
 .word 0xf90097a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #256]
-bl _p_3
+ldr x0, [x16, #368]
+bl _p_4
 .word 0xf9408fa1
 .word 0xf94093a2
 .word 0xf94097a3
@@ -746,7 +1215,7 @@ bl _p_3
 .word 0xaa0103e1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_13
+bl _p_26
 .word 0xf9407fa0
 .word 0xf94083a1
 .word 0xf94087a2
@@ -767,7 +1236,7 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #264]
+ldr x1, [x16, #376]
 .word 0xf90073a1
 .word 0xf9007ba0
 .word 0xeb1f001f
@@ -776,8 +1245,8 @@ ldr x1, [x16, #264]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_3
+ldr x0, [x16, #384]
+bl _p_4
 .word 0xf9407ba1
 .word 0xf9001001
 .word 0x91008002
@@ -796,17 +1265,17 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #392]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #288]
+ldr x1, [x16, #400]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #296]
+ldr x1, [x16, #408]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -815,33 +1284,33 @@ ldr x1, [x16, #296]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #304]
-bl _p_3
+ldr x0, [x16, #416]
+bl _p_4
 .word 0xf94073a1
 .word 0xf94077a2
 .word 0xf9006fa0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_14
+bl _p_27
 .word 0xf9406fa0
 .word 0xaa0003e0
 .word 0xf9002ba0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #424]
 .word 0xf9006ba0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf9406ba1
 .word 0xf90067a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_4
+bl _p_19
 .word 0xf94067a0
 .word 0xaa0003e0
 .word 0xf90023a0
@@ -850,13 +1319,13 @@ bl _p_4
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #432]
 .word 0xf90063a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xf94063a1
 .word 0xaa0003e2
 .word 0xf90053a2
@@ -868,12 +1337,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf90057a0
 .word 0xaa0003e0
 .word 0xf9005fa0
-bl _p_5
+bl _p_20
 .word 0xf94047a0
 .word 0xf9404ba1
 .word 0xf9404fa2
@@ -884,7 +1353,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x6, [x16, #64]
+ldr x6, [x16, #176]
 .word 0xf94000c6
 .word 0xf9000886
 .word 0x910040e7
@@ -932,18 +1401,18 @@ ldr x4, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_9
+bl _p_23
 .word 0xf9403fa1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf90033a1
 .word 0xf90027a0
@@ -952,12 +1421,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf9002fa0
 .word 0xaa0003e0
 .word 0xf9003ba0
-bl _p_5
+bl _p_20
 .word 0xf94027a0
 .word 0xf9402ba1
 .word 0xf9402fa2
@@ -967,7 +1436,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x5, [x16, #64]
+ldr x5, [x16, #176]
 .word 0xf94000a5
 .word 0xf9000845
 .word 0x910040c6
@@ -1015,32 +1484,32 @@ ldr x4, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_9
+bl _p_23
 .word 0xf9401fa1
 .word 0xf94023a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
 .word 0xf9001ba2
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #208]
-bl _p_7
+ldr x0, [x16, #320]
+bl _p_9
 .word 0xf9401ba1
 .word 0xf90017a0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xd2800022
-bl _p_15
+bl _p_28
 .word 0xf94017a0
 .word 0xaa0003e0
 .word 0xf90013a0
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9410c30
+.word 0xf9411030
 .word 0xd63f0200
 .word 0xaa0003e3
 .word 0xaa0303e0
@@ -1054,11 +1523,11 @@ bl _p_15
 .word 0x910003bf
 .word 0xa8d37bfd
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_4:
+Lme_9:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate_MakeLogin
@@ -1069,8 +1538,8 @@ _BubbleCell_AppDelegate_MakeLogin:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #328]
-bl _p_3
+ldr x0, [x16, #440]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf9007ba1
 .word 0xf9400ba1
@@ -1093,23 +1562,23 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #448]
 .word 0xf9008ba0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #352]
 .word 0xf9008fa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #360]
 .word 0xf90093a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #256]
-bl _p_3
+ldr x0, [x16, #368]
+bl _p_4
 .word 0xf9408ba1
 .word 0xf9408fa2
 .word 0xf94093a3
@@ -1118,7 +1587,7 @@ bl _p_3
 .word 0xaa0103e1
 .word 0xaa0203e2
 .word 0xaa0303e3
-bl _p_13
+bl _p_26
 .word 0xf9407ba0
 .word 0xf9407fa1
 .word 0xf94083a2
@@ -1139,7 +1608,7 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #336]
+ldr x1, [x16, #448]
 .word 0xf9006fa1
 .word 0xf90077a0
 .word 0xeb1f001f
@@ -1148,8 +1617,8 @@ ldr x1, [x16, #336]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_3
+ldr x0, [x16, #384]
+bl _p_4
 .word 0xf94077a1
 .word 0xf9001001
 .word 0x91008002
@@ -1168,17 +1637,17 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #456]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #464]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #472]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -1187,33 +1656,33 @@ ldr x1, [x16, #360]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #304]
-bl _p_3
+ldr x0, [x16, #416]
+bl _p_4
 .word 0xf9406fa1
 .word 0xf94073a2
 .word 0xf9006ba0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xaa0203e2
-bl _p_14
+bl _p_27
 .word 0xf9406ba0
 .word 0xaa0003e0
 .word 0xf90027a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #448]
 .word 0xf90067a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #40]
-bl _p_3
+ldr x0, [x16, #152]
+bl _p_4
 .word 0xf94067a1
 .word 0xf90063a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_4
+bl _p_19
 .word 0xf94063a0
 .word 0xaa0003e0
 .word 0xf9001fa0
@@ -1222,13 +1691,13 @@ bl _p_4
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #480]
 .word 0xf9005fa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xf9405fa1
 .word 0xaa0003e2
 .word 0xf9004fa2
@@ -1240,12 +1709,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf90053a0
 .word 0xaa0003e0
 .word 0xf9005ba0
-bl _p_5
+bl _p_20
 .word 0xf94043a0
 .word 0xf94047a1
 .word 0xf9404ba2
@@ -1256,7 +1725,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x6, [x16, #64]
+ldr x6, [x16, #176]
 .word 0xf94000c6
 .word 0xf9000886
 .word 0x910040e7
@@ -1304,18 +1773,18 @@ ldr x4, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_9
+bl _p_23
 .word 0xf9403ba1
 .word 0xf9403fa2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #48]
-bl _p_3
+ldr x0, [x16, #160]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf9002fa1
 .word 0xf90023a0
@@ -1324,12 +1793,12 @@ bl _p_3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #56]
-bl _p_3
+ldr x0, [x16, #168]
+bl _p_4
 .word 0xf9002ba0
 .word 0xaa0003e0
 .word 0xf90037a0
-bl _p_5
+bl _p_20
 .word 0xf94023a0
 .word 0xf94027a1
 .word 0xf9402ba2
@@ -1339,7 +1808,7 @@ bl _p_5
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x5, [x16, #64]
+ldr x5, [x16, #176]
 .word 0xf94000a5
 .word 0xf9000845
 .word 0x910040c6
@@ -1387,34 +1856,34 @@ ldr x4, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_9
+bl _p_23
 .word 0xf9401ba1
 .word 0xf9401fa2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
 .word 0xf90017a2
-bl _p_6
+bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #208]
-bl _p_7
+ldr x0, [x16, #320]
+bl _p_9
 .word 0xf94017a1
 .word 0xf90013a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_10
+bl _p_24
 .word 0xf94013a0
 .word 0xaa0003e0
 .word 0x910003bf
 .word 0xa8d37bfd
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_5:
+Lme_a:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
@@ -1428,8 +1897,8 @@ _BubbleCell_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDicti
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #376]
-bl _p_3
+ldr x0, [x16, #488]
+bl _p_4
 .word 0xaa0003f9
 .word 0xf9000c1a
 .word 0x91006000
@@ -1444,12 +1913,12 @@ ldr x1, [x16, #16]
 .word 0x8b010000
 .word 0xd280003e
 .word 0x3900001e
-bl _p_16
+bl _p_29
 .word 0xaa0003e2
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #384]
+ldr x1, [x16, #496]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
@@ -1460,21 +1929,21 @@ ldr x1, [x16, #384]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #56]
 .word 0xd2800021
-bl _p_17
+bl _p_1
 .word 0xf9002fa0
 .word 0xf9402fa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x2, [x16, #32]
+ldr x2, [x16, #144]
 .word 0xaa0003e0
 .word 0xd2800001
 .word 0xaa0203e2
-bl _p_2
-.word 0xaa1a03e0
 bl _p_18
+.word 0xaa1a03e0
+bl _p_30
 .word 0xf9000b20
 .word 0x91004321
 .word 0xd349fc21
@@ -1491,7 +1960,7 @@ ldr x2, [x16, #16]
 .word 0xf9400b21
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9410c30
+.word 0xf9411030
 .word 0xd63f0200
 .word 0xf90037a0
 .word 0xeb1f033f
@@ -1500,8 +1969,8 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #400]
-bl _p_3
+ldr x0, [x16, #504]
+bl _p_4
 .word 0xf9001019
 .word 0x91008001
 .word 0xd349fc21
@@ -1518,17 +1987,17 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #408]
+ldr x1, [x16, #512]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #416]
+ldr x1, [x16, #520]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #424]
+ldr x1, [x16, #528]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -1537,14 +2006,14 @@ ldr x1, [x16, #424]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #432]
-bl _p_7
+ldr x0, [x16, #536]
+bl _p_9
 .word 0xf9403ba2
 .word 0xf90033a0
 .word 0xaa0003e0
 .word 0xd2800121
 .word 0xaa0203e2
-bl _p_19
+bl _p_31
 .word 0xf94033a1
 .word 0xf94037a3
 .word 0xaa0303e0
@@ -1555,7 +2024,7 @@ bl _p_19
 .word 0xd63f0200
 .word 0x1400000f
 .word 0xaa1a03e0
-bl _p_20
+bl _p_32
 .word 0xf9000b20
 .word 0x91004321
 .word 0xd349fc21
@@ -1569,7 +2038,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_21
+bl _p_33
 .word 0xaa0003e1
 .word 0x9100c3a0
 .word 0xf9002ba0
@@ -1585,8 +2054,8 @@ bl _p_21
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #440]
-bl _p_7
+ldr x0, [x16, #544]
+bl _p_9
 .word 0xf90033a0
 .word 0xaa0003e0
 .word 0xfd401ba0
@@ -1597,7 +2066,7 @@ bl _p_7
 .word 0x1e604042
 .word 0xfd4027a3
 .word 0x1e604063
-bl _p_22
+bl _p_34
 .word 0xf94033a0
 .word 0xf9001740
 .word 0x9100a341
@@ -1617,23 +2086,23 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a450
+.word 0xf941ac50
 .word 0xd63f0200
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941ac30
+.word 0xf941b430
 .word 0xd63f0200
 .word 0xd2800020
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_6:
+Lme_b:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeOptionsm__0_MonoTouch_Dialog_RootElement
@@ -1645,15 +2114,15 @@ _BubbleCell_AppDelegate__MakeOptionsm__0_MonoTouch_Dialog_RootElement:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #448]
+ldr x1, [x16, #552]
 .word 0xf9400ba0
 .word 0xaa0103e1
-bl _p_23
+bl _p_35
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7:
+Lme_c:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeOptionsm__1_MonoTouch_Dialog_RootElement
@@ -1665,15 +2134,15 @@ _BubbleCell_AppDelegate__MakeOptionsm__1_MonoTouch_Dialog_RootElement:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #456]
+ldr x1, [x16, #560]
 .word 0xf9400ba0
 .word 0xaa0103e1
-bl _p_23
+bl _p_35
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_8:
+Lme_d:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeOptionsm__2_MonoTouch_Dialog_RootElement
@@ -1683,12 +2152,12 @@ _BubbleCell_AppDelegate__MakeOptionsm__2_MonoTouch_Dialog_RootElement:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba0
-bl _p_24
+bl _p_36
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9:
+Lme_e:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_BubbleCell__cctor
@@ -1698,44 +2167,44 @@ _BubbleCell_BubbleCell__cctor:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #568]
 .word 0xf90037a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #472]
-bl _p_7
+ldr x0, [x16, #576]
+bl _p_9
 .word 0xf94037a1
 .word 0xf90033a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_25
+bl _p_37
 .word 0xf94033a1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #584]
 .word 0xf9000001
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #592]
 .word 0xf9002fa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #472]
-bl _p_7
+ldr x0, [x16, #576]
+bl _p_9
 .word 0xf9402fa1
 .word 0xf9002ba0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_25
+bl _p_37
 .word 0xf9402ba1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #600]
 .word 0xf9000001
 .word 0xd28001c0
 .word 0x1e620000
@@ -1746,12 +2215,12 @@ ldr x0, [x16, #496]
 .word 0x1e604000
 .word 0x1e604000
 .word 0x1e604000
-bl _p_26
+bl _p_38
 .word 0xaa0003e1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xf9000001
 .word 0xd28002c0
 .word 0x1e620000
@@ -1786,7 +2255,7 @@ ldr x0, [x16, #504]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #616]
 .word 0xf9400ba1
 .word 0xf9000001
 .word 0xf9400fa1
@@ -1794,29 +2263,29 @@ ldr x0, [x16, #512]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #520]
-bl _p_27
+ldr x0, [x16, #624]
+bl _p_39
 .word 0xaa0003e1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #632]
 .word 0xf9000001
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #536]
-bl _p_27
+ldr x0, [x16, #640]
+bl _p_39
 .word 0xaa0003e1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xf9000001
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xf9400003
 .word 0xd2800340
 .word 0x93407c01
@@ -1832,12 +2301,12 @@ ldr x0, [x16, #544]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #656]
 .word 0xf9000001
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #632]
 .word 0xf9400003
 .word 0xd2800160
 .word 0x93407c01
@@ -1853,13 +2322,13 @@ ldr x0, [x16, #528]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #664]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_a:
+Lme_f:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_BubbleCell__ctor_bool
@@ -1882,18 +2351,18 @@ _BubbleCell_BubbleCell__ctor_bool:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #584]
 .word 0xf9400016
 .word 0x14000005
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #600]
 .word 0xf9400016
 .word 0xaa1803e0
 .word 0xf9404ba1
 .word 0xaa1603e2
-bl _p_28
+bl _p_40
 .word 0x9101c3a0
 .word 0xd2800001
 .word 0x1e620020
@@ -1932,7 +2401,7 @@ bl _p_28
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_29
+bl _p_41
 .word 0x3901033a
 .word 0xf9403ba0
 .word 0xf9002ba0
@@ -1945,8 +2414,8 @@ bl _p_29
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #568]
-bl _p_7
+ldr x0, [x16, #672]
+bl _p_9
 .word 0xf90063a0
 .word 0xaa0003e0
 .word 0xfd402ba0
@@ -1957,7 +2426,7 @@ bl _p_7
 .word 0x1e604042
 .word 0xfd4037a3
 .word 0x1e604063
-bl _p_30
+bl _p_42
 .word 0xf94063a0
 .word 0xf9001720
 .word 0x9100a321
@@ -1977,23 +2446,23 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #656]
 .word 0xf940001a
 .word 0x14000005
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #664]
 .word 0xf940001a
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #576]
-bl _p_7
+ldr x0, [x16, #680]
+bl _p_9
 .word 0xf90067a0
 .word 0xaa0003e0
 .word 0xaa1a03e1
-bl _p_31
+bl _p_43
 .word 0xf94067a0
 .word 0xf9001b00
 .word 0x9100c301
@@ -2013,7 +2482,7 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xf9403ba0
 .word 0xf9001ba0
@@ -2026,8 +2495,8 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #584]
-bl _p_7
+ldr x0, [x16, #688]
+bl _p_9
 .word 0xf90063a0
 .word 0xaa0003e0
 .word 0xfd401ba0
@@ -2038,38 +2507,38 @@ bl _p_7
 .word 0x1e604042
 .word 0xfd4027a3
 .word 0x1e604063
-bl _p_32
+bl _p_44
 .word 0xf94063a0
 .word 0xaa0003fa
 .word 0xaa1a03e2
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf941c850
+.word 0xf941d050
 .word 0xd63f0200
 .word 0xd2800000
 .word 0x93407c01
 .word 0xaa1a03e0
 .word 0xaa0103e1
 .word 0xf9400342
-.word 0xf941c450
+.word 0xf941cc50
 .word 0xd63f0200
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xaa0103e1
 .word 0xf9400342
-.word 0xf941cc50
+.word 0xf941d450
 .word 0xd63f0200
-bl _p_33
+bl _p_45
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xaa0103e1
 .word 0xf9400342
-.word 0xf9414c50
+.word 0xf9415450
 .word 0xd63f0200
 .word 0xf9001f3a
 .word 0x9100e320
@@ -2089,18 +2558,18 @@ ldr x1, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf941b430
+.word 0xf941bc30
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xf9401721
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_34
+bl _p_46
 .word 0xf9400bb6
 .word 0xa941e7b8
 .word 0xf94017ba
@@ -2108,7 +2577,7 @@ bl _p_34
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 
-Lme_b:
+Lme_10:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_BubbleCell_LayoutSubviews
@@ -2126,17 +2595,17 @@ _BubbleCell_BubbleCell_LayoutSubviews:
 .word 0xf900a3a0
 .word 0xf900a7a0
 .word 0xaa1a03e0
-bl _p_35
+bl _p_47
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf941b430
+.word 0xf941bc30
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910543a0
 .word 0xf900bba0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf940bbbe
 .word 0xfd0003c0
@@ -2146,21 +2615,21 @@ bl _p_35
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b430
+.word 0xf941bc30
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910343a0
 .word 0xf900bba0
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_36
+bl _p_48
 .word 0xf940bbbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #616]
 .word 0xf9400001
 .word 0xf90063a1
 .word 0xf9400400
@@ -2175,7 +2644,7 @@ ldr x0, [x16, #512]
 .word 0x1e604042
 .word 0xfd4067a3
 .word 0x1e604063
-bl _p_37
+bl _p_49
 .word 0xf940bbbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -2245,7 +2714,7 @@ bl _p_37
 .word 0x1e604042
 .word 0xfd4057a3
 .word 0x1e604063
-bl _p_38
+bl _p_50
 .word 0xf9408ba0
 .word 0xf90043a0
 .word 0xf9408fa0
@@ -2264,19 +2733,19 @@ bl _p_38
 .word 0xfd404fa3
 .word 0x1e604063
 .word 0xf9400321
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9417830
+.word 0xf9418030
 .word 0xd63f0200
 .word 0xf9401b41
 .word 0x910543a0
 .word 0xf900bba0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf940bbbe
 .word 0xfd0003c0
@@ -2341,7 +2810,7 @@ bl _p_38
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #616]
 .word 0xf9400001
 .word 0xf9002ba1
 .word 0xf9400400
@@ -2356,7 +2825,7 @@ ldr x0, [x16, #512]
 .word 0x1e604042
 .word 0xfd402fa3
 .word 0x1e604063
-bl _p_39
+bl _p_51
 .word 0xf940bbbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -2374,7 +2843,7 @@ bl _p_39
 .word 0x1e604042
 .word 0xfd4027a3
 .word 0x1e604063
-bl _p_38
+bl _p_50
 .word 0xf94073a0
 .word 0xf90013a0
 .word 0xf94077a0
@@ -2393,14 +2862,14 @@ bl _p_38
 .word 0xfd401fa3
 .word 0x1e604063
 .word 0xf9400321
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8da7bfd
 .word 0xd65f03c0
 
-Lme_c:
+Lme_11:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_BubbleCell_GetSizeForText_UIKit_UIView_string
@@ -2414,11 +2883,11 @@ _BubbleCell_BubbleCell_GetSizeForText_UIKit_UIView_string:
 .word 0xf90047a0
 .word 0xf9004ba0
 .word 0xf9004fa0
-bl _p_40
+bl _p_52
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xf9400000
 .word 0xf90063a0
 .word 0x910203a0
@@ -2426,7 +2895,7 @@ ldr x0, [x16, #504]
 .word 0xf9402ba0
 .word 0xf9402ba1
 .word 0xf9400021
-.word 0xf9414830
+.word 0xf9415030
 .word 0xd63f0200
 .word 0xf94053be
 .word 0xfd0003c0
@@ -2492,7 +2961,7 @@ ldr x0, [x16, #504]
 .word 0x1e604000
 .word 0xfd4037a1
 .word 0x1e604021
-bl _p_41
+bl _p_53
 .word 0xf94053be
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -2502,7 +2971,7 @@ bl _p_41
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 
-Lme_d:
+Lme_12:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_BubbleCell_Update_string
@@ -2516,18 +2985,18 @@ _BubbleCell_BubbleCell_Update_string:
 .word 0xaa0203e0
 .word 0xf9400fa1
 .word 0xf9400042
-.word 0xf941b050
+.word 0xf941b850
 .word 0xd63f0200
 .word 0xf9400ba0
 .word 0xf9400ba1
 .word 0xf9400021
-.word 0xf9417430
+.word 0xf9417c30
 .word 0xd63f0200
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_e:
+Lme_13:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatBubble__ctor_bool_string
@@ -2558,7 +3027,7 @@ ldr x3, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_f:
+Lme_14:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatBubble_GetCell_UIKit_UITableView
@@ -2573,23 +3042,23 @@ _BubbleCell_ChatBubble_GetCell_UIKit_UITableView:
 .word 0x39408000
 .word 0xaa1a03f8
 .word 0x340000e0
-bl _p_40
+bl _p_52
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #584]
 .word 0xf940001a
 .word 0x14000006
-bl _p_40
+bl _p_52
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #600]
 .word 0xf940001a
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xf940031e
-bl _p_42
+bl _p_54
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -2601,7 +3070,7 @@ bl _p_42
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #592]
+ldr x1, [x16, #696]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -2610,17 +3079,17 @@ ldr x1, [x16, #592]
 .word 0xf94013a0
 .word 0x39408000
 .word 0xf9001fa0
-bl _p_40
+bl _p_52
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #600]
-bl _p_7
+ldr x0, [x16, #704]
+bl _p_9
 .word 0xf9401fa1
 .word 0xf9001ba0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_43
+bl _p_55
 .word 0xf9401ba0
 .word 0xaa0003fa
 .word 0xf94013a0
@@ -2628,7 +3097,7 @@ bl _p_43
 .word 0xaa1a03e0
 .word 0xaa0103e1
 .word 0xf940035e
-bl _p_44
+bl _p_56
 .word 0xaa1a03e0
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -2636,7 +3105,7 @@ bl _p_44
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_10:
+Lme_15:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatBubble_GetHeight_UIKit_UITableView_Foundation_NSIndexPath
@@ -2655,7 +3124,7 @@ _BubbleCell_ChatBubble_GetHeight_UIKit_UITableView_Foundation_NSIndexPath:
 .word 0xf9001fa0
 .word 0xf9400fa0
 .word 0xaa0103e1
-bl _p_36
+bl _p_48
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -2663,12 +3132,12 @@ bl _p_36
 .word 0x1e604000
 .word 0x1e604000
 .word 0xfd0023a0
-bl _p_40
+bl _p_52
 .word 0xfd4023a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #616]
 .word 0xfd400401
 .word 0x1e604021
 .word 0x1e604021
@@ -2678,7 +3147,7 @@ ldr x0, [x16, #512]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_11:
+Lme_16:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController__ctor_MonoTouch_Dialog_RootElement
@@ -2688,7 +3157,7 @@ _BubbleCell_ChatViewController__ctor_MonoTouch_Dialog_RootElement:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba0
-bl _p_45
+bl _p_57
 .word 0xf9400fa0
 .word 0xf9400ba1
 .word 0xf9001820
@@ -2708,7 +3177,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_12:
+Lme_17:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_InitializeSender
@@ -2719,19 +3188,19 @@ _BubbleCell_ChatViewController_InitializeSender:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #608]
+ldr x0, [x16, #712]
 .word 0xf90017a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #616]
-bl _p_7
+ldr x0, [x16, #720]
+bl _p_9
 .word 0xf94017a1
 .word 0xf90013a0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xd29aa222
-bl _p_46
+bl _p_58
 .word 0xf94013a1
 .word 0xf9400ba0
 .word 0xf9003001
@@ -2751,12 +3220,12 @@ ldr x3, [x16, #16]
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_47
+bl _p_59
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_13:
+Lme_18:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_InitializeReceiver
@@ -2768,12 +3237,12 @@ _BubbleCell_ChatViewController_InitializeReceiver:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #616]
-bl _p_7
+ldr x0, [x16, #720]
+bl _p_9
 .word 0xf9001ba0
 .word 0xaa0003e0
 .word 0xd29aa221
-bl _p_48
+bl _p_60
 .word 0xf9401ba0
 .word 0xf9002f40
 .word 0x91016341
@@ -2794,8 +3263,8 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #624]
-bl _p_3
+ldr x0, [x16, #728]
+bl _p_4
 .word 0xf900101a
 .word 0x91008001
 .word 0xd349fc21
@@ -2812,17 +3281,17 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #632]
+ldr x1, [x16, #736]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #640]
+ldr x1, [x16, #744]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #648]
+ldr x1, [x16, #752]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -2832,13 +3301,13 @@ ldr x1, [x16, #648]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #656]
-bl _p_7
+ldr x0, [x16, #760]
+bl _p_9
 .word 0xf94017a1
 .word 0xf90013a0
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_49
+bl _p_61
 .word 0xf94013a0
 .word 0xf9003740
 .word 0x9101a341
@@ -2857,20 +3326,20 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_50
+bl _p_62
 .word 0xf9403741
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_51
+bl _p_63
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_14:
+Lme_19:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_ViewDidLoad
@@ -2897,32 +3366,32 @@ _BubbleCell_ChatViewController_ViewDidLoad:
 .word 0xf900d7a0
 .word 0xf900dba0
 .word 0xaa1a03e0
-bl _p_52
+bl _p_64
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9411030
+.word 0xf9411430
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9416030
+.word 0xf9416430
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf941a850
+.word 0xf941b050
 .word 0xd63f0200
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910723a0
 .word 0xf900f7a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9414830
+.word 0xf9415030
 .word 0xd63f0200
 .word 0xf940f7be
 .word 0xfd0003c0
@@ -2956,8 +3425,8 @@ bl _p_52
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #664]
-bl _p_7
+ldr x0, [x16, #768]
+bl _p_9
 .word 0xfd41eba0
 .word 0xfd41efa1
 .word 0xfd41f3a2
@@ -2968,13 +3437,13 @@ bl _p_7
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_53
+bl _p_65
 .word 0xf941e7a0
 .word 0xaa0003e0
 .word 0xf901e3a0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xf941e3a1
@@ -2982,7 +3451,7 @@ bl _p_53
 .word 0xf901c3a1
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf9414c50
+.word 0xf9415450
 .word 0xd63f0200
 .word 0xfd40e7a0
 .word 0x1e604000
@@ -3015,7 +3484,7 @@ bl _p_53
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_29
+bl _p_41
 .word 0xf940bfa0
 .word 0xf9005fa0
 .word 0xf940c3a0
@@ -3027,8 +3496,8 @@ bl _p_29
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #568]
-bl _p_7
+ldr x0, [x16, #672]
+bl _p_9
 .word 0xf901dfa0
 .word 0xaa0003e0
 .word 0xfd405fa0
@@ -3039,7 +3508,7 @@ bl _p_7
 .word 0x1e604042
 .word 0xfd406ba3
 .word 0x1e604063
-bl _p_30
+bl _p_42
 .word 0xf941dfa0
 .word 0xaa0003e0
 .word 0xf901dba0
@@ -3047,21 +3516,21 @@ bl _p_30
 .word 0xaa0203e0
 .word 0xd2800241
 .word 0xf9400042
-.word 0xf9415850
+.word 0xf9416050
 .word 0xd63f0200
 .word 0xf941dba2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf901d7a2
 .word 0xf9400042
-.word 0xf9415450
+.word 0xf9415c50
 .word 0xd63f0200
 .word 0xf941d7a2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf901d3a2
 .word 0xf9400042
-.word 0xf9411050
+.word 0xf9411450
 .word 0xd63f0200
 .word 0xf941d3a0
 .word 0xf9001f40
@@ -3079,29 +3548,29 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xf9401f41
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xf9401b40
 .word 0xf901cfa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #208]
-bl _p_7
+ldr x0, [x16, #320]
+bl _p_9
 .word 0xf941cfa2
 .word 0xf901cba0
 .word 0xaa0003e0
 .word 0xd2800001
 .word 0xaa0203e2
 .word 0xd2800023
-bl _p_54
+bl _p_66
 .word 0xf941cba0
 .word 0xf9001740
 .word 0x9100a341
@@ -3121,31 +3590,31 @@ ldr x2, [x16, #16]
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf941c7a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xf941c3a1
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf9414c50
+.word 0xf9415450
 .word 0xd63f0200
 .word 0xaa1a03e0
-bl _p_55
+bl _p_67
 .word 0xaa1a03e0
-bl _p_56
+bl _p_68
 .word 0xd2800000
 .word 0x1e620000
 .word 0x9e6703e1
@@ -3187,7 +3656,7 @@ bl _p_56
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_29
+bl _p_41
 .word 0xf940afa0
 .word 0xf9004fa0
 .word 0xf940b3a0
@@ -3199,8 +3668,8 @@ bl _p_29
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #576]
-bl _p_7
+ldr x0, [x16, #680]
+bl _p_9
 .word 0xf901bfa0
 .word 0xaa0003e0
 .word 0xfd404fa0
@@ -3211,7 +3680,7 @@ bl _p_7
 .word 0x1e604042
 .word 0xfd405ba3
 .word 0x1e604063
-bl _p_57
+bl _p_69
 .word 0xf941bfa0
 .word 0xaa0003e0
 .word 0xf901bba0
@@ -3219,20 +3688,20 @@ bl _p_57
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf9413c50
+.word 0xf9414450
 .word 0xd63f0200
 .word 0xf941bba2
 .word 0xaa0203e0
 .word 0xd2800141
 .word 0xf901b7a2
 .word 0xf9400042
-.word 0xf9415850
+.word 0xf9416050
 .word 0xd63f0200
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #672]
-bl _p_27
+ldr x0, [x16, #776]
+bl _p_39
 .word 0xaa0003e3
 .word 0xd2800240
 .word 0x93407c01
@@ -3250,14 +3719,14 @@ bl _p_27
 .word 0xaa0103e1
 .word 0xf901b3a2
 .word 0xf9400042
-.word 0xf941a450
+.word 0xf941ac50
 .word 0xd63f0200
 .word 0xf941b3a2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf901afa2
 .word 0xf9400042
-.word 0xf9411050
+.word 0xf9411450
 .word 0xd63f0200
 .word 0xf941afa0
 .word 0xf9002740
@@ -3275,14 +3744,14 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xf9402741
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xd2800140
 .word 0x1e620000
@@ -3326,7 +3795,7 @@ ldr x2, [x16, #16]
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_29
+bl _p_41
 .word 0xf9409fa0
 .word 0xf9003fa0
 .word 0xf940a3a0
@@ -3338,8 +3807,8 @@ bl _p_29
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #680]
-bl _p_7
+ldr x0, [x16, #784]
+bl _p_9
 .word 0xf901aba0
 .word 0xaa0003e0
 .word 0xfd403fa0
@@ -3350,7 +3819,7 @@ bl _p_7
 .word 0x1e604042
 .word 0xfd404ba3
 .word 0x1e604063
-bl _p_58
+bl _p_70
 .word 0xf941aba0
 .word 0xaa0003e0
 .word 0xf901a7a0
@@ -3391,21 +3860,21 @@ bl _p_58
 .word 0xfd403ba1
 .word 0x1e604021
 .word 0xf9400021
-.word 0xf941b430
+.word 0xf941bc30
 .word 0xd63f0200
 .word 0xf941a7a2
 .word 0xaa0203e0
 .word 0xd2800241
 .word 0xf901a3a2
 .word 0xf9400042
-.word 0xf9415850
+.word 0xf9416050
 .word 0xd63f0200
 .word 0xf941a3a2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf9019fa2
 .word 0xf9400042
-.word 0xf941b050
+.word 0xf941b850
 .word 0xd63f0200
 .word 0xd28000a0
 .word 0x1e620000
@@ -3450,7 +3919,7 @@ bl _p_58
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_59
+bl _p_71
 .word 0xf9419fa1
 .word 0xf94087a0
 .word 0xf90027a0
@@ -3471,28 +3940,28 @@ bl _p_59
 .word 0x1e604063
 .word 0xf9019ba1
 .word 0xf9400021
-.word 0xf941ac30
+.word 0xf941b430
 .word 0xd63f0200
 .word 0xf9419ba2
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf90197a2
 .word 0xf9400042
-.word 0xf9413c50
+.word 0xf9414450
 .word 0xd63f0200
 .word 0xd280001e
 .word 0xf2a8301e
 .word 0x9e6703d0
 .word 0x1e22c200
 .word 0x1e604000
-bl _p_26
+bl _p_38
 .word 0xaa0003e1
 .word 0xf94197a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf90193a2
 .word 0xf9400042
-.word 0xf942e850
+.word 0xf942f050
 .word 0xd63f0200
 .word 0xf94193a2
 .word 0xaa0203e0
@@ -3502,16 +3971,16 @@ bl _p_26
 .word 0xf2ffffe1
 .word 0xf9018fa2
 .word 0xf9400042
-.word 0xf942f850
+.word 0xf9430050
 .word 0xd63f0200
-bl _p_33
+bl _p_45
 .word 0xaa0003e1
 .word 0xf9418fa2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9018ba2
 .word 0xf9400042
-.word 0xf9414c50
+.word 0xf9415450
 .word 0xd63f0200
 .word 0xf9418ba0
 .word 0xf9002340
@@ -3535,8 +4004,8 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #688]
-bl _p_3
+ldr x0, [x16, #792]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf94187a2
 .word 0xf900103a
@@ -3555,17 +4024,17 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #696]
+ldr x0, [x16, #800]
 .word 0xf9001420
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #704]
+ldr x0, [x16, #808]
 .word 0xf9001c20
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #712]
+ldr x0, [x16, #816]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -3573,13 +4042,13 @@ ldr x0, [x16, #712]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_60
+bl _p_72
 .word 0xf9402341
 .word 0x9106e3a0
 .word 0xf900f7a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xf940f7be
 .word 0xfd0003c0
@@ -3593,10 +4062,10 @@ bl _p_60
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xd2800000
-bl _p_61
+bl _p_73
 .word 0xf9002b40
 .word 0x91014341
 .word 0xd349fc21
@@ -3614,7 +4083,7 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf9413c50
+.word 0xf9414450
 .word 0xd63f0200
 .word 0xf9402b40
 .word 0xf90183a0
@@ -3623,7 +4092,7 @@ ldr x2, [x16, #16]
 .word 0xf900f7a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf940f7be
 .word 0xfd0003c0
@@ -3676,7 +4145,7 @@ ldr x2, [x16, #16]
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_29
+bl _p_41
 .word 0xf94183a1
 .word 0xf94077a0
 .word 0xf90017a0
@@ -3696,19 +4165,19 @@ bl _p_29
 .word 0xfd4023a3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
 .word 0xf9402b42
 .word 0xaa0203e0
 .word 0xd2800121
 .word 0xf9400042
-.word 0xf9415850
+.word 0xf9416050
 .word 0xd63f0200
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #720]
-bl _p_27
+ldr x0, [x16, #824]
+bl _p_39
 .word 0xaa0003e1
 .word 0xf9402b43
 .word 0xaa0303e0
@@ -3716,7 +4185,7 @@ bl _p_27
 .word 0xaa0103e1
 .word 0xd2800002
 .word 0xf9400063
-.word 0xf941c870
+.word 0xf941d070
 .word 0xd63f0200
 .word 0xf9417fa1
 .word 0xf9402b43
@@ -3724,12 +4193,12 @@ bl _p_27
 .word 0xaa0103e1
 .word 0xd2800042
 .word 0xf9400063
-.word 0xf941c870
+.word 0xf941d070
 .word 0xd63f0200
 .word 0xf9402b41
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xf9017ba0
 .word 0xd2800200
@@ -3741,18 +4210,18 @@ bl _p_27
 .word 0x1e604000
 .word 0x1e604000
 .word 0x1e604000
-bl _p_62
+bl _p_74
 .word 0xaa0003e1
 .word 0xf9417ba2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941cc50
+.word 0xf941d450
 .word 0xd63f0200
 .word 0xf9402b41
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xd2800000
@@ -3792,18 +4261,18 @@ bl _p_62
 .word 0xfd4013a1
 .word 0x1e604021
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xf9402b43
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #728]
+ldr x1, [x16, #832]
 .word 0xaa0303e0
 .word 0xaa0103e1
 .word 0xd2800002
 .word 0xf9400063
-.word 0xf941c070
+.word 0xf941c870
 .word 0xd63f0200
 .word 0xf9402b40
 .word 0xf90167a0
@@ -3834,8 +4303,8 @@ ldr x1, [x16, #728]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #664]
-bl _p_7
+ldr x0, [x16, #768]
+bl _p_9
 .word 0xfd416ba0
 .word 0xfd416fa1
 .word 0xfd4173a2
@@ -3846,14 +4315,14 @@ bl _p_7
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_53
+bl _p_65
 .word 0xf94163a1
 .word 0xf94167a3
 .word 0xaa0303e0
 .word 0xaa0103e1
 .word 0xd2800002
 .word 0xf9400063
-.word 0xf941bc70
+.word 0xf941c470
 .word 0xd63f0200
 .word 0xf9402b40
 .word 0xf9015fa0
@@ -3863,8 +4332,8 @@ bl _p_53
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #400]
-bl _p_3
+ldr x0, [x16, #504]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf9415fa3
 .word 0xf900103a
@@ -3883,17 +4352,17 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #840]
 .word 0xf9001420
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #744]
+ldr x0, [x16, #848]
 .word 0xf9001c20
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #752]
+ldr x0, [x16, #856]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -3902,7 +4371,7 @@ ldr x0, [x16, #752]
 .word 0xaa0103e1
 .word 0xd2800802
 .word 0xf940007e
-bl _p_63
+bl _p_75
 .word 0xaa1a03e0
 bl _BubbleCell_ChatViewController_DisableSend
 .word 0xf9402742
@@ -3910,7 +4379,7 @@ bl _BubbleCell_ChatViewController_DisableSend
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf941a050
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xeb1f035f
 .word 0x10000011
@@ -3918,8 +4387,8 @@ bl _BubbleCell_ChatViewController_DisableSend
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #760]
-bl _p_3
+ldr x0, [x16, #864]
+bl _p_4
 .word 0xf900101a
 .word 0x91008001
 .word 0xd349fc21
@@ -3936,23 +4405,23 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #768]
+ldr x1, [x16, #872]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #776]
+ldr x1, [x16, #880]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #784]
+ldr x1, [x16, #888]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
 .word 0xf9000801
 .word 0xaa0003e0
-bl _p_64
+bl _p_76
 .word 0xf9003b40
 .word 0x9101c341
 .word 0xd349fc21
@@ -3972,8 +4441,8 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #760]
-bl _p_3
+ldr x0, [x16, #864]
+bl _p_4
 .word 0xf900101a
 .word 0x91008001
 .word 0xd349fc21
@@ -3990,23 +4459,23 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #768]
+ldr x1, [x16, #872]
 .word 0xf9001401
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #776]
+ldr x1, [x16, #880]
 .word 0xf9001c01
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #784]
+ldr x1, [x16, #888]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
 .word 0xf9000801
 .word 0xaa0003e0
-bl _p_65
+bl _p_77
 .word 0xf9003f40
 .word 0x9101e341
 .word 0xd349fc21
@@ -4031,8 +4500,8 @@ bl _BubbleCell_ChatViewController_ScrollToBottom_bool
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #400]
-bl _p_3
+ldr x0, [x16, #504]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf9415ba2
 .word 0xf900103a
@@ -4051,17 +4520,17 @@ ldr x3, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #792]
+ldr x0, [x16, #896]
 .word 0xf9001420
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #800]
+ldr x0, [x16, #904]
 .word 0xf9001c20
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #912]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -4069,7 +4538,7 @@ ldr x0, [x16, #808]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_66
+bl _p_78
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa9407bfd
@@ -4078,11 +4547,11 @@ bl _p_66
 .word 0x8b100231
 .word 0x9100023f
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_15:
+Lme_1a:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_ViewDidUnload
@@ -4094,24 +4563,24 @@ _BubbleCell_ChatViewController_ViewDidUnload:
 .word 0xf9403b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_67
+bl _p_79
 .word 0xf9403f41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_67
+bl _p_79
 .word 0xf900175f
 .word 0xf9001f5f
 .word 0xf9001b5f
 .word 0xf900235f
 .word 0xf900275f
 .word 0xaa1a03e0
-bl _p_68
+bl _p_80
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_16:
+Lme_1b:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_EnableSend
@@ -4124,13 +4593,13 @@ _BubbleCell_ChatViewController_EnableSend:
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf9400042
-.word 0xf941a450
+.word 0xf941ac50
 .word 0xd63f0200
 .word 0xf9400ba0
 .word 0xf9402801
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xd2800020
@@ -4144,13 +4613,13 @@ _BubbleCell_ChatViewController_EnableSend:
 .word 0xaa0103e0
 .word 0x1e604000
 .word 0xf9400021
-.word 0xf9415c30
+.word 0xf9416430
 .word 0xd63f0200
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_17:
+Lme_1c:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_DisableSend
@@ -4163,13 +4632,13 @@ _BubbleCell_ChatViewController_DisableSend:
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf941a450
+.word 0xf941ac50
 .word 0xd63f0200
 .word 0xf9400ba0
 .word 0xf9402801
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xd280001e
@@ -4179,13 +4648,13 @@ _BubbleCell_ChatViewController_DisableSend:
 .word 0xaa0103e0
 .word 0x1e604000
 .word 0xf9400021
-.word 0xf9415c30
+.word 0xf9416430
 .word 0xd63f0200
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_18:
+Lme_1d:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_SendMessage_object_System_EventArgs
@@ -4202,32 +4671,32 @@ _BubbleCell_ChatViewController_SendMessage_object_System_EventArgs:
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf942a430
+.word 0xf942ac30
 .word 0xd63f0200
 .word 0xf90027a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #816]
+ldr x0, [x16, #920]
 .word 0xd2800001
-bl _p_17
+bl _p_1
 .word 0xaa0003e1
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_69
+bl _p_81
 .word 0xaa0003e1
 .word 0xf94023a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf942a050
+.word 0xf942a850
 .word 0xd63f0200
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf942a430
+.word 0xf942ac30
 .word 0xd63f0200
 .word 0xaa0003f9
 .word 0xb40000b9
@@ -4259,14 +4728,14 @@ bl _p_69
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf942a430
+.word 0xf942ac30
 .word 0xd63f0200
 .word 0xf90027a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #824]
-bl _p_3
+ldr x0, [x16, #928]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xaa0003e0
@@ -4287,20 +4756,20 @@ ldr x3, [x16, #16]
 .word 0xaa1703e0
 .word 0xaa0103e1
 .word 0xf94002fe
-bl _p_9
-bl _p_70
+bl _p_23
+bl _p_82
 .word 0xf90023a0
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf942a430
+.word 0xf942ac30
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94023a2
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf9405c50
+.word 0xf9409850
 .word 0xd63f0200
 .word 0xaa0003f9
 .word 0xf9403343
@@ -4309,17 +4778,17 @@ bl _p_70
 .word 0xaa1903e1
 .word 0xaa0203e2
 .word 0xf940007e
-bl _p_71
+bl _p_83
 .word 0x93407c00
 .word 0xf9402342
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #360]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf9400042
-.word 0xf942a050
+.word 0xf942a850
 .word 0xd63f0200
 .word 0xaa1a03e0
 .word 0xd2800021
@@ -4329,18 +4798,18 @@ bl _BubbleCell_ChatViewController_ScrollToBottom_bool
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd281e840
-bl _p_72
+.word 0xd2862920
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 .word 0xd2800017
 .word 0x17ffffab
 
-Lme_19:
+Lme_1e:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_Receiver
@@ -4353,27 +4822,27 @@ _BubbleCell_ChatViewController_Receiver:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #832]
+ldr x0, [x16, #936]
 .word 0xf9400000
 .word 0xf9001fa0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #840]
-bl _p_3
+ldr x0, [x16, #944]
+bl _p_4
 .word 0xf9401fa1
 .word 0xf9001ba0
 .word 0xaa0003e0
 .word 0xaa0103e1
 .word 0xd29aa222
-bl _p_74
+bl _p_85
 .word 0xf9401ba0
 .word 0xf90013a0
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #848]
-bl _p_3
+ldr x0, [x16, #952]
+bl _p_4
 .word 0xaa0003f9
 .word 0xf9000c1a
 .word 0xf9001ba0
@@ -4394,14 +4863,14 @@ ldr x1, [x16, #16]
 .word 0xaa0203e0
 .word 0xaa0103e1
 .word 0xf940005e
-bl _p_75
+bl _p_86
 .word 0xf90017a0
-bl _p_70
+bl _p_82
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xf94017a1
 .word 0xf9400042
-.word 0xf9403450
+.word 0xf9406050
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf9000820
@@ -4423,8 +4892,8 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_3
+ldr x0, [x16, #384]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf9001039
 .word 0x91008020
@@ -4442,34 +4911,34 @@ ldr x2, [x16, #16]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #960]
 .word 0xf9001420
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #968]
 .word 0xf9001c20
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #976]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
 .word 0xf9000820
 .word 0xaa1a03e0
 .word 0xaa0103e1
-bl _p_76
+bl _p_87
 .word 0x17ffffad
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xaa1103e1
-bl _p_12
+bl _p_17
 
-Lme_1a:
+Lme_1f:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_MessageReceived_string
@@ -4502,8 +4971,8 @@ _BubbleCell_ChatViewController_MessageReceived_string:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #824]
-bl _p_3
+ldr x0, [x16, #928]
+bl _p_4
 .word 0xaa0003e1
 .word 0xf94017a0
 .word 0xf9000c20
@@ -4524,24 +4993,24 @@ ldr x3, [x16, #16]
 .word 0xaa1703e0
 .word 0xaa0103e1
 .word 0xf94002fe
-bl _p_9
+bl _p_23
 .word 0xa94163b7
 .word 0xf94013b9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd281e840
-bl _p_72
+.word 0xd2862920
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 .word 0xd2800017
 .word 0x17ffffd4
 
-Lme_1b:
+Lme_20:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_HandleEntryChanged_object_System_EventArgs
@@ -4560,7 +5029,7 @@ _BubbleCell_ChatViewController_HandleEntryChanged_object_System_EventArgs:
 .word 0xf9003fa0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941b830
+.word 0xf941c030
 .word 0xd63f0200
 .word 0xf9403fbe
 .word 0xfd0003c0
@@ -4586,7 +5055,7 @@ _BubbleCell_ChatViewController_HandleEntryChanged_object_System_EventArgs:
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf942e430
+.word 0xf942ec30
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34001260
@@ -4615,7 +5084,7 @@ _BubbleCell_ChatViewController_HandleEntryChanged_object_System_EventArgs:
 .word 0x1e612800
 .word 0xaa1a03e0
 .word 0x1e604000
-bl _p_77
+bl _p_88
 .word 0xfd404340
 .word 0xd280001e
 .word 0xf2a8551e
@@ -4628,7 +5097,7 @@ bl _p_77
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf941b050
+.word 0xf941b850
 .word 0xd63f0200
 .word 0xf9402341
 .word 0xd2800000
@@ -4667,7 +5136,7 @@ bl _p_77
 .word 0xfd4023a1
 .word 0x1e604021
 .word 0xf9400021
-.word 0xf941bc30
+.word 0xf941c430
 .word 0xd63f0200
 .word 0x14000061
 .word 0xfd404340
@@ -4682,7 +5151,7 @@ bl _p_77
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf9400042
-.word 0xf941b050
+.word 0xf941b850
 .word 0xd63f0200
 .word 0xf9402341
 .word 0xd2800000
@@ -4723,7 +5192,7 @@ bl _p_77
 .word 0xfd401ba1
 .word 0x1e604021
 .word 0xf9400021
-.word 0xf941bc30
+.word 0xf941c430
 .word 0xd63f0200
 .word 0xfd404340
 .word 0xd280001e
@@ -4762,22 +5231,22 @@ bl _BubbleCell_ChatViewController_ResetChatBarHeight
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf941b050
+.word 0xf941b850
 .word 0xd63f0200
 .word 0xaa1a03e0
 bl _BubbleCell_ChatViewController_AdjustEntry
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf942a430
+.word 0xf942ac30
 .word 0xd63f0200
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #360]
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_78
+bl _p_89
 .word 0x53001c00
 .word 0x34000080
 .word 0xaa1a03e0
@@ -4792,7 +5261,7 @@ bl _BubbleCell_ChatViewController_DisableSend
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 
-Lme_1c:
+Lme_21:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat
@@ -4820,14 +5289,14 @@ _BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat:
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910383a0
 .word 0xf90083a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf94083be
 .word 0xfd0003c0
@@ -4836,14 +5305,14 @@ _BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat:
 .word 0xfd000fc3
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910303a0
 .word 0xf90083a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf94083be
 .word 0xfd0003c0
@@ -4861,7 +5330,7 @@ _BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat:
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94073a0
@@ -4882,23 +5351,23 @@ _BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat:
 .word 0xfd403fa3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #248]
-bl _p_79
+ldr x0, [x16, #360]
+bl _p_90
 .word 0xd286667e
 .word 0xf2a6667e
 .word 0xf2c6667e
 .word 0xf2e7fa7e
 .word 0x9e6703c0
-bl _p_80
+bl _p_91
 .word 0xf9401741
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94073a0
@@ -4919,7 +5388,7 @@ bl _p_80
 .word 0xfd402fa3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
 .word 0xf9402740
 .word 0xf9008ba0
@@ -4928,7 +5397,7 @@ bl _p_80
 .word 0xf90083a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf94083be
 .word 0xfd0003c0
@@ -4955,7 +5424,7 @@ bl _p_80
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_29
+bl _p_41
 .word 0xf9408ba1
 .word 0xf94043a0
 .word 0xf90013a0
@@ -4975,15 +5444,15 @@ bl _p_29
 .word 0xfd401fa3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
-bl _p_81
+bl _p_92
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8d27bfd
 .word 0xd65f03c0
 
-Lme_1d:
+Lme_22:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_ResetChatBarHeight
@@ -5001,12 +5470,12 @@ _BubbleCell_ChatViewController_ResetChatBarHeight:
 .word 0x1e604000
 .word 0xf9400ba0
 .word 0x1e604000
-bl _p_77
+bl _p_88
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1e:
+Lme_23:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_ExpandChatBarHeight
@@ -5024,12 +5493,12 @@ _BubbleCell_ChatViewController_ExpandChatBarHeight:
 .word 0x1e604000
 .word 0xf9400ba0
 .word 0x1e604000
-bl _p_77
+bl _p_88
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_1f:
+Lme_24:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_AdjustEntry
@@ -5075,13 +5544,13 @@ _BubbleCell_ChatViewController_AdjustEntry:
 .word 0xfd4013a1
 .word 0x1e604021
 .word 0xf9400021
-.word 0xf941bc30
+.word 0xf941c430
 .word 0xd63f0200
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_20:
+Lme_25:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_ViewDidLayoutSubviews
@@ -5090,12 +5559,12 @@ _BubbleCell_ChatViewController_ViewDidLayoutSubviews:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_82
+bl _p_93
 .word 0xf9400ba0
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf9400ba0
@@ -5104,7 +5573,7 @@ bl _p_82
 .word 0xf9001fa0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf9401fbe
 .word 0xfd0003c0
@@ -5122,13 +5591,13 @@ bl _p_82
 .word 0xfd401ba3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_21:
+Lme_26:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_PlaceKeyboard_object_UIKit_UIKeyboardEventArgs
@@ -5152,27 +5621,27 @@ _BubbleCell_ChatViewController_PlaceKeyboard_object_UIKit_UIKeyboardEventArgs:
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #248]
-bl _p_79
+ldr x0, [x16, #360]
+bl _p_90
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_83
-bl _p_84
+bl _p_94
+bl _p_95
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_85
+bl _p_96
 .word 0x1e604000
-bl _p_80
+bl _p_91
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910223a0
 .word 0xf90057a0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf94057be
 .word 0xfd0003c0
@@ -5181,14 +5650,14 @@ bl _p_80
 .word 0xfd000fc3
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xf9005ba0
 .word 0x910123a0
 .word 0xf90057a0
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_86
+bl _p_97
 .word 0xf94057be
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -5208,7 +5677,7 @@ bl _p_86
 .word 0x1e604063
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf9419050
+.word 0xf9419850
 .word 0xd63f0200
 .word 0xf94057be
 .word 0xfd0003c0
@@ -5223,7 +5692,7 @@ bl _p_86
 .word 0xfd0053a0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940fc30
+.word 0xf9410030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94047a0
@@ -5244,9 +5713,9 @@ bl _p_86
 .word 0xfd4023a3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf9413030
+.word 0xf9413830
 .word 0xd63f0200
-bl _p_81
+bl _p_92
 .word 0xaa1903e0
 .word 0xd2800021
 bl _BubbleCell_ChatViewController_ScrollToBottom_bool
@@ -5257,7 +5726,7 @@ bl _BubbleCell_ChatViewController_AdjustEntry
 .word 0xa8cc7bfd
 .word 0xd65f03c0
 
-Lme_22:
+Lme_27:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_ScrollToBottom_bool
@@ -5302,7 +5771,7 @@ _BubbleCell_ChatViewController_ScrollToBottom_bool:
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9416030
+.word 0xf9416430
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0x93407f20
@@ -5310,7 +5779,7 @@ _BubbleCell_ChatViewController_ScrollToBottom_bool:
 .word 0x93407c21
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_87
+bl _p_98
 .word 0xaa0003e1
 .word 0xf94023a4
 .word 0xaa0403e0
@@ -5318,25 +5787,25 @@ bl _p_87
 .word 0xd2800062
 .word 0xd2800023
 .word 0xf9400084
-.word 0xf941e090
+.word 0xf941e890
 .word 0xd63f0200
 .word 0xa94163b7
 .word 0xf94013b9
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd281e840
-bl _p_72
+.word 0xd2862920
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 .word 0xd2800017
 .word 0x17ffffcc
 
-Lme_23:
+Lme_28:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController_get_AutomaticallyForwardAppearanceAndRotationMethodsToChildViewControllers
@@ -5349,7 +5818,7 @@ _BubbleCell_ChatViewController_get_AutomaticallyForwardAppearanceAndRotationMeth
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_24:
+Lme_29:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController__ViewDidLoadm__0_UIKit_UITextView_Foundation_NSRange_string
@@ -5406,7 +5875,7 @@ _BubbleCell_ChatViewController__ViewDidLoadm__0_UIKit_UITextView_Foundation_NSRa
 .word 0x1e604021
 .word 0x1e604042
 .word 0x1e604063
-bl _p_59
+bl _p_71
 .word 0xf94053a1
 .word 0xf9402fa0
 .word 0xf9001fa0
@@ -5426,14 +5895,14 @@ bl _p_59
 .word 0xfd402ba3
 .word 0x1e604063
 .word 0xf9400021
-.word 0xf941c430
+.word 0xf941cc30
 .word 0xd63f0200
 .word 0xd2800020
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 
-Lme_25:
+Lme_2a:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeNewChatc__AnonStorey0__ctor
@@ -5445,7 +5914,7 @@ _BubbleCell_AppDelegate__MakeNewChatc__AnonStorey0__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_26:
+Lme_2b:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeNewChatc__AnonStorey0__m__0
@@ -5457,12 +5926,12 @@ _BubbleCell_AppDelegate__MakeNewChatc__AnonStorey0__m__0:
 .word 0xf9400801
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_88
+bl _p_99
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_27:
+Lme_2c:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeLoginc__AnonStorey1__ctor
@@ -5474,25 +5943,46 @@ _BubbleCell_AppDelegate__MakeLoginc__AnonStorey1__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_28:
+Lme_2d:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeLoginc__AnonStorey1__m__0
 _BubbleCell_AppDelegate__MakeLoginc__AnonStorey1__m__0:
 .word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xf9000bba
+.word 0xa9016bb9
 .word 0xaa0003fa
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_88
-bl _p_16
+bl _p_99
+.word 0xf9400f40
+.word 0xf9001fa0
+.word 0xf9400b41
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_100
+.word 0xf9401fa2
+.word 0xaa0203e1
+.word 0xf9002040
+.word 0x91010021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+bl _p_29
 .word 0xaa0003e3
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x2, [x16, #880]
+ldr x2, [x16, #984]
 .word 0xaa0303e0
 .word 0xd2800021
 .word 0xaa0203e2
@@ -5503,43 +5993,43 @@ ldr x2, [x16, #880]
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941a830
+.word 0xf941b030
 .word 0xd63f0200
 .word 0xf9001ba0
 .word 0xf9400f40
-bl _p_18
+bl _p_30
 .word 0xaa0003e1
 .word 0xf9401ba2
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #992]
 .word 0xf9400000
-.word 0xaa0203fa
-.word 0xf9000fa1
+.word 0xaa0203f9
+.word 0xf90013a1
 .word 0xd280003e
-.word 0xb90023be
+.word 0xb9002bbe
 .word 0xb5000320
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_3
+ldr x0, [x16, #384]
+bl _p_4
 .word 0xaa0003e1
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #1000]
 .word 0xf9001420
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #1008]
 .word 0xf9001c20
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #1016]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -5547,26 +6037,28 @@ ldr x0, [x16, #912]
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #992]
 .word 0xf9000001
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #992]
 .word 0xf9400003
-.word 0xaa1a03e0
-.word 0xf9400fa1
-.word 0xb98023a2
+.word 0xaa1903e0
+.word 0xf94013a1
+.word 0xb9802ba2
 .word 0xaa0303e3
-.word 0xf9400344
-.word 0xf9414090
+.word 0xf9400324
+.word 0xf9414490
 .word 0xd63f0200
-.word 0xf9400bba
+.word 0xf9400f40
+bl _p_101
+.word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_29:
+Lme_2e:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__MakeLoginc__AnonStorey1__m__1
@@ -5577,7 +6069,7 @@ _BubbleCell_AppDelegate__MakeLoginc__AnonStorey1__m__1:
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_2a:
+Lme_2f:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__FinishedLaunchingc__AnonStorey2__ctor
@@ -5589,7 +6081,7 @@ _BubbleCell_AppDelegate__FinishedLaunchingc__AnonStorey2__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2b:
+Lme_30:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_AppDelegate__FinishedLaunchingc__AnonStorey2__m__0_object_System_EventArgs
@@ -5601,7 +6093,7 @@ _BubbleCell_AppDelegate__FinishedLaunchingc__AnonStorey2__m__0_object_System_Eve
 .word 0xf90013a2
 .word 0xf9400ba0
 .word 0xf9400c00
-bl _p_24
+bl _p_36
 .word 0xf9400ba1
 .word 0xf9000820
 .word 0x91004021
@@ -5620,7 +6112,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2c:
+Lme_31:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController__Receiverc__AnonStorey0__ctor
@@ -5632,7 +6124,7 @@ _BubbleCell_ChatViewController__Receiverc__AnonStorey0__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2d:
+Lme_32:
 .text
 	.align 4
 	.no_dead_strip _BubbleCell_ChatViewController__Receiverc__AnonStorey0__m__0
@@ -5645,12 +6137,12 @@ _BubbleCell_ChatViewController__Receiverc__AnonStorey0__m__0:
 .word 0xf9400821
 .word 0xaa0003e0
 .word 0xaa0103e1
-bl _p_89
+bl _p_102
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2e:
+Lme_33:
 .text
 	.align 4
 	.no_dead_strip _wrapper_delegate_invoke_System_Func_2_MonoTouch_Dialog_RootElement_UIKit_UIViewController_invoke_TResult_T_MonoTouch_Dialog_RootElement
@@ -5663,7 +6155,7 @@ _wrapper_delegate_invoke_System_Func_2_MonoTouch_Dialog_RootElement_UIKit_UIView
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #920]
+ldr x0, [x16, #1024]
 .word 0xb9400000
 .word 0x35000300
 .word 0xf9402f38
@@ -5689,10 +6181,10 @@ ldr x0, [x16, #920]
 .word 0xf9400f10
 .word 0xd63f0200
 .word 0x17ffffed
-bl _p_90
+bl _p_103
 .word 0x17ffffe8
 
-Lme_30:
+Lme_35:
 .text
 	.align 4
 	.no_dead_strip _wrapper_delegate_invoke_System_EventHandler_1_UIKit_UIKeyboardEventArgs_invoke_void_object_TEventArgs_object_UIKit_UIKeyboardEventArgs
@@ -5706,7 +6198,7 @@ _wrapper_delegate_invoke_System_EventHandler_1_UIKit_UIKeyboardEventArgs_invoke_
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #920]
+ldr x0, [x16, #1024]
 .word 0xb9400000
 .word 0x35000360
 .word 0xf9402f17
@@ -5735,10 +6227,10 @@ ldr x0, [x16, #920]
 .word 0xf9400ef0
 .word 0xd63f0200
 .word 0x17ffffea
-bl _p_90
+bl _p_103
 .word 0x17ffffe5
 
-Lme_31:
+Lme_36:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__IEnumerable_GetEnumerator_T
@@ -5748,7 +6240,7 @@ _System_Array_InternalArray__IEnumerable_GetEnumerator_T:
 .word 0xf9001faf
 .word 0xf9000ba0
 .word 0xf9401fa0
-bl _p_91
+bl _p_104
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0xb9800000
@@ -5759,10 +6251,10 @@ bl _p_91
 .word 0x9100a3a0
 .word 0xf9002ba0
 .word 0xf9401fa0
-bl _p_92
+bl _p_105
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_93
+bl _p_106
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -5775,8 +6267,8 @@ bl _p_93
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_92
-bl _p_7
+bl _p_105
+bl _p_9
 .word 0x91004003
 .word 0xaa0303e1
 .word 0xf9400fa2
@@ -5800,7 +6292,7 @@ ldr x4, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_32:
+Lme_37:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_get_Count
@@ -5814,7 +6306,7 @@ _System_Array_InternalArray__ICollection_get_Count:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_33:
+Lme_38:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_get_IsReadOnly
@@ -5827,7 +6319,7 @@ _System_Array_InternalArray__ICollection_get_IsReadOnly:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_34:
+Lme_39:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Clear
@@ -5835,19 +6327,19 @@ _System_Array_InternalArray__ICollection_Clear:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28c02e0
-bl _p_72
+.word 0xd29a06a0
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_35:
+Lme_3a:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Add_T_T
@@ -5858,24 +6350,24 @@ _System_Array_InternalArray__ICollection_Add_T_T:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_94
+bl _p_107
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
 .word 0xf90017bf
-.word 0xd28c08e0
-bl _p_72
+.word 0xd29a0ca0
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_36:
+Lme_3b:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Remove_T_T
@@ -5886,24 +6378,24 @@ _System_Array_InternalArray__ICollection_Remove_T_T:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_95
+bl _p_108
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
 .word 0xf90017bf
-.word 0xd28c08e0
-bl _p_72
+.word 0xd29a0ca0
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2803820
+.word 0xd2805480
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_37:
+Lme_3c:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_Contains_T_T
@@ -5916,7 +6408,7 @@ _System_Array_InternalArray__ICollection_Contains_T_T:
 .word 0xaa0003fa
 .word 0xf90017a1
 .word 0xf9401ba0
-bl _p_96
+bl _p_109
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001fbf
@@ -5932,10 +6424,10 @@ bl _p_96
 .word 0x910103a0
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_97
+bl _p_110
 .word 0xf9002fa0
 .word 0xf9401ba0
-bl _p_98
+bl _p_111
 .word 0xaa0003e3
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -5970,17 +6462,17 @@ bl _p_98
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd28c1060
-bl _p_72
-bl _p_99
+.word 0xd29a1420
+bl _p_84
+bl _p_112
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 
-Lme_38:
+Lme_3d:
 .text
 	.align 4
 	.no_dead_strip _System_Array_InternalArray__ICollection_CopyTo_T_T___int
@@ -5996,7 +6488,7 @@ _System_Array_InternalArray__ICollection_CopyTo_T_T___int:
 .word 0xaa0103f9
 .word 0xaa0203fa
 .word 0xf94027a0
-bl _p_100
+bl _p_113
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0xf9002bbf
@@ -6059,7 +6551,7 @@ bl _p_100
 .word 0xaa1503e2
 .word 0xaa1903e3
 .word 0xaa1803e4
-bl _p_101
+bl _p_114
 .word 0xa94157b4
 .word 0xa9425fb6
 .word 0xa94367b8
@@ -6067,56 +6559,56 @@ bl _p_101
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd28c1060
-bl _p_72
-bl _p_99
+.word 0xd29a1420
+bl _p_84
+bl _p_112
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
-.word 0xd28c1b60
-bl _p_72
+bl _p_14
+.word 0xd29a1f20
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2802ae0
+.word 0xd28046c0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
-.word 0xd28c1060
-bl _p_72
-bl _p_99
+bl _p_14
+.word 0xd29a1420
+bl _p_84
+bl _p_112
 .word 0xaa0003e1
-.word 0xd2803960
+.word 0xd2805640
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
-.word 0xd281e840
-bl _p_72
+bl _p_14
+.word 0xd2862920
+bl _p_84
 .word 0xf90033a0
-.word 0xd28c33c0
-bl _p_72
-bl _p_99
+.word 0xd29a3780
+bl _p_84
+bl _p_112
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2802b20
+.word 0xd2804700
 .word 0xf2a04000
 .word 0xaa0103e1
 .word 0xaa0203e2
 bl _mono_create_corlib_exception_2
-bl _p_73
-.word 0xd281e6c0
-bl _p_72
+bl _p_14
+.word 0xd286b360
+bl _p_84
 .word 0xaa0003e1
-.word 0xd2802b00
+.word 0xd28046e0
 .word 0xf2a04000
 .word 0xaa0103e1
 bl _mono_create_corlib_exception_1
-bl _p_73
+bl _p_14
 
-Lme_39:
+Lme_3e:
 .text
 	.align 4
 	.no_dead_strip _wrapper_delegate_invoke_System_Comparison_1_MonoTouch_Dialog_Element_invoke_int_T_T_MonoTouch_Dialog_Element_MonoTouch_Dialog_Element
@@ -6130,7 +6622,7 @@ _wrapper_delegate_invoke_System_Comparison_1_MonoTouch_Dialog_Element_invoke_int
 
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x0, [x16, #920]
+ldr x0, [x16, #1024]
 .word 0xb9400000
 .word 0x350003c0
 .word 0xf9402f17
@@ -6162,10 +6654,10 @@ ldr x0, [x16, #920]
 .word 0xd63f0200
 .word 0x93407c00
 .word 0x17ffffe7
-bl _p_90
+bl _p_103
 .word 0x17ffffe2
 
-Lme_3a:
+Lme_3f:
 .text
 	.align 3
 methods_end:
@@ -6176,6 +6668,11 @@ methods_end:
 method_addresses:
 	.no_dead_strip method_addresses
 bl _BubbleCell_AppDelegate__ctor
+bl _BubbleCell_AppDelegate_get_MyIp
+bl _BubbleCell_AppDelegate_set_MyIp_string
+bl _BubbleCell_AppDelegate_get_UserName
+bl _BubbleCell_AppDelegate_set_UserName_string
+bl _BubbleCell_AppDelegate_UpdateIp
 bl _BubbleCell_AppDelegate_Main_string__
 bl _BubbleCell_AppDelegate_MakeChat_string
 bl _BubbleCell_AppDelegate_MakeOptions
@@ -6251,30 +6748,30 @@ unbox_trampolines_end:
 	.align 3
 method_info_offsets:
 
-	.long 59,10,6,2
-	.short 0, 10, 20, 31, 42, 58
-	.byte 1,2,3,7,32,23,23,12,3,3,111,19,11,5,4,3,2,6,3,2,128,170,8,31,2,2,2,5,9,3,3,128
-	.byte 238,2,2,2,2,3,2,2,2,2,129,3,2,10,2,2,2,2,255,255,255,254,233,129,25,3,129,31,2,2,2,2
-	.byte 2,2,2,2
+	.long 64,10,7,2
+	.short 0, 10, 20, 31, 42, 53, 69
+	.byte 1,4,2,2,2,2,16,3,7,32,94,23,12,3,3,2,19,11,5,4,128,179,2,6,3,2,4,8,31,2,2,128
+	.byte 241,5,9,3,3,3,2,2,2,2,129,19,2,2,2,2,2,2,10,2,2,129,47,2,255,255,255,254,207,129,51,4
+	.byte 4,2,2,2,2,129,69,2,2,2
 .section __TEXT, __const
 	.align 3
 extra_method_table:
 
-	.long 19,306,48,0,0,0,0,0
-	.long 0,0,370,53,0,343,50,0
-	.long 511,58,0,0,0,0,419,55
-	.long 0,387,54,20,0,0,0,366
-	.long 52,0,318,49,19,0,0,0
+	.long 19,335,53,0,0,0,0,0
+	.long 0,0,399,58,0,372,55,0
+	.long 540,63,0,0,0,0,448,60
+	.long 0,416,59,20,0,0,0,395
+	.long 57,0,347,54,19,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0,362,51,0,0,0,0,0
-	.long 0,0,451,56,0,483,57,0
+	.long 0,391,56,0,0,0,0,0
+	.long 0,0,480,61,0,512,62,0
 .section __TEXT, __const
 	.align 3
 extra_method_info_offsets:
 
-	.long 11,48,306,49,318,50,343,51
-	.long 362,52,366,53,370,54,387,55
-	.long 419,56,451,57,483,58,511
+	.long 11,53,335,54,347,55,372,56
+	.long 391,57,395,58,399,59,416,60
+	.long 448,61,480,62,512,63,540
 .section __TEXT, __const
 	.align 3
 class_name_table:
@@ -6288,871 +6785,977 @@ class_name_table:
 	.align 3
 got_info_offsets:
 
-	.long 116,10,12,2
+	.long 129,10,13,2
 	.short 0, 11, 22, 33, 44, 55, 66, 77
-	.short 88, 99, 110, 121
-	.byte 130,9,2,1,1,1,3,4,4,15,6,130,49,3,3,3,6,2,2,9,3,2,130,84,9,3,4,2,2,9,4,5
-	.byte 3,130,129,4,4,4,4,5,2,2,8,4,130,170,4,3,4,2,2,8,4,3,4,130,211,5,2,2,8,5,5,4
-	.byte 4,4,130,254,4,4,4,4,4,4,4,4,4,131,38,4,5,5,5,3,3,4,4,5,131,78,2,8,5,5,4,5
-	.byte 5,2,2,131,124,4,4,2,2,8,6,2,2,9,131,165,2,8,7,3,6,4,3,2,2,131,210,4,4,2,2,8
+	.short 88, 99, 110, 121, 132
+	.byte 130,38,2,1,1,1,4,7,4,7,3,130,71,3,3,4,4,4,4,4,4,4,130,109,4,15,6,3,4,4,4,6
+	.byte 2,130,159,9,4,2,2,9,4,4,2,2,130,206,4,5,3,4,4,4,4,4,5,130,245,2,8,4,4,4,3,4
+	.byte 2,2,131,30,4,3,4,5,2,2,8,5,5,131,72,4,4,4,4,4,4,4,4,4,131,112,4,4,4,4,5,5
+	.byte 5,3,3,131,153,5,5,2,2,8,5,5,4,5,131,199,2,2,8,4,4,2,2,8,6,131,239,2,9,2,2,8
+	.byte 7,3,7,5,132,31,2,2,8,4,4,2,2,8
 .section __TEXT, __const
 	.align 3
 ex_info_offsets:
 
-	.long 59,10,6,2
-	.short 0, 11, 22, 33, 44, 60
-	.byte 135,137,3,3,3,3,3,3,3,3,3,135,167,3,3,3,3,3,4,4,4,3,135,201,4,4,4,3,3,4,4,4
-	.byte 4,135,239,3,3,4,4,4,4,3,4,3,136,18,3,4,4,3,4,3,255,255,255,247,217,136,42,4,136,50,32,3
-	.byte 3,3,32,32,32,32
+	.long 64,10,7,2
+	.short 0, 11, 22, 33, 44, 55, 71
+	.byte 136,66,3,3,3,3,3,30,3,3,3,136,123,3,3,3,3,3,3,3,4,4,136,155,4,4,4,3,4,4,4,4
+	.byte 3,136,192,4,4,4,4,4,3,3,4,4,136,230,4,3,4,3,3,3,4,4,3,137,9,3,255,255,255,246,244,137
+	.byte 15,4,4,32,3,3,3,137,96,32,32,32
 .section __TEXT, __const
 	.align 3
 unwind_info:
 
-	.byte 13,12,31,0,68,14,32,157,4,158,3,68,13,29,13,12,31,0,68,14,112,157,14,158,13,68,13,29,17,12,31,0
-	.byte 68,14,208,2,157,42,158,41,68,13,29,68,154,40,14,12,31,0,68,14,176,2,157,38,158,37,68,13,29,19,12,31
-	.byte 0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,25,12,31,0,68,14,208,1,157,26,158,25,68,13,29
-	.byte 68,150,24,68,152,23,153,22,68,154,21,19,12,31,0,68,14,160,3,157,52,158,51,68,13,29,68,153,50,154,49,14
-	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,13,12,31,0,68,14,48,157,6,158,5,68,13,29,19,12,31,0
-	.byte 68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5,13,12,31,0,68,14,80,157,10,158,9,68,13,29,16,12
-	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,17,12,31,0,84,14,240,7,157,126,158,125,68,13,29,68,154
-	.byte 124,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,23,12,31,0,68,14,80,157,10,158,9,68,13,29
-	.byte 68,151,8,152,7,68,153,6,154,5,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,21,12,31
-	.byte 0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,17,12,31,0,68,14,208,1,157,26,158,25,68
-	.byte 13,29,68,154,24,17,12,31,0,68,14,160,2,157,36,158,35,68,13,29,68,154,34,19,12,31,0,68,14,192,1,157
-	.byte 24,158,23,68,13,29,68,153,22,154,21,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153
-	.byte 6,14,12,31,0,68,14,176,1,157,22,158,21,68,13,29,13,12,31,0,68,14,16,157,2,158,1,68,13,29,18,12
-	.byte 31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68
-	.byte 151,4,152,3,13,12,31,0,68,14,96,157,12,158,11,68,13,29,21,12,31,0,68,14,96,157,12,158,11,68,13,29
-	.byte 68,152,10,153,9,68,154,8,31,12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,149,11,68,150,10,151,9
-	.byte 68,152,8,153,7,68,154,6
+	.byte 16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,13,12,31,0,68,14,32,157,4,158,3,68,13,29,19
+	.byte 12,31,0,68,14,176,2,157,38,158,37,68,13,29,68,153,36,154,35,13,12,31,0,68,14,112,157,14,158,13,68,13
+	.byte 29,17,12,31,0,68,14,208,2,157,42,158,41,68,13,29,68,154,40,14,12,31,0,68,14,176,2,157,38,158,37,68
+	.byte 13,29,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,25,12,31,0,68,14,208,1,157,26
+	.byte 158,25,68,13,29,68,150,24,68,152,23,153,22,68,154,21,19,12,31,0,68,14,160,3,157,52,158,51,68,13,29,68
+	.byte 153,50,154,49,14,12,31,0,68,14,208,1,157,26,158,25,68,13,29,13,12,31,0,68,14,48,157,6,158,5,68,13
+	.byte 29,19,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5,13,12,31,0,68,14,80,157,10,158,9
+	.byte 68,13,29,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,17,12,31,0,84,14,240,7,157,126,158,125
+	.byte 68,13,29,68,154,124,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,23,12,31,0,68,14,80,157,10
+	.byte 158,9,68,13,29,68,151,8,152,7,68,153,6,154,5,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6
+	.byte 154,5,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,17,12,31,0,68,14,208,1
+	.byte 157,26,158,25,68,13,29,68,154,24,17,12,31,0,68,14,160,2,157,36,158,35,68,13,29,68,154,34,19,12,31,0
+	.byte 68,14,192,1,157,24,158,23,68,13,29,68,153,22,154,21,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151
+	.byte 8,152,7,68,153,6,14,12,31,0,68,14,176,1,157,22,158,21,68,13,29,13,12,31,0,68,14,16,157,2,158,1
+	.byte 68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,18,12,31,0,68,14,48,157,6,158
+	.byte 5,68,13,29,68,151,4,152,3,13,12,31,0,68,14,96,157,12,158,11,68,13,29,21,12,31,0,68,14,96,157,12
+	.byte 158,11,68,13,29,68,152,10,153,9,68,154,8,31,12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,149,11
+	.byte 68,150,10,151,9,68,152,8,153,7,68,154,6
 .section __TEXT, __const
 	.align 3
 class_info_offsets:
 
 	.long 9,10,1,2
 	.short 0
-	.byte 136,223,7,128,188,129,173,53,129,68,23,23,23
+	.byte 137,196,7,128,188,129,181,53,129,72,23,23,23
 
 .text
 	.align 4
 plt:
 _mono_aot_BubbleCell_plt:
-	.no_dead_strip plt_UIKit_UIApplicationDelegate__ctor
-plt_UIKit_UIApplicationDelegate__ctor:
+	.no_dead_strip plt__jit_icall_mono_array_new_specific
+plt__jit_icall_mono_array_new_specific:
 _p_1:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #936]
-br x16
-.word 999
-	.no_dead_strip plt_UIKit_UIApplication_Main_string___string_string
-plt_UIKit_UIApplication_Main_string___string_string:
-_p_2:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #944]
-br x16
-.word 1004
-	.no_dead_strip plt__jit_icall_mono_object_new_fast
-plt__jit_icall_mono_object_new_fast:
-_p_3:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #952]
-br x16
-.word 1009
-	.no_dead_strip plt_MonoTouch_Dialog_RootElement__ctor_string
-plt_MonoTouch_Dialog_RootElement__ctor_string:
-_p_4:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #960]
-br x16
-.word 1032
-	.no_dead_strip plt__class_init_System_EmptyArray_MonoTouch_Dialog_Element_
-plt__class_init_System_EmptyArray_MonoTouch_Dialog_Element_:
-_p_5:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #968]
-br x16
-.word 1037
-	.no_dead_strip plt_MonoTouch_Dialog_RootElement_Add_MonoTouch_Dialog_Section
-plt_MonoTouch_Dialog_RootElement_Add_MonoTouch_Dialog_Section:
-_p_6:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #976]
-br x16
-.word 1041
-	.no_dead_strip plt__jit_icall_mono_object_new_specific
-plt__jit_icall_mono_object_new_specific:
-_p_7:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #984]
-br x16
-.word 1046
-	.no_dead_strip plt_MonoTouch_Dialog_RootElement__ctor_string_System_Func_2_MonoTouch_Dialog_RootElement_UIKit_UIViewController
-plt_MonoTouch_Dialog_RootElement__ctor_string_System_Func_2_MonoTouch_Dialog_RootElement_UIKit_UIViewController:
-_p_8:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #992]
-br x16
-.word 1073
-	.no_dead_strip plt_MonoTouch_Dialog_Section_Add_MonoTouch_Dialog_Element
-plt_MonoTouch_Dialog_Section_Add_MonoTouch_Dialog_Element:
-_p_9:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #1000]
-br x16
-.word 1078
-	.no_dead_strip plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement
-plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement:
-_p_10:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #1008]
-br x16
-.word 1083
-	.no_dead_strip plt_UIKit_UINavigationController__ctor_UIKit_UIViewController
-plt_UIKit_UINavigationController__ctor_UIKit_UIViewController:
-_p_11:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #1016]
-br x16
-.word 1088
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_12:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #1024]
-br x16
-.word 1093
-	.no_dead_strip plt_MonoTouch_Dialog_EntryElement__ctor_string_string_string
-plt_MonoTouch_Dialog_EntryElement__ctor_string_string_string:
-_p_13:
-adrp x16, _mono_aot_BubbleCell_got@PAGE+0
-add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
-ldr x16, [x16, #1032]
-br x16
-.word 1128
-	.no_dead_strip plt_MonoTouch_Dialog_StringElement__ctor_string_System_Action
-plt_MonoTouch_Dialog_StringElement__ctor_string_System_Action:
-_p_14:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 1133
-	.no_dead_strip plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement_bool
-plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement_bool:
-_p_15:
+.word 1088
+	.no_dead_strip plt_string_Format_string_object__
+plt_string_Format_string_object__:
+_p_2:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 1138
-	.no_dead_strip plt_Foundation_NSUserDefaults_get_StandardUserDefaults
-plt_Foundation_NSUserDefaults_get_StandardUserDefaults:
-_p_16:
+.word 1114
+	.no_dead_strip plt_UIKit_UIApplicationDelegate__ctor
+plt_UIKit_UIApplicationDelegate__ctor:
+_p_3:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 1143
-	.no_dead_strip plt__jit_icall_mono_array_new_specific
-plt__jit_icall_mono_array_new_specific:
-_p_17:
+.word 1119
+	.no_dead_strip plt__jit_icall_mono_object_new_fast
+plt__jit_icall_mono_object_new_fast:
+_p_4:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 1148
-	.no_dead_strip plt_BubbleCell_AppDelegate_MakeOptions
-plt_BubbleCell_AppDelegate_MakeOptions:
-_p_18:
+.word 1124
+	.no_dead_strip plt_I18N_West_CP437__ctor
+plt_I18N_West_CP437__ctor:
+_p_5:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 1174
-	.no_dead_strip plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_System_EventHandler
-plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_System_EventHandler:
-_p_19:
+.word 1147
+	.no_dead_strip plt_System_Net_Dns_GetHostName
+plt_System_Net_Dns_GetHostName:
+_p_6:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 1176
-	.no_dead_strip plt_BubbleCell_AppDelegate_MakeLogin
-plt_BubbleCell_AppDelegate_MakeLogin:
-_p_20:
+.word 1152
+	.no_dead_strip plt_System_Net_Dns_GetHostAddresses_string
+plt_System_Net_Dns_GetHostAddresses_string:
+_p_7:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 1181
-	.no_dead_strip plt_UIKit_UIScreen_get_MainScreen
-plt_UIKit_UIScreen_get_MainScreen:
-_p_21:
+.word 1157
+	.no_dead_strip plt_string_Concat_string__
+plt_string_Concat_string__:
+_p_8:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 1183
-	.no_dead_strip plt_UIKit_UIWindow__ctor_CoreGraphics_CGRect
-plt_UIKit_UIWindow__ctor_CoreGraphics_CGRect:
-_p_22:
+.word 1162
+	.no_dead_strip plt__jit_icall_mono_object_new_specific
+plt__jit_icall_mono_object_new_specific:
+_p_9:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 1188
-	.no_dead_strip plt_BubbleCell_AppDelegate_MakeChat_string
-plt_BubbleCell_AppDelegate_MakeChat_string:
-_p_23:
+.word 1167
+	.no_dead_strip plt_MySql_Data_MySqlClient_MySqlConnection__ctor_string
+plt_MySql_Data_MySqlClient_MySqlConnection__ctor_string:
+_p_10:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 1193
-	.no_dead_strip plt_BubbleCell_AppDelegate_MakeNewChat
-plt_BubbleCell_AppDelegate_MakeNewChat:
-_p_24:
+.word 1194
+	.no_dead_strip plt_MySql_Data_MySqlClient_MySqlCommand__ctor_string_MySql_Data_MySqlClient_MySqlConnection
+plt_MySql_Data_MySqlClient_MySqlCommand__ctor_string_MySql_Data_MySqlClient_MySqlConnection:
+_p_11:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 1195
-	.no_dead_strip plt_Foundation_NSString__ctor_string
-plt_Foundation_NSString__ctor_string:
-_p_25:
+.word 1199
+	.no_dead_strip plt_string_Contains_string
+plt_string_Contains_string:
+_p_12:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 1197
-	.no_dead_strip plt_UIKit_UIFont_SystemFontOfSize_System_nfloat
-plt_UIKit_UIFont_SystemFontOfSize_System_nfloat:
-_p_26:
+.word 1204
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
+_p_13:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 1202
-	.no_dead_strip plt_UIKit_UIImage_FromFile_string
-plt_UIKit_UIImage_FromFile_string:
-_p_27:
+.word 1209
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_14:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 1207
-	.no_dead_strip plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_Foundation_NSString
-plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_Foundation_NSString:
-_p_28:
+.word 1248
+	.no_dead_strip plt_string_Concat_object_object_object
+plt_string_Concat_object_object_object:
+_p_15:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 1212
-	.no_dead_strip plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
-plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
-_p_29:
+.word 1276
+	.no_dead_strip plt_System_Console_WriteLine_string
+plt_System_Console_WriteLine_string:
+_p_16:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 1217
-	.no_dead_strip plt_UIKit_UIView__ctor_CoreGraphics_CGRect
-plt_UIKit_UIView__ctor_CoreGraphics_CGRect:
-_p_30:
+.word 1281
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_17:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 1222
-	.no_dead_strip plt_UIKit_UIImageView__ctor_UIKit_UIImage
-plt_UIKit_UIImageView__ctor_UIKit_UIImage:
-_p_31:
+.word 1286
+	.no_dead_strip plt_UIKit_UIApplication_Main_string___string_string
+plt_UIKit_UIApplication_Main_string___string_string:
+_p_18:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 1227
-	.no_dead_strip plt_UIKit_UILabel__ctor_CoreGraphics_CGRect
-plt_UIKit_UILabel__ctor_CoreGraphics_CGRect:
-_p_32:
+.word 1321
+	.no_dead_strip plt_MonoTouch_Dialog_RootElement__ctor_string
+plt_MonoTouch_Dialog_RootElement__ctor_string:
+_p_19:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 1232
-	.no_dead_strip plt_UIKit_UIColor_get_Clear
-plt_UIKit_UIColor_get_Clear:
-_p_33:
+.word 1326
+	.no_dead_strip plt__class_init_System_EmptyArray_MonoTouch_Dialog_Element_
+plt__class_init_System_EmptyArray_MonoTouch_Dialog_Element_:
+_p_20:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 1237
-	.no_dead_strip plt_UIKit_UIView_Add_UIKit_UIView
-plt_UIKit_UIView_Add_UIKit_UIView:
-_p_34:
+.word 1331
+	.no_dead_strip plt_MonoTouch_Dialog_RootElement_Add_MonoTouch_Dialog_Section
+plt_MonoTouch_Dialog_RootElement_Add_MonoTouch_Dialog_Section:
+_p_21:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 1242
-	.no_dead_strip plt_UIKit_UIView_LayoutSubviews
-plt_UIKit_UIView_LayoutSubviews:
-_p_35:
+.word 1335
+	.no_dead_strip plt_MonoTouch_Dialog_RootElement__ctor_string_System_Func_2_MonoTouch_Dialog_RootElement_UIKit_UIViewController
+plt_MonoTouch_Dialog_RootElement__ctor_string_System_Func_2_MonoTouch_Dialog_RootElement_UIKit_UIViewController:
+_p_22:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 1247
-	.no_dead_strip plt_BubbleCell_BubbleCell_GetSizeForText_UIKit_UIView_string
-plt_BubbleCell_BubbleCell_GetSizeForText_UIKit_UIView_string:
-_p_36:
+.word 1340
+	.no_dead_strip plt_MonoTouch_Dialog_Section_Add_MonoTouch_Dialog_Element
+plt_MonoTouch_Dialog_Section_Add_MonoTouch_Dialog_Element:
+_p_23:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 1252
-	.no_dead_strip plt_CoreGraphics_CGSize_op_Addition_CoreGraphics_CGSize_CoreGraphics_CGSize
-plt_CoreGraphics_CGSize_op_Addition_CoreGraphics_CGSize_CoreGraphics_CGSize:
-_p_37:
+.word 1345
+	.no_dead_strip plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement
+plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement:
+_p_24:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 1254
-	.no_dead_strip plt_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize
-plt_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize:
-_p_38:
+.word 1350
+	.no_dead_strip plt_UIKit_UINavigationController__ctor_UIKit_UIViewController
+plt_UIKit_UINavigationController__ctor_UIKit_UIViewController:
+_p_25:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 1259
-	.no_dead_strip plt_CoreGraphics_CGSize_op_Subtraction_CoreGraphics_CGSize_CoreGraphics_CGSize
-plt_CoreGraphics_CGSize_op_Subtraction_CoreGraphics_CGSize_CoreGraphics_CGSize:
-_p_39:
+.word 1355
+	.no_dead_strip plt_MonoTouch_Dialog_EntryElement__ctor_string_string_string
+plt_MonoTouch_Dialog_EntryElement__ctor_string_string_string:
+_p_26:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 1264
-	.no_dead_strip plt__class_init_BubbleCell_BubbleCell
-plt__class_init_BubbleCell_BubbleCell:
-_p_40:
+.word 1360
+	.no_dead_strip plt_MonoTouch_Dialog_StringElement__ctor_string_System_Action
+plt_MonoTouch_Dialog_StringElement__ctor_string_System_Action:
+_p_27:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 1269
-	.no_dead_strip plt_UIKit_UIStringDrawing_StringSize_string_UIKit_UIFont_CoreGraphics_CGSize
-plt_UIKit_UIStringDrawing_StringSize_string_UIKit_UIFont_CoreGraphics_CGSize:
-_p_41:
+.word 1365
+	.no_dead_strip plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement_bool
+plt_MonoTouch_Dialog_DialogViewController__ctor_MonoTouch_Dialog_RootElement_bool:
+_p_28:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 1272
-	.no_dead_strip plt_UIKit_UITableView_DequeueReusableCell_Foundation_NSString
-plt_UIKit_UITableView_DequeueReusableCell_Foundation_NSString:
-_p_42:
+.word 1370
+	.no_dead_strip plt_Foundation_NSUserDefaults_get_StandardUserDefaults
+plt_Foundation_NSUserDefaults_get_StandardUserDefaults:
+_p_29:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 1277
-	.no_dead_strip plt_BubbleCell_BubbleCell__ctor_bool
-plt_BubbleCell_BubbleCell__ctor_bool:
-_p_43:
+.word 1375
+	.no_dead_strip plt_BubbleCell_AppDelegate_MakeOptions
+plt_BubbleCell_AppDelegate_MakeOptions:
+_p_30:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 1282
-	.no_dead_strip plt_BubbleCell_BubbleCell_Update_string
-plt_BubbleCell_BubbleCell_Update_string:
-_p_44:
+.word 1380
+	.no_dead_strip plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_System_EventHandler
+plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_System_EventHandler:
+_p_31:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 1284
-	.no_dead_strip plt_UIKit_UIViewController__ctor
-plt_UIKit_UIViewController__ctor:
-_p_45:
+.word 1382
+	.no_dead_strip plt_BubbleCell_AppDelegate_MakeLogin
+plt_BubbleCell_AppDelegate_MakeLogin:
+_p_32:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 1286
-	.no_dead_strip plt_System_Net_Sockets_UdpClient__ctor_string_int
-plt_System_Net_Sockets_UdpClient__ctor_string_int:
-_p_46:
+.word 1387
+	.no_dead_strip plt_UIKit_UIScreen_get_MainScreen
+plt_UIKit_UIScreen_get_MainScreen:
+_p_33:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 1291
-	.no_dead_strip plt_System_Net_Sockets_UdpClient_set_EnableBroadcast_bool
-plt_System_Net_Sockets_UdpClient_set_EnableBroadcast_bool:
-_p_47:
+.word 1389
+	.no_dead_strip plt_UIKit_UIWindow__ctor_CoreGraphics_CGRect
+plt_UIKit_UIWindow__ctor_CoreGraphics_CGRect:
+_p_34:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 1296
-	.no_dead_strip plt_System_Net_Sockets_UdpClient__ctor_int
-plt_System_Net_Sockets_UdpClient__ctor_int:
-_p_48:
+.word 1394
+	.no_dead_strip plt_BubbleCell_AppDelegate_MakeChat_string
+plt_BubbleCell_AppDelegate_MakeChat_string:
+_p_35:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 1301
-	.no_dead_strip plt_System_Threading_Thread__ctor_System_Threading_ThreadStart
-plt_System_Threading_Thread__ctor_System_Threading_ThreadStart:
-_p_49:
+.word 1399
+	.no_dead_strip plt_BubbleCell_AppDelegate_MakeNewChat
+plt_BubbleCell_AppDelegate_MakeNewChat:
+_p_36:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 1306
-	.no_dead_strip plt_System_Threading_Thread_set_IsBackground_bool
-plt_System_Threading_Thread_set_IsBackground_bool:
-_p_50:
+.word 1401
+	.no_dead_strip plt_Foundation_NSString__ctor_string
+plt_Foundation_NSString__ctor_string:
+_p_37:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 1311
-	.no_dead_strip plt_System_Threading_Thread_Start
-plt_System_Threading_Thread_Start:
-_p_51:
+.word 1403
+	.no_dead_strip plt_UIKit_UIFont_SystemFontOfSize_System_nfloat
+plt_UIKit_UIFont_SystemFontOfSize_System_nfloat:
+_p_38:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 1316
-	.no_dead_strip plt_UIKit_UIViewController_ViewDidLoad
-plt_UIKit_UIViewController_ViewDidLoad:
-_p_52:
+.word 1408
+	.no_dead_strip plt_UIKit_UIImage_FromFile_string
+plt_UIKit_UIImage_FromFile_string:
+_p_39:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 1321
-	.no_dead_strip plt_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
-plt_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
-_p_53:
+.word 1413
+	.no_dead_strip plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_Foundation_NSString
+plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_Foundation_NSString:
+_p_40:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 1326
-	.no_dead_strip plt_MonoTouch_Dialog_DialogViewController__ctor_UIKit_UITableViewStyle_MonoTouch_Dialog_RootElement_bool
-plt_MonoTouch_Dialog_DialogViewController__ctor_UIKit_UITableViewStyle_MonoTouch_Dialog_RootElement_bool:
-_p_54:
+.word 1418
+	.no_dead_strip plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
+plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
+_p_41:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 1331
-	.no_dead_strip plt_BubbleCell_ChatViewController_InitializeSender
-plt_BubbleCell_ChatViewController_InitializeSender:
-_p_55:
+.word 1423
+	.no_dead_strip plt_UIKit_UIView__ctor_CoreGraphics_CGRect
+plt_UIKit_UIView__ctor_CoreGraphics_CGRect:
+_p_42:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 1336
-	.no_dead_strip plt_BubbleCell_ChatViewController_InitializeReceiver
-plt_BubbleCell_ChatViewController_InitializeReceiver:
-_p_56:
+.word 1428
+	.no_dead_strip plt_UIKit_UIImageView__ctor_UIKit_UIImage
+plt_UIKit_UIImageView__ctor_UIKit_UIImage:
+_p_43:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 1338
-	.no_dead_strip plt_UIKit_UIImageView__ctor_CoreGraphics_CGRect
-plt_UIKit_UIImageView__ctor_CoreGraphics_CGRect:
-_p_57:
+.word 1433
+	.no_dead_strip plt_UIKit_UILabel__ctor_CoreGraphics_CGRect
+plt_UIKit_UILabel__ctor_CoreGraphics_CGRect:
+_p_44:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 1340
-	.no_dead_strip plt_UIKit_UITextView__ctor_CoreGraphics_CGRect
-plt_UIKit_UITextView__ctor_CoreGraphics_CGRect:
-_p_58:
+.word 1438
+	.no_dead_strip plt_UIKit_UIColor_get_Clear
+plt_UIKit_UIColor_get_Clear:
+_p_45:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 1345
-	.no_dead_strip plt_UIKit_UIEdgeInsets__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
-plt_UIKit_UIEdgeInsets__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
-_p_59:
+.word 1443
+	.no_dead_strip plt_UIKit_UIView_Add_UIKit_UIView
+plt_UIKit_UIView_Add_UIKit_UIView:
+_p_46:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 1350
-	.no_dead_strip plt_UIKit_UITextView_set_ShouldChangeText_UIKit_UITextViewChange
-plt_UIKit_UITextView_set_ShouldChangeText_UIKit_UITextViewChange:
-_p_60:
+.word 1448
+	.no_dead_strip plt_UIKit_UIView_LayoutSubviews
+plt_UIKit_UIView_LayoutSubviews:
+_p_47:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 1355
-	.no_dead_strip plt_UIKit_UIButton_FromType_UIKit_UIButtonType
-plt_UIKit_UIButton_FromType_UIKit_UIButtonType:
-_p_61:
+.word 1453
+	.no_dead_strip plt_BubbleCell_BubbleCell_GetSizeForText_UIKit_UIView_string
+plt_BubbleCell_BubbleCell_GetSizeForText_UIKit_UIView_string:
+_p_48:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 1360
-	.no_dead_strip plt_UIKit_UIFont_BoldSystemFontOfSize_System_nfloat
-plt_UIKit_UIFont_BoldSystemFontOfSize_System_nfloat:
-_p_62:
+.word 1458
+	.no_dead_strip plt_CoreGraphics_CGSize_op_Addition_CoreGraphics_CGSize_CoreGraphics_CGSize
+plt_CoreGraphics_CGSize_op_Addition_CoreGraphics_CGSize_CoreGraphics_CGSize:
+_p_49:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 1365
-	.no_dead_strip plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent
-plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent:
-_p_63:
+.word 1460
+	.no_dead_strip plt_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize
+plt_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize:
+_p_50:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 1370
-	.no_dead_strip plt_UIKit_UIKeyboard_Notifications_ObserveWillShow_System_EventHandler_1_UIKit_UIKeyboardEventArgs
-plt_UIKit_UIKeyboard_Notifications_ObserveWillShow_System_EventHandler_1_UIKit_UIKeyboardEventArgs:
-_p_64:
+.word 1465
+	.no_dead_strip plt_CoreGraphics_CGSize_op_Subtraction_CoreGraphics_CGSize_CoreGraphics_CGSize
+plt_CoreGraphics_CGSize_op_Subtraction_CoreGraphics_CGSize_CoreGraphics_CGSize:
+_p_51:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 1375
-	.no_dead_strip plt_UIKit_UIKeyboard_Notifications_ObserveWillHide_System_EventHandler_1_UIKit_UIKeyboardEventArgs
-plt_UIKit_UIKeyboard_Notifications_ObserveWillHide_System_EventHandler_1_UIKit_UIKeyboardEventArgs:
-_p_65:
+.word 1470
+	.no_dead_strip plt__class_init_BubbleCell_BubbleCell
+plt__class_init_BubbleCell_BubbleCell:
+_p_52:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 1380
-	.no_dead_strip plt_UIKit_UITextView_add_Changed_System_EventHandler
-plt_UIKit_UITextView_add_Changed_System_EventHandler:
-_p_66:
+.word 1475
+	.no_dead_strip plt_UIKit_UIStringDrawing_StringSize_string_UIKit_UIFont_CoreGraphics_CGSize
+plt_UIKit_UIStringDrawing_StringSize_string_UIKit_UIFont_CoreGraphics_CGSize:
+_p_53:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 1385
-	.no_dead_strip plt_Foundation_NSObject_Dispose
-plt_Foundation_NSObject_Dispose:
-_p_67:
+.word 1478
+	.no_dead_strip plt_UIKit_UITableView_DequeueReusableCell_Foundation_NSString
+plt_UIKit_UITableView_DequeueReusableCell_Foundation_NSString:
+_p_54:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 1390
-	.no_dead_strip plt_UIKit_UIViewController_ViewDidUnload
-plt_UIKit_UIViewController_ViewDidUnload:
-_p_68:
+.word 1483
+	.no_dead_strip plt_BubbleCell_BubbleCell__ctor_bool
+plt_BubbleCell_BubbleCell__ctor_bool:
+_p_55:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 1395
-	.no_dead_strip plt_string_TrimEnd_char__
-plt_string_TrimEnd_char__:
-_p_69:
+.word 1488
+	.no_dead_strip plt_BubbleCell_BubbleCell_Update_string
+plt_BubbleCell_BubbleCell_Update_string:
+_p_56:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 1400
-	.no_dead_strip plt_System_Text_Encoding_get_ASCII
-plt_System_Text_Encoding_get_ASCII:
-_p_70:
+.word 1490
+	.no_dead_strip plt_UIKit_UIViewController__ctor
+plt_UIKit_UIViewController__ctor:
+_p_57:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 1405
-	.no_dead_strip plt_System_Net_Sockets_UdpClient_Send_byte___int
-plt_System_Net_Sockets_UdpClient_Send_byte___int:
-_p_71:
+.word 1492
+	.no_dead_strip plt_System_Net_Sockets_UdpClient__ctor_string_int
+plt_System_Net_Sockets_UdpClient__ctor_string_int:
+_p_58:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 1410
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_72:
+.word 1497
+	.no_dead_strip plt_System_Net_Sockets_UdpClient_set_EnableBroadcast_bool
+plt_System_Net_Sockets_UdpClient_set_EnableBroadcast_bool:
+_p_59:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 1415
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_73:
+.word 1502
+	.no_dead_strip plt_System_Net_Sockets_UdpClient__ctor_int
+plt_System_Net_Sockets_UdpClient__ctor_int:
+_p_60:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 1444
-	.no_dead_strip plt_System_Net_IPEndPoint__ctor_System_Net_IPAddress_int
-plt_System_Net_IPEndPoint__ctor_System_Net_IPAddress_int:
-_p_74:
+.word 1507
+	.no_dead_strip plt_System_Threading_Thread__ctor_System_Threading_ThreadStart
+plt_System_Threading_Thread__ctor_System_Threading_ThreadStart:
+_p_61:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 1472
-	.no_dead_strip plt_System_Net_Sockets_UdpClient_Receive_System_Net_IPEndPoint_
-plt_System_Net_Sockets_UdpClient_Receive_System_Net_IPEndPoint_:
-_p_75:
+.word 1512
+	.no_dead_strip plt_System_Threading_Thread_set_IsBackground_bool
+plt_System_Threading_Thread_set_IsBackground_bool:
+_p_62:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 1477
-	.no_dead_strip plt_Foundation_NSObject_InvokeOnMainThread_System_Action
-plt_Foundation_NSObject_InvokeOnMainThread_System_Action:
-_p_76:
+.word 1517
+	.no_dead_strip plt_System_Threading_Thread_Start
+plt_System_Threading_Thread_Start:
+_p_63:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 1482
-	.no_dead_strip plt_BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat
-plt_BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat:
-_p_77:
+.word 1522
+	.no_dead_strip plt_UIKit_UIViewController_ViewDidLoad
+plt_UIKit_UIViewController_ViewDidLoad:
+_p_64:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 1487
-	.no_dead_strip plt_string_op_Inequality_string_string
-plt_string_op_Inequality_string_string:
-_p_78:
+.word 1527
+	.no_dead_strip plt_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
+plt_UIKit_UIColor__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
+_p_65:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 1489
-	.no_dead_strip plt_UIKit_UIView_BeginAnimations_string
-plt_UIKit_UIView_BeginAnimations_string:
-_p_79:
+.word 1532
+	.no_dead_strip plt_MonoTouch_Dialog_DialogViewController__ctor_UIKit_UITableViewStyle_MonoTouch_Dialog_RootElement_bool
+plt_MonoTouch_Dialog_DialogViewController__ctor_UIKit_UITableViewStyle_MonoTouch_Dialog_RootElement_bool:
+_p_66:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 1494
-	.no_dead_strip plt_UIKit_UIView_SetAnimationDuration_double
-plt_UIKit_UIView_SetAnimationDuration_double:
-_p_80:
+.word 1537
+	.no_dead_strip plt_BubbleCell_ChatViewController_InitializeSender
+plt_BubbleCell_ChatViewController_InitializeSender:
+_p_67:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 1499
-	.no_dead_strip plt_UIKit_UIView_CommitAnimations
-plt_UIKit_UIView_CommitAnimations:
-_p_81:
+.word 1542
+	.no_dead_strip plt_BubbleCell_ChatViewController_InitializeReceiver
+plt_BubbleCell_ChatViewController_InitializeReceiver:
+_p_68:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 1504
-	.no_dead_strip plt_UIKit_UIViewController_ViewDidLayoutSubviews
-plt_UIKit_UIViewController_ViewDidLayoutSubviews:
-_p_82:
+.word 1544
+	.no_dead_strip plt_UIKit_UIImageView__ctor_CoreGraphics_CGRect
+plt_UIKit_UIImageView__ctor_CoreGraphics_CGRect:
+_p_69:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 1509
-	.no_dead_strip plt_UIKit_UIKeyboardEventArgs_get_AnimationCurve
-plt_UIKit_UIKeyboardEventArgs_get_AnimationCurve:
-_p_83:
+.word 1546
+	.no_dead_strip plt_UIKit_UITextView__ctor_CoreGraphics_CGRect
+plt_UIKit_UITextView__ctor_CoreGraphics_CGRect:
+_p_70:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 1514
-	.no_dead_strip plt_UIKit_UIView_SetAnimationCurve_UIKit_UIViewAnimationCurve
-plt_UIKit_UIView_SetAnimationCurve_UIKit_UIViewAnimationCurve:
-_p_84:
+.word 1551
+	.no_dead_strip plt_UIKit_UIEdgeInsets__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
+plt_UIKit_UIEdgeInsets__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
+_p_71:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 1519
-	.no_dead_strip plt_UIKit_UIKeyboardEventArgs_get_AnimationDuration
-plt_UIKit_UIKeyboardEventArgs_get_AnimationDuration:
-_p_85:
+.word 1556
+	.no_dead_strip plt_UIKit_UITextView_set_ShouldChangeText_UIKit_UITextViewChange
+plt_UIKit_UITextView_set_ShouldChangeText_UIKit_UITextViewChange:
+_p_72:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 1524
-	.no_dead_strip plt_UIKit_UIKeyboardEventArgs_get_FrameEnd
-plt_UIKit_UIKeyboardEventArgs_get_FrameEnd:
-_p_86:
+.word 1561
+	.no_dead_strip plt_UIKit_UIButton_FromType_UIKit_UIButtonType
+plt_UIKit_UIButton_FromType_UIKit_UIButtonType:
+_p_73:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 1529
-	.no_dead_strip plt_Foundation_NSIndexPath_FromRowSection_System_nint_System_nint
-plt_Foundation_NSIndexPath_FromRowSection_System_nint_System_nint:
-_p_87:
+.word 1566
+	.no_dead_strip plt_UIKit_UIFont_BoldSystemFontOfSize_System_nfloat
+plt_UIKit_UIFont_BoldSystemFontOfSize_System_nfloat:
+_p_74:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 1534
-	.no_dead_strip plt_MonoTouch_Dialog_EntryElement_FetchValue
-plt_MonoTouch_Dialog_EntryElement_FetchValue:
-_p_88:
+.word 1571
+	.no_dead_strip plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent
+plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent:
+_p_75:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 1539
-	.no_dead_strip plt_BubbleCell_ChatViewController_MessageReceived_string
-plt_BubbleCell_ChatViewController_MessageReceived_string:
-_p_89:
+.word 1576
+	.no_dead_strip plt_UIKit_UIKeyboard_Notifications_ObserveWillShow_System_EventHandler_1_UIKit_UIKeyboardEventArgs
+plt_UIKit_UIKeyboard_Notifications_ObserveWillShow_System_EventHandler_1_UIKit_UIKeyboardEventArgs:
+_p_76:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 1544
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_90:
+.word 1581
+	.no_dead_strip plt_UIKit_UIKeyboard_Notifications_ObserveWillHide_System_EventHandler_1_UIKit_UIKeyboardEventArgs
+plt_UIKit_UIKeyboard_Notifications_ObserveWillHide_System_EventHandler_1_UIKit_UIKeyboardEventArgs:
+_p_77:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 1546
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_91:
+.word 1586
+	.no_dead_strip plt_UIKit_UITextView_add_Changed_System_EventHandler
+plt_UIKit_UITextView_add_Changed_System_EventHandler:
+_p_78:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 1603
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_92:
+.word 1591
+	.no_dead_strip plt_Foundation_NSObject_Dispose
+plt_Foundation_NSObject_Dispose:
+_p_79:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 1639
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_93:
+.word 1596
+	.no_dead_strip plt_UIKit_UIViewController_ViewDidUnload
+plt_UIKit_UIViewController_ViewDidUnload:
+_p_80:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 1647
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_94:
+.word 1601
+	.no_dead_strip plt_string_TrimEnd_char__
+plt_string_TrimEnd_char__:
+_p_81:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 1689
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_95:
+.word 1606
+	.no_dead_strip plt_System_Text_Encoding_get_ASCII
+plt_System_Text_Encoding_get_ASCII:
+_p_82:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 1735
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_96:
+.word 1611
+	.no_dead_strip plt_System_Net_Sockets_UdpClient_Send_byte___int
+plt_System_Net_Sockets_UdpClient_Send_byte___int:
+_p_83:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 1781
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_97:
+.word 1616
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_84:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 1808
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_98:
+.word 1621
+	.no_dead_strip plt_System_Net_IPEndPoint__ctor_System_Net_IPAddress_int
+plt_System_Net_IPEndPoint__ctor_System_Net_IPAddress_int:
+_p_85:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 1832
-	.no_dead_strip plt_Locale_GetText_string
-plt_Locale_GetText_string:
-_p_99:
+.word 1650
+	.no_dead_strip plt_System_Net_Sockets_UdpClient_Receive_System_Net_IPEndPoint_
+plt_System_Net_Sockets_UdpClient_Receive_System_Net_IPEndPoint_:
+_p_86:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 1873
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_100:
+.word 1655
+	.no_dead_strip plt_Foundation_NSObject_InvokeOnMainThread_System_Action
+plt_Foundation_NSObject_InvokeOnMainThread_System_Action:
+_p_87:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 1897
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_101:
+.word 1660
+	.no_dead_strip plt_BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat
+plt_BubbleCell_ChatViewController_SetChatBarHeight_System_nfloat:
+_p_88:
 adrp x16, _mono_aot_BubbleCell_got@PAGE+0
 add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 1924
+.word 1665
+	.no_dead_strip plt_string_op_Inequality_string_string
+plt_string_op_Inequality_string_string:
+_p_89:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1744]
+br x16
+.word 1667
+	.no_dead_strip plt_UIKit_UIView_BeginAnimations_string
+plt_UIKit_UIView_BeginAnimations_string:
+_p_90:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1752]
+br x16
+.word 1672
+	.no_dead_strip plt_UIKit_UIView_SetAnimationDuration_double
+plt_UIKit_UIView_SetAnimationDuration_double:
+_p_91:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1760]
+br x16
+.word 1677
+	.no_dead_strip plt_UIKit_UIView_CommitAnimations
+plt_UIKit_UIView_CommitAnimations:
+_p_92:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1768]
+br x16
+.word 1682
+	.no_dead_strip plt_UIKit_UIViewController_ViewDidLayoutSubviews
+plt_UIKit_UIViewController_ViewDidLayoutSubviews:
+_p_93:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1776]
+br x16
+.word 1687
+	.no_dead_strip plt_UIKit_UIKeyboardEventArgs_get_AnimationCurve
+plt_UIKit_UIKeyboardEventArgs_get_AnimationCurve:
+_p_94:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1784]
+br x16
+.word 1692
+	.no_dead_strip plt_UIKit_UIView_SetAnimationCurve_UIKit_UIViewAnimationCurve
+plt_UIKit_UIView_SetAnimationCurve_UIKit_UIViewAnimationCurve:
+_p_95:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1792]
+br x16
+.word 1697
+	.no_dead_strip plt_UIKit_UIKeyboardEventArgs_get_AnimationDuration
+plt_UIKit_UIKeyboardEventArgs_get_AnimationDuration:
+_p_96:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1800]
+br x16
+.word 1702
+	.no_dead_strip plt_UIKit_UIKeyboardEventArgs_get_FrameEnd
+plt_UIKit_UIKeyboardEventArgs_get_FrameEnd:
+_p_97:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1808]
+br x16
+.word 1707
+	.no_dead_strip plt_Foundation_NSIndexPath_FromRowSection_System_nint_System_nint
+plt_Foundation_NSIndexPath_FromRowSection_System_nint_System_nint:
+_p_98:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1816]
+br x16
+.word 1712
+	.no_dead_strip plt_MonoTouch_Dialog_EntryElement_FetchValue
+plt_MonoTouch_Dialog_EntryElement_FetchValue:
+_p_99:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1824]
+br x16
+.word 1717
+	.no_dead_strip plt_MonoTouch_Dialog_EntryElement_get_Value
+plt_MonoTouch_Dialog_EntryElement_get_Value:
+_p_100:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1832]
+br x16
+.word 1722
+	.no_dead_strip plt_BubbleCell_AppDelegate_UpdateIp
+plt_BubbleCell_AppDelegate_UpdateIp:
+_p_101:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1840]
+br x16
+.word 1727
+	.no_dead_strip plt_BubbleCell_ChatViewController_MessageReceived_string
+plt_BubbleCell_ChatViewController_MessageReceived_string:
+_p_102:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1848]
+br x16
+.word 1729
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_103:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1856]
+br x16
+.word 1731
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_104:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1864]
+br x16
+.word 1788
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_105:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1872]
+br x16
+.word 1824
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_106:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1880]
+br x16
+.word 1832
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_107:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1888]
+br x16
+.word 1874
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_108:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1896]
+br x16
+.word 1920
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_109:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1904]
+br x16
+.word 1966
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_110:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1912]
+br x16
+.word 1993
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_111:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1920]
+br x16
+.word 2017
+	.no_dead_strip plt_Locale_GetText_string
+plt_Locale_GetText_string:
+_p_112:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1928]
+br x16
+.word 2058
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_113:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1936]
+br x16
+.word 2082
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_114:
+adrp x16, _mono_aot_BubbleCell_got@PAGE+0
+add x16, x16, _mono_aot_BubbleCell_got@PAGEOFF
+ldr x16, [x16, #1944]
+br x16
+.word 2109
 plt_end:
 .section __TEXT, __const
 	.align 3
 image_table:
 
-	.long 5
+	.long 7
 	.asciz "BubbleCell"
-	.asciz "5A4BC88E-6D1E-499B-A62B-D48563CAC2F0"
+	.asciz "CBAED82C-CF8C-43F4-A62A-776B21D0A62A"
 	.asciz ""
 	.asciz ""
 	.align 3
@@ -7172,6 +7775,20 @@ image_table:
 	.align 3
 
 	.long 1,0,0,0,0
+	.asciz "I18N.West"
+	.asciz "629C4D52-251D-4E51-9813-896597B801FF"
+	.asciz ""
+	.asciz "0738eb9f132ed756"
+	.align 3
+
+	.long 1,2,0,5,0
+	.asciz "MySql.Data.CF"
+	.asciz "D1242B67-E19F-4791-A53E-4813D2D65219"
+	.asciz ""
+	.asciz "c5687fc88969c44d"
+	.align 3
+
+	.long 257,6,9,5,0
 	.asciz "Xamarin.iOS"
 	.asciz "02957833-2967-41F6-BF91-6F5BB6222AA8"
 	.asciz ""
@@ -7189,12 +7806,12 @@ image_table:
 .data
 	.align 3
 _mono_aot_BubbleCell_got:
-	.space 1744
+	.space 1952
 got_end:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "5A4BC88E-6D1E-499B-A62B-D48563CAC2F0"
+	.asciz "CBAED82C-CF8C-43F4-A62A-776B21D0A62A"
 .section __TEXT, __const
 	.align 2
 runtime_version:
@@ -7269,7 +7886,7 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampolines_end
 
-	.long 116,1744,102,59,10,387000831,0,3364
+	.long 129,1952,115,64,10,387000831,0,3605
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,128,8,8,14
 	.long 0,0,0,0,0
@@ -7282,112 +7899,119 @@ _mono_aot_module_BubbleCell_info:
 	.align 3
 blob:
 
-	.byte 0,0,0,0,1,4,0,5,5,6,7,8,9,0,30,10,5,11,6,7,8,12,13,14,15,16,5,17,13,18,19,20
-	.byte 5,21,6,7,8,22,13,23,24,25,5,26,27,0,21,28,29,30,31,32,33,34,35,36,37,38,39,5,40,6,7,8
-	.byte 6,7,8,26,0,21,41,42,30,31,32,42,34,43,44,45,38,42,5,46,6,7,8,6,7,8,26,0,10,47,48,49
-	.byte 4,50,51,52,53,54,55,0,1,56,0,1,57,0,0,1,3,16,58,59,60,61,59,62,63,64,65,66,67,68,68,69
-	.byte 66,70,1,3,8,60,62,71,69,70,72,73,63,1,3,2,64,64,1,3,1,63,1,3,0,0,0,0,4,60,62,74
-	.byte 75,0,1,64,0,0,0,2,76,77,0,6,77,78,79,80,81,82,0,29,83,71,26,72,84,85,86,87,88,89,90,91
-	.byte 83,50,92,93,94,95,96,97,98,95,96,97,98,50,99,100,101,0,0,0,0,0,0,0,3,102,103,31,0,7,104,105
-	.byte 106,34,107,108,109,0,1,103,0,1,31,0,1,31,0,0,0,0,0,0,0,0,0,1,31,0,0,0,0,0,0,0
-	.byte 0,0,0,0,0,0,8,110,111,34,112,113,114,111,111,0,0,0,0,0,0,0,0,0,0,0,1,115,0,1,115,0
-	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,115,255,252,0,0,0,1,1,3,219,0,0,1,255,252
-	.byte 0,0,0,1,1,3,219,0,0,2,5,30,0,1,255,255,255,255,255,193,0,6,144,255,253,0,0,0,2,129,91,1
-	.byte 1,198,0,6,144,0,1,7,129,74,193,0,6,142,193,0,6,143,193,0,6,145,5,30,0,1,255,255,255,255,255,193
-	.byte 0,6,146,255,253,0,0,0,2,129,91,1,1,198,0,6,146,0,1,7,129,118,5,30,0,1,255,255,255,255,255,193
-	.byte 0,6,147,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,7,129,150,5,30,0,1,255,255,255,255,255,193
-	.byte 0,6,148,255,253,0,0,0,2,129,91,1,1,198,0,6,148,0,1,7,129,182,5,30,0,1,255,255,255,255,255,193
-	.byte 0,6,149,255,253,0,0,0,2,129,91,1,1,198,0,6,149,0,1,7,129,214,4,2,129,110,1,1,2,2,2,255
-	.byte 252,0,0,0,1,1,7,129,246,12,0,39,42,47,17,0,1,14,2,31,2,14,2,28,2,14,3,219,0,0,3,4
-	.byte 2,129,130,1,1,2,2,2,16,7,130,31,133,245,14,1,5,17,0,25,17,0,37,17,0,63,14,3,219,0,0,1
-	.byte 6,8,50,8,30,3,219,0,0,1,1,8,0,17,0,99,6,9,50,9,30,3,219,0,0,1,1,9,0,17,0,127
-	.byte 17,0,128,163,6,10,50,10,30,3,219,0,0,1,1,10,0,14,2,33,2,14,2,128,211,3,14,1,6,17,0,128
-	.byte 171,17,0,128,189,17,0,128,227,14,2,22,2,17,0,128,229,14,2,129,76,1,6,40,50,40,30,2,129,76,1,1
-	.byte 40,0,14,2,11,2,17,0,128,243,17,0,129,5,14,1,7,17,0,129,29,6,42,50,42,30,2,129,76,1,1,42
-	.byte 0,17,0,129,41,14,1,8,17,0,129,91,14,6,1,2,129,215,1,14,2,129,140,1,6,45,50,45,30,2,129,140
-	.byte 1,1,45,0,14,2,128,194,3,14,2,128,227,3,17,0,129,111,17,0,129,123,17,0,129,149,14,2,24,3,16,1
-	.byte 3,2,17,0,129,185,16,1,3,3,16,1,3,8,16,1,3,13,17,0,129,223,16,1,3,5,17,0,129,243,16,1
-	.byte 3,4,16,1,3,6,16,1,3,7,14,2,128,225,3,14,2,129,34,3,14,2,129,33,3,11,1,3,14,1,3,17
-	.byte 0,130,5,14,2,23,4,14,2,129,71,1,6,27,50,27,30,2,129,71,1,1,27,0,14,2,129,67,1,14,2,128
-	.byte 198,3,17,0,130,37,14,2,128,223,3,14,2,129,82,3,6,38,50,38,30,2,129,82,3,1,38,0,17,0,130,61
-	.byte 17,0,130,91,6,26,50,26,30,2,129,140,1,1,26,0,14,3,219,0,0,2,6,35,50,35,30,3,219,0,0,2
-	.byte 1,35,0,6,29,50,29,30,2,129,140,1,1,29,0,14,6,1,2,129,108,1,14,1,4,16,2,26,4,128,234,14
-	.byte 2,27,4,14,1,9,6,47,50,47,30,2,129,76,1,1,47,0,17,0,129,131,16,1,7,35,6,43,50,43,30,2
-	.byte 129,76,1,1,43,0,33,3,195,0,5,76,3,195,0,5,67,7,20,109,111,110,111,95,111,98,106,101,99,116,95,110
-	.byte 101,119,95,102,97,115,116,0,3,194,0,0,180,15,7,130,31,3,194,0,0,187,7,24,109,111,110,111,95,111,98,106
-	.byte 101,99,116,95,110,101,119,95,115,112,101,99,105,102,105,99,0,3,194,0,0,181,3,194,0,0,170,3,194,0,0,203
-	.byte 3,195,0,5,224,7,32,109,111,110,111,95,97,114,99,104,95,116,104,114,111,119,95,99,111,114,108,105,98,95,101,120
-	.byte 99,101,112,116,105,111,110,0,3,194,0,0,109,3,194,0,0,59,3,194,0,0,205,3,195,0,0,249,7,23,109,111
-	.byte 110,111,95,97,114,114,97,121,95,110,101,119,95,115,112,101,99,105,102,105,99,0,3,4,3,195,0,5,86,3,6,3
-	.byte 195,0,6,0,3,195,0,7,53,3,3,3,5,3,195,0,0,196,3,195,0,5,175,3,195,0,5,199,3,195,0,6
-	.byte 67,3,195,0,4,210,3,195,0,6,229,3,195,0,8,221,3,195,0,8,203,3,195,0,5,133,3,195,0,6,230,3
-	.byte 195,0,6,243,3,14,3,195,0,4,200,3,195,0,4,209,3,195,0,4,201,15,1,3,3,195,0,6,36,3,195,0
-	.byte 6,51,3,12,3,15,3,195,0,7,20,3,196,0,0,101,3,196,0,0,110,3,196,0,0,100,3,193,0,6,33,3
-	.byte 193,0,6,43,3,193,0,6,45,3,195,0,7,36,3,195,0,5,116,3,194,0,0,206,3,20,3,21,3,195,0,8
-	.byte 220,3,195,0,6,154,3,195,0,4,184,3,195,0,6,213,3,195,0,5,107,3,195,0,5,172,3,195,0,5,143,3
-	.byte 195,0,5,211,3,195,0,5,210,3,195,0,6,211,3,195,0,2,122,3,195,0,7,37,3,193,0,9,207,3,193,0
-	.byte 5,143,3,196,0,0,108,7,26,109,111,110,111,95,104,101,108,112,101,114,95,108,100,115,116,114,95,109,115,99,111,114
-	.byte 108,105,98,0,7,25,109,111,110,111,95,97,114,99,104,95,116,104,114,111,119,95,101,120,99,101,112,116,105,111,110,0
-	.byte 3,196,0,0,149,3,196,0,0,106,3,195,0,2,143,3,30,3,193,0,9,193,3,195,0,6,231,3,195,0,6,246
-	.byte 3,195,0,6,235,3,195,0,7,35,3,195,0,9,203,3,195,0,6,245,3,195,0,9,202,3,195,0,9,201,3,195
-	.byte 0,0,121,3,194,0,0,128,3,28,7,35,109,111,110,111,95,116,104,114,101,97,100,95,105,110,116,101,114,114,117,112
-	.byte 116,105,111,110,95,99,104,101,99,107,112,111,105,110,116,0,255,253,0,0,0,2,129,91,1,1,198,0,6,144,0,1
-	.byte 7,129,74,35,134,48,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6,144,0,1,7,129,74,0,4,2
-	.byte 129,92,1,1,7,129,74,35,134,48,150,5,7,134,94,35,134,48,140,13,255,253,0,0,0,7,134,94,1,198,0,6
-	.byte 211,1,7,129,74,0,255,253,0,0,0,2,129,91,1,1,198,0,6,146,0,1,7,129,118,35,134,134,192,0,92,41
-	.byte 255,253,0,0,0,2,129,91,1,1,198,0,6,146,0,1,7,129,118,0,255,253,0,0,0,2,129,91,1,1,198,0
-	.byte 6,147,0,1,7,129,150,35,134,180,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,7,129
-	.byte 150,0,255,253,0,0,0,2,129,91,1,1,198,0,6,148,0,1,7,129,182,35,134,226,192,0,92,41,255,253,0,0
-	.byte 0,2,129,91,1,1,198,0,6,148,0,1,7,129,182,0,35,134,226,140,17,255,253,0,0,0,2,129,91,1,1,198
-	.byte 0,6,157,0,1,7,129,182,35,134,226,192,0,90,33,16,1,3,1,18,2,129,91,1,8,16,30,7,129,182,255,253
-	.byte 0,0,0,2,129,91,1,1,198,0,6,157,0,1,7,129,182,3,193,0,0,23,255,253,0,0,0,2,129,91,1,1
-	.byte 198,0,6,149,0,1,7,129,214,35,135,86,192,0,92,41,255,253,0,0,0,2,129,91,1,1,198,0,6,149,0,1
-	.byte 7,129,214,0,3,193,0,6,176,2,0,0,2,0,0,2,14,0,2,28,0,2,46,0,2,46,0,2,61,0,2,0
-	.byte 0,2,0,0,2,0,0,2,14,0,2,81,0,2,107,0,2,127,0,2,0,0,2,128,142,0,2,128,156,0,2,128
-	.byte 176,0,2,0,0,2,128,142,0,2,128,190,0,2,128,207,0,2,128,225,0,2,0,0,2,0,0,2,128,242,0,2
-	.byte 129,10,0,2,129,29,0,2,129,51,0,2,129,69,0,2,0,0,2,0,0,2,128,176,0,2,128,176,0,2,129,87
-	.byte 0,2,129,107,0,2,0,0,2,129,129,0,2,0,0,2,0,0,2,0,0,2,128,190,0,2,129,144,0,2,0,0
-	.byte 2,128,142,0,2,0,0,2,0,0,2,129,158,0,2,129,177,0,3,129,196,0,1,29,56,19,255,253,0,0,0,2
-	.byte 129,91,1,1,198,0,6,144,0,1,7,129,74,1,0,1,0,0,2,0,0,2,0,0,2,0,0,3,128,142,0,1
-	.byte 29,32,19,255,253,0,0,0,2,129,91,1,1,198,0,6,146,0,1,7,129,118,1,0,1,0,0,3,128,142,0,1
-	.byte 29,32,19,255,253,0,0,0,2,129,91,1,1,198,0,6,147,0,1,7,129,150,1,0,1,0,0,3,129,210,0,1
-	.byte 29,48,19,255,253,0,0,0,2,129,91,1,1,198,0,6,148,0,1,7,129,182,1,0,1,0,0,3,129,232,0,1
-	.byte 29,72,19,255,253,0,0,0,2,129,91,1,1,198,0,6,149,0,1,7,129,214,1,0,1,0,0,2,129,177,0,0
-	.byte 128,144,16,0,0,1,45,128,170,195,0,2,121,48,0,0,8,195,0,2,147,195,0,2,144,195,0,2,121,195,0,2
-	.byte 145,195,0,2,146,195,0,2,138,195,0,2,122,195,0,2,153,195,0,2,154,195,0,2,157,195,0,2,158,195,0,2
-	.byte 159,195,0,2,155,195,0,2,156,195,0,2,131,195,0,2,160,195,0,2,135,195,0,2,132,195,0,2,136,195,0,2
-	.byte 162,195,0,2,166,195,0,2,161,195,0,2,165,195,0,2,163,195,0,2,164,195,0,2,167,195,0,2,167,195,0,2
-	.byte 166,195,0,2,165,195,0,2,164,195,0,2,163,195,0,2,162,195,0,2,161,195,0,2,160,195,0,2,159,195,0,2
-	.byte 158,195,0,2,157,195,0,2,156,195,0,2,155,195,0,2,154,195,0,2,153,195,0,2,152,195,0,2,149,195,0,2
-	.byte 131,7,105,128,230,11,195,0,2,121,72,72,0,8,195,0,2,147,195,0,2,144,195,0,2,121,195,0,2,145,195,0
-	.byte 2,146,195,0,2,138,195,0,2,122,195,0,2,153,195,0,2,154,195,0,2,157,195,0,2,158,195,0,2,159,195,0
-	.byte 2,155,195,0,2,156,195,0,2,131,195,0,2,160,195,0,2,135,195,0,2,132,195,0,2,136,195,0,2,162,195,0
-	.byte 2,166,195,0,2,161,195,0,2,165,195,0,2,163,195,0,2,164,195,0,2,167,195,0,2,167,195,0,2,166,195,0
-	.byte 2,165,195,0,2,164,195,0,2,163,195,0,2,162,195,0,2,161,195,0,2,160,195,0,2,159,195,0,2,158,195,0
-	.byte 2,157,195,0,2,156,195,0,2,155,195,0,2,154,195,0,2,153,195,0,6,68,195,0,6,76,195,0,2,131,195,0
-	.byte 5,248,195,0,5,247,195,0,6,242,195,0,6,252,195,0,6,253,195,0,6,237,195,0,6,236,195,0,6,240,195,0
-	.byte 6,238,195,0,7,3,195,0,7,4,195,0,7,5,195,0,7,3,195,0,7,15,195,0,7,16,195,0,6,250,195,0
-	.byte 7,14,195,0,7,17,195,0,7,16,195,0,7,15,195,0,7,14,195,0,7,13,195,0,7,12,195,0,7,11,195,0
-	.byte 7,10,195,0,7,9,195,0,7,8,195,0,7,7,195,0,7,6,195,0,7,5,195,0,7,4,195,0,7,3,195,0
-	.byte 7,2,195,0,7,1,195,0,7,0,195,0,6,255,195,0,6,254,195,0,6,253,195,0,6,252,195,0,6,251,195,0
-	.byte 6,250,195,0,6,249,195,0,6,248,195,0,6,247,195,0,6,244,13,195,0,6,242,195,0,6,241,195,0,6,240,195
-	.byte 0,6,239,195,0,6,238,195,0,6,237,195,0,6,236,195,0,6,233,195,0,6,75,195,0,6,74,195,0,6,73,195
-	.byte 0,6,72,195,0,6,71,195,0,6,70,195,0,6,69,13,128,160,40,0,0,8,193,0,9,133,193,0,9,130,193,0
-	.byte 9,129,193,0,9,127,194,0,0,2,194,0,0,14,194,0,0,9,194,0,0,8,194,0,0,7,17,194,0,0,4,194
-	.byte 0,0,3,18,81,128,234,195,0,2,121,128,136,0,0,8,195,0,2,147,195,0,2,144,195,0,2,121,195,0,2,145
-	.byte 195,0,2,146,195,0,2,138,195,0,2,122,195,0,2,153,195,0,2,154,195,0,2,157,195,0,2,158,195,0,2,159
-	.byte 195,0,2,155,195,0,2,156,195,0,2,131,195,0,2,160,195,0,2,135,195,0,2,132,195,0,2,136,195,0,2,162
-	.byte 195,0,2,166,195,0,2,161,195,0,2,165,195,0,2,163,195,0,2,164,195,0,2,167,195,0,2,167,195,0,2,166
-	.byte 195,0,2,165,195,0,2,164,195,0,2,163,195,0,2,162,195,0,2,161,195,0,2,160,195,0,2,159,195,0,2,158
-	.byte 195,0,2,157,195,0,2,156,195,0,2,155,195,0,2,154,195,0,2,153,195,0,7,23,195,0,7,50,195,0,2,131
-	.byte 195,0,5,248,195,0,5,247,195,0,7,26,195,0,7,29,195,0,7,33,195,0,7,27,195,0,7,40,195,0,7,41
-	.byte 195,0,7,46,195,0,7,34,195,0,7,47,195,0,7,49,195,0,7,48,195,0,7,47,195,0,7,46,195,0,7,45
-	.byte 195,0,7,44,195,0,7,43,37,195,0,7,41,195,0,7,40,195,0,7,39,195,0,7,38,23,22,34,195,0,7,34
-	.byte 195,0,7,33,195,0,7,32,195,0,7,31,195,0,7,30,195,0,7,29,195,0,7,28,195,0,7,27,195,0,7,26
-	.byte 195,0,7,25,195,0,7,24,4,128,160,24,0,0,8,193,0,9,133,193,0,9,130,193,0,9,129,193,0,9,127,4
-	.byte 128,224,32,8,0,8,193,0,9,133,193,0,9,130,193,0,9,129,193,0,9,127,4,128,160,32,0,0,8,193,0,9
-	.byte 133,193,0,9,130,193,0,9,129,193,0,9,127,4,128,160,32,0,0,8,193,0,9,133,193,0,9,130,193,0,9,129
-	.byte 193,0,9,127,115,103,101,110,0
+	.byte 0,0,2,4,5,0,0,0,0,0,0,0,0,0,14,6,7,8,9,10,7,11,12,13,14,15,16,15,17,0,1,18
+	.byte 0,5,19,20,21,22,23,0,30,24,19,25,20,21,22,26,27,28,29,30,19,31,27,32,33,34,19,35,20,21,22,36
+	.byte 27,37,38,39,19,40,41,0,21,42,43,44,45,46,47,48,49,50,51,52,53,19,54,20,21,22,20,21,22,40,0,21
+	.byte 55,56,44,45,46,56,48,57,58,59,52,56,19,60,20,21,22,20,21,22,40,0,10,61,62,7,18,63,64,65,66,67
+	.byte 68,0,1,69,0,1,70,0,0,1,3,16,71,72,73,74,72,75,76,77,78,79,80,81,81,82,79,83,1,3,8,73
+	.byte 75,84,82,83,85,86,76,1,3,2,77,77,1,3,1,76,1,3,0,0,0,0,4,73,75,87,88,0,1,77,0,0
+	.byte 0,2,89,90,0,6,90,91,92,93,94,95,0,29,96,84,40,85,97,98,99,100,101,102,103,104,96,63,105,106,107,108
+	.byte 109,110,111,108,109,110,111,63,112,113,114,0,0,0,0,0,0,0,3,115,116,45,0,7,117,118,119,48,120,121,122,0
+	.byte 1,116,0,1,45,0,1,45,0,0,0,0,0,0,0,0,0,1,45,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 8,123,124,48,125,126,127,124,124,0,0,0,0,0,0,0,0,0,0,0,1,128,128,0,1,128,128,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,1,128,128,255,252,0,0,0,1,1,3,219,0,0,1,255,252,0,0,0
+	.byte 1,1,3,219,0,0,2,5,30,0,1,255,255,255,255,255,193,0,13,205,255,253,0,0,0,2,130,58,1,1,198,0
+	.byte 13,205,0,1,7,129,103,193,0,13,203,193,0,13,204,193,0,13,206,5,30,0,1,255,255,255,255,255,193,0,13,207
+	.byte 255,253,0,0,0,2,130,58,1,1,198,0,13,207,0,1,7,129,147,5,30,0,1,255,255,255,255,255,193,0,13,208
+	.byte 255,253,0,0,0,2,130,58,1,1,198,0,13,208,0,1,7,129,179,5,30,0,1,255,255,255,255,255,193,0,13,209
+	.byte 255,253,0,0,0,2,130,58,1,1,198,0,13,209,0,1,7,129,211,5,30,0,1,255,255,255,255,255,193,0,13,210
+	.byte 255,253,0,0,0,2,130,58,1,1,198,0,13,210,0,1,7,129,243,4,2,130,80,1,1,2,2,2,255,252,0,0
+	.byte 0,1,1,7,130,19,12,0,39,42,47,17,0,130,75,14,6,1,2,130,169,1,14,2,21,3,14,6,1,2,130,190
+	.byte 1,17,0,1,17,0,77,17,0,87,17,0,93,17,0,128,137,17,0,128,167,14,2,21,4,14,2,22,4,17,0,128
+	.byte 171,17,0,128,191,17,0,128,221,14,2,32,2,14,2,28,2,14,3,219,0,0,3,4,2,130,100,1,1,2,2,2
+	.byte 16,7,130,119,136,247,14,1,5,17,0,128,245,17,0,129,1,17,0,129,27,14,3,219,0,0,1,6,13,50,13,30
+	.byte 3,219,0,0,1,1,13,0,17,0,129,63,6,14,50,14,30,3,219,0,0,1,1,14,0,17,0,129,91,17,0,129
+	.byte 127,6,15,50,15,30,3,219,0,0,1,1,15,0,14,2,35,2,14,2,128,215,5,14,1,6,17,0,129,135,17,0
+	.byte 129,153,17,0,129,191,14,2,22,2,17,0,129,193,14,2,130,43,1,6,45,50,45,30,2,130,43,1,1,45,0,14
+	.byte 2,11,2,17,0,129,207,17,0,129,225,14,1,7,17,0,129,249,6,47,50,47,30,2,130,43,1,1,47,0,17,0
+	.byte 130,5,14,1,8,17,0,130,55,14,2,130,110,1,6,50,50,50,30,2,130,110,1,1,50,0,14,2,128,198,5,14
+	.byte 2,128,233,5,17,0,131,14,17,0,131,26,17,0,131,52,14,2,28,5,16,1,3,8,17,0,131,88,16,1,3,9
+	.byte 16,1,3,14,16,1,3,19,17,0,131,126,16,1,3,11,17,0,131,146,16,1,3,10,16,1,3,12,16,1,3,13
+	.byte 14,2,128,229,5,14,2,129,40,5,14,2,129,39,5,11,1,3,14,1,3,17,0,131,164,14,2,128,168,6,14,2
+	.byte 130,34,1,6,32,50,32,30,2,130,34,1,1,32,0,14,2,130,30,1,14,2,128,202,5,17,0,131,196,14,2,128
+	.byte 227,5,14,2,129,88,5,6,43,50,43,30,2,129,88,5,1,43,0,17,0,131,220,17,0,131,250,6,31,50,31,30
+	.byte 2,130,110,1,1,31,0,14,3,219,0,0,2,6,40,50,40,30,3,219,0,0,2,1,40,0,6,34,50,34,30,2
+	.byte 130,110,1,1,34,0,14,6,1,2,130,78,1,14,1,4,16,2,128,220,6,132,147,14,2,128,221,6,14,1,9,6
+	.byte 52,50,52,30,2,130,43,1,1,52,0,17,0,131,34,16,1,7,41,6,48,50,48,30,2,130,43,1,1,48,0,33
+	.byte 7,23,109,111,110,111,95,97,114,114,97,121,95,110,101,119,95,115,112,101,99,105,102,105,99,0,3,193,0,20,30,3
+	.byte 197,0,5,175,7,20,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119,95,102,97,115,116,0,3,195,0,0,64
+	.byte 3,198,0,5,79,3,198,0,5,77,3,193,0,20,39,7,24,109,111,110,111,95,111,98,106,101,99,116,95,110,101,119
+	.byte 95,115,112,101,99,105,102,105,99,0,3,196,0,1,173,3,196,0,1,224,3,193,0,20,5,7,36,109,111,110,111,95
+	.byte 116,104,114,101,97,100,95,103,101,116,95,117,110,100,101,110,105,97,98,108,101,95,101,120,99,101,112,116,105,111,110,0
+	.byte 7,25,109,111,110,111,95,97,114,99,104,95,116,104,114,111,119,95,101,120,99,101,112,116,105,111,110,0,3,193,0,20
+	.byte 34,3,193,0,14,241,7,32,109,111,110,111,95,97,114,99,104,95,116,104,114,111,119,95,99,111,114,108,105,98,95,101
+	.byte 120,99,101,112,116,105,111,110,0,3,197,0,5,166,3,194,0,0,187,15,7,130,119,3,194,0,0,194,3,194,0,0
+	.byte 188,3,194,0,0,170,3,194,0,0,219,3,197,0,6,67,3,194,0,0,109,3,194,0,0,59,3,194,0,0,221,3
+	.byte 197,0,1,45,3,9,3,197,0,5,185,3,11,3,197,0,6,99,3,197,0,7,167,3,8,3,10,3,197,0,0,248
+	.byte 3,197,0,6,18,3,197,0,6,42,3,197,0,6,166,3,197,0,5,6,3,197,0,7,72,3,197,0,9,79,3,197
+	.byte 0,9,61,3,197,0,5,232,3,197,0,7,73,3,197,0,7,87,3,19,3,197,0,4,252,3,197,0,5,5,3,197
+	.byte 0,4,253,15,1,3,3,197,0,6,135,3,197,0,6,150,3,17,3,20,3,197,0,7,127,3,198,0,4,147,3,198
+	.byte 0,4,156,3,198,0,4,146,3,193,0,13,43,3,193,0,13,54,3,193,0,13,58,3,197,0,7,144,3,197,0,5
+	.byte 215,3,194,0,0,222,3,25,3,26,3,197,0,9,78,3,197,0,6,253,3,197,0,4,236,3,197,0,7,56,3,197
+	.byte 0,5,206,3,197,0,6,15,3,197,0,5,242,3,197,0,6,54,3,197,0,6,53,3,197,0,7,54,3,197,0,2
+	.byte 174,3,197,0,7,145,3,193,0,19,218,3,193,0,12,73,3,198,0,4,154,7,26,109,111,110,111,95,104,101,108,112
+	.byte 101,114,95,108,100,115,116,114,95,109,115,99,111,114,108,105,98,0,3,198,0,6,106,3,198,0,4,152,3,197,0,2
+	.byte 195,3,35,3,193,0,19,199,3,197,0,7,75,3,197,0,7,90,3,197,0,7,79,3,197,0,7,143,3,197,0,10
+	.byte 61,3,197,0,7,89,3,197,0,10,60,3,197,0,10,59,3,197,0,0,155,3,194,0,0,128,3,194,0,0,111,3
+	.byte 6,3,33,7,35,109,111,110,111,95,116,104,114,101,97,100,95,105,110,116,101,114,114,117,112,116,105,111,110,95,99,104
+	.byte 101,99,107,112,111,105,110,116,0,255,253,0,0,0,2,130,58,1,1,198,0,13,205,0,1,7,129,103,35,134,233,192
+	.byte 0,92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,205,0,1,7,129,103,0,4,2,130,59,1,1,7,129,103
+	.byte 35,134,233,150,5,7,135,23,35,134,233,140,13,255,253,0,0,0,7,135,23,1,198,0,14,31,1,7,129,103,0,255
+	.byte 253,0,0,0,2,130,58,1,1,198,0,13,207,0,1,7,129,147,35,135,63,192,0,92,41,255,253,0,0,0,2,130
+	.byte 58,1,1,198,0,13,207,0,1,7,129,147,0,255,253,0,0,0,2,130,58,1,1,198,0,13,208,0,1,7,129,179
+	.byte 35,135,109,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,208,0,1,7,129,179,0,255,253,0,0,0
+	.byte 2,130,58,1,1,198,0,13,209,0,1,7,129,211,35,135,155,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198
+	.byte 0,13,209,0,1,7,129,211,0,35,135,155,140,17,255,253,0,0,0,2,130,58,1,1,198,0,13,218,0,1,7,129
+	.byte 211,35,135,155,192,0,90,33,16,1,3,1,18,2,130,58,1,8,16,30,7,129,211,255,253,0,0,0,2,130,58,1
+	.byte 1,198,0,13,218,0,1,7,129,211,3,193,0,0,149,255,253,0,0,0,2,130,58,1,1,198,0,13,210,0,1,7
+	.byte 129,243,35,136,15,192,0,92,41,255,253,0,0,0,2,130,58,1,1,198,0,13,210,0,1,7,129,243,0,3,193,0
+	.byte 13,249,2,0,0,2,17,0,2,17,0,2,17,0,2,17,0,6,31,2,0,88,4,2,130,111,1,131,252,132,120,132
+	.byte 120,0,96,4,2,130,111,1,131,148,131,180,131,180,0,2,17,0,2,51,0,2,65,0,2,83,0,2,83,0,2,98
+	.byte 0,2,17,0,2,17,0,2,17,0,2,51,0,2,118,0,2,128,144,0,2,128,164,0,2,17,0,2,128,179,0,2
+	.byte 128,193,0,2,128,213,0,2,17,0,2,128,179,0,2,128,227,0,2,128,244,0,2,129,6,0,2,17,0,2,17,0
+	.byte 2,129,23,0,2,129,47,0,2,129,66,0,2,129,88,0,2,129,106,0,2,17,0,2,17,0,2,128,213,0,2,128
+	.byte 213,0,2,129,124,0,2,129,144,0,2,17,0,2,129,166,0,2,17,0,2,17,0,2,17,0,2,129,47,0,2,129
+	.byte 181,0,2,17,0,2,128,179,0,2,17,0,2,17,0,2,129,195,0,2,129,214,0,3,129,233,0,1,29,56,19,255
+	.byte 253,0,0,0,2,130,58,1,1,198,0,13,205,0,1,7,129,103,1,0,1,0,0,2,17,0,2,17,0,2,17,0
+	.byte 3,128,179,0,1,29,32,19,255,253,0,0,0,2,130,58,1,1,198,0,13,207,0,1,7,129,147,1,0,1,0,0
+	.byte 3,128,179,0,1,29,32,19,255,253,0,0,0,2,130,58,1,1,198,0,13,208,0,1,7,129,179,1,0,1,0,0
+	.byte 3,129,247,0,1,29,48,19,255,253,0,0,0,2,130,58,1,1,198,0,13,209,0,1,7,129,211,1,0,1,0,0
+	.byte 3,130,13,0,1,29,72,19,255,253,0,0,0,2,130,58,1,1,198,0,13,210,0,1,7,129,243,1,0,1,0,0
+	.byte 2,129,214,0,0,128,144,16,0,0,1,45,128,170,197,0,2,173,96,0,0,8,197,0,2,199,197,0,2,196,197,0
+	.byte 2,173,197,0,2,197,197,0,2,198,197,0,2,190,197,0,2,174,197,0,2,205,197,0,2,206,197,0,2,209,197,0
+	.byte 2,210,197,0,2,211,197,0,2,207,197,0,2,208,197,0,2,183,197,0,2,212,197,0,2,187,197,0,2,184,197,0
+	.byte 2,188,197,0,2,214,197,0,2,218,197,0,2,213,197,0,2,217,197,0,2,215,197,0,2,216,197,0,2,219,197,0
+	.byte 2,219,197,0,2,218,197,0,2,217,197,0,2,216,197,0,2,215,197,0,2,214,197,0,2,213,197,0,2,212,197,0
+	.byte 2,211,197,0,2,210,197,0,2,209,197,0,2,208,197,0,2,207,197,0,2,206,197,0,2,205,197,0,2,204,197,0
+	.byte 2,201,197,0,2,183,12,107,128,230,16,197,0,2,173,72,72,0,8,197,0,2,199,197,0,2,196,197,0,2,173,197
+	.byte 0,2,197,197,0,2,198,197,0,2,190,197,0,2,174,197,0,2,205,197,0,2,206,197,0,2,209,197,0,2,210,197
+	.byte 0,2,211,197,0,2,207,197,0,2,208,197,0,2,183,197,0,2,212,197,0,2,187,197,0,2,184,197,0,2,188,197
+	.byte 0,2,214,197,0,2,218,197,0,2,213,197,0,2,217,197,0,2,215,197,0,2,216,197,0,2,219,197,0,2,219,197
+	.byte 0,2,218,197,0,2,217,197,0,2,216,197,0,2,215,197,0,2,214,197,0,2,213,197,0,2,212,197,0,2,211,197
+	.byte 0,2,210,197,0,2,209,197,0,2,208,197,0,2,207,197,0,2,206,197,0,2,205,197,0,6,167,197,0,6,175,197
+	.byte 0,2,183,197,0,6,91,197,0,6,90,197,0,7,74,197,0,7,86,197,0,7,96,197,0,7,97,197,0,7,81,197
+	.byte 0,7,80,197,0,7,84,197,0,7,82,197,0,7,103,197,0,7,104,197,0,7,105,197,0,7,103,197,0,7,116,197
+	.byte 0,7,117,197,0,7,94,197,0,7,115,197,0,7,118,197,0,7,117,197,0,7,116,197,0,7,115,197,0,7,114,197
+	.byte 0,7,113,197,0,7,112,197,0,7,111,197,0,7,110,197,0,7,109,197,0,7,108,197,0,7,107,197,0,7,106,197
+	.byte 0,7,105,197,0,7,104,197,0,7,103,197,0,7,102,197,0,7,101,197,0,7,100,197,0,7,99,197,0,7,98,197
+	.byte 0,7,97,197,0,7,96,197,0,7,95,197,0,7,94,197,0,7,93,197,0,7,92,197,0,7,91,197,0,7,88,18
+	.byte 197,0,7,86,197,0,7,85,197,0,7,84,197,0,7,83,197,0,7,82,197,0,7,81,197,0,7,80,197,0,7,77
+	.byte 197,0,6,174,197,0,6,173,197,0,6,172,197,0,6,171,197,0,6,170,197,0,6,169,197,0,6,168,13,128,160,40
+	.byte 0,0,8,193,0,19,83,193,0,19,80,193,0,19,79,193,0,19,77,194,0,0,2,194,0,0,14,194,0,0,9,194
+	.byte 0,0,8,194,0,0,7,22,194,0,0,4,194,0,0,3,23,82,128,234,197,0,2,173,128,136,0,0,8,197,0,2
+	.byte 199,197,0,2,196,197,0,2,173,197,0,2,197,197,0,2,198,197,0,2,190,197,0,2,174,197,0,2,205,197,0,2
+	.byte 206,197,0,2,209,197,0,2,210,197,0,2,211,197,0,2,207,197,0,2,208,197,0,2,183,197,0,2,212,197,0,2
+	.byte 187,197,0,2,184,197,0,2,188,197,0,2,214,197,0,2,218,197,0,2,213,197,0,2,217,197,0,2,215,197,0,2
+	.byte 216,197,0,2,219,197,0,2,219,197,0,2,218,197,0,2,217,197,0,2,216,197,0,2,215,197,0,2,214,197,0,2
+	.byte 213,197,0,2,212,197,0,2,211,197,0,2,210,197,0,2,209,197,0,2,208,197,0,2,207,197,0,2,206,197,0,2
+	.byte 205,197,0,7,131,197,0,7,158,197,0,2,183,197,0,6,91,197,0,6,90,197,0,7,130,197,0,7,134,197,0,7
+	.byte 137,197,0,7,141,197,0,7,135,197,0,7,148,197,0,7,149,197,0,7,154,197,0,7,142,197,0,7,155,197,0,7
+	.byte 157,197,0,7,156,197,0,7,155,197,0,7,154,197,0,7,153,197,0,7,152,197,0,7,151,42,197,0,7,149,197,0
+	.byte 7,148,197,0,7,147,197,0,7,146,28,27,39,197,0,7,142,197,0,7,141,197,0,7,140,197,0,7,139,197,0,7
+	.byte 138,197,0,7,137,197,0,7,136,197,0,7,135,197,0,7,134,197,0,7,133,197,0,7,132,4,128,160,24,0,0,8
+	.byte 193,0,19,83,193,0,19,80,193,0,19,79,193,0,19,77,4,128,224,32,8,0,8,193,0,19,83,193,0,19,80,193
+	.byte 0,19,79,193,0,19,77,4,128,160,32,0,0,8,193,0,19,83,193,0,19,80,193,0,19,79,193,0,19,77,4,128
+	.byte 160,32,0,0,8,193,0,19,83,193,0,19,80,193,0,19,79,193,0,19,77,115,103,101,110,0
 .section __TEXT, __const
 	.align 3
 Lglobals_hash:

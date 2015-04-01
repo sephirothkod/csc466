@@ -48,3 +48,6 @@
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Debug/BubbleCell.exe
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/BubbleCell.exe
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Debug/BubbleCell.exe.mdb
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Debug/MySql.Data.CF.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Debug/I18N.West.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Debug/I18N.dll

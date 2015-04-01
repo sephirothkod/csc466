@@ -1,7 +1,12 @@
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/MonoTouch.Dialog-1.dll
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/mscorlib.dll
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/System.Core.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/I18N.West.dll
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/Xamarin.iOS.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/MySql.Data.CF.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/I18N.dll
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/BubbleCell.exe
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/System.Json.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/System.Data.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/System.Xml.dll
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/mtouch-cache/32/Link/System.dll

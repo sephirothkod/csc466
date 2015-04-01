@@ -44,3 +44,6 @@
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/icon-72.png
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/obj/iPhone/Release/BubbleCell.exe
 /Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Release/BubbleCell.exe
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Release/MySql.Data.CF.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Release/I18N.West.dll
+/Users/Korchinski/csc466/BubbleCell/BubbleCell/bin/iPhone/Release/I18N.dll
