@@ -24,15 +24,19 @@ namespace BubbleCell
 		DialogViewController discussion;
 		RootElement root;
 		UIView discussionHost;
-		UITextView entry;
+		public UITextView entry;
 		UIImageView chatBar;
 		UIButton sendButton;
+		public User Me{ get; set; }
+		public User ChatUser{ get; set; }
+		public LocationHelper.LocationResult location{ get; set; }
+		public bool sendLocation = false;
 
 		const float messageFontSize = 16f;
 		const float maxContentHeight = 84f;
 		const int entryHeight = 40;
 		const int port = 54545;
-		const string broadcastAddress = "255.255.255.255";
+		public string broadcastAddress{ get; set; }
 		nfloat previousContentHeight;
 
 		UdpClient receivingClient;
@@ -180,8 +184,18 @@ namespace BubbleCell
 			entry.Text = entry.Text.TrimEnd ();
 			if (!string.IsNullOrEmpty (entry.Text)) 
 			{
-				discussion.Root [0].Add (new ChatBubble (false, entry.Text));
-				byte[] data = Encoding.ASCII.GetBytes (entry.Text);
+				string message;
+				if (sendLocation) {
+					sendLocation = false;
+					message = "User:" + Me.Name + ",IP:" + Me.IP + ",Map:"
+						+location.Longitude+"|"+location.Latitude+"~" + entry.Text;
+					
+				} else {
+					message = "User:" + Me.Name + ",IP:" + Me.IP + ",Map:false~" + entry.Text;
+					discussion.Root [0].Add (new ChatBubble (false, entry.Text));
+				}
+
+				byte[] data = Encoding.ASCII.GetBytes (message);
 				sendingClient.Send (data, data.Length);
 				entry.Text = "";
 			}
@@ -202,7 +216,20 @@ namespace BubbleCell
 
 		private void MessageReceived(string message)
 		{
-			discussion.Root [0].Add (new ChatBubble (true, message));
+			string[] messages = message.Split ('~');
+			string[] data = messages [0].Split (',');
+			if (data [0].Split (':') [1] == ChatUser.Name) {
+				if (data [1].Split (':') [1] != ChatUser.IP) {
+					broadcastAddress = data [1].Split (':') [1];
+					ChatUser.IP = broadcastAddress;
+				}
+				if (data [2].Split (':') [1] != "false") {
+					
+					UIApplication.SharedApplication.OpenUrl(new NSUrl("http://maps.google.com/maps?q=48.461066,-123.3115"));
+				} else {
+					discussion.Root [0].Add (new ChatBubble (true, messages [1]));
+				}
+			}
 		}
 
 		//

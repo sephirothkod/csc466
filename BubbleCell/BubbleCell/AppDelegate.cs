@@ -15,6 +15,7 @@ using UIKit;
 using System.Net;
 using System.Threading;
 using System.Collections.Generic;
+using CoreLocation;
 
 namespace BubbleCell {
 
@@ -23,6 +24,7 @@ namespace BubbleCell {
 	{
 		UIWindow window;
 		MySqlConnection sqlconn = null;
+		User Me = new User ();
 		public string MyIp { get; set; }
 		string UserName { get; set; }
 		string connsqlstring = string.Format ("Server=sql3.freesqldatabase.com;Port=3306;database=sql372492;User Id=sql372492;Password=wS6!dQ5%");
@@ -69,7 +71,11 @@ namespace BubbleCell {
 					}
 				}
 			}
-
+			finally{
+				connection.Close ();
+			}
+			Me.Name = UserName;
+			Me.IP = MyIp;
 
 
 		}
@@ -86,7 +92,7 @@ namespace BubbleCell {
 			MySql.Data.MySqlClient.MySqlCommand myCommand = new MySql.Data.MySqlClient.MySqlCommand(retrieve, connection);
 
 			try{
-				User newUser = new User();
+				
 				MySqlDataReader myReader;
 				myReader = myCommand.ExecuteReader();
 //				while(myReader.Read()){
@@ -95,11 +101,21 @@ namespace BubbleCell {
 
 				DataTable myTable = new DataTable();
 				myTable.Load(myReader);
+				User newUser = new User();
 				foreach (DataRow row in myTable.Rows)
 				{
 					newUser.Name = row["Name"].ToString();
 					newUser.IP = row["IP"].ToString();
 				}
+				if (newUser.Name != null && newUser.IP != null)
+				{
+					currentChats.Add(newUser);
+				}
+				else{
+					UIAlertView alert = new UIAlertView ("Error", "User does not exist!", null, "OK", null);
+					alert.Show();
+				}
+
 			}
 			catch (Exception e) {
 				Console.WriteLine ("ERROR: "+e);
@@ -107,9 +123,6 @@ namespace BubbleCell {
 			finally{
 				connection.Close ();
 			}
-
-
-
 		}
 
 		static void Main (string[] args)
@@ -117,32 +130,52 @@ namespace BubbleCell {
 			UIApplication.Main (args, null, "AppDelegate");
 		}
 
-		UIViewController MakeChat (string title)
+		UIViewController MakeChat (User chatUser)
 		{
-			var chatContent = new RootElement (title) {
+			var chatContent = new RootElement (chatUser.Name) {
 				new Section () {
 
 				}
 			};
-			return new ChatViewController (chatContent);
+			var chatView = new ChatViewController (chatContent){broadcastAddress=chatUser.IP,Me=Me,ChatUser=chatUser};
+			chatView.NavigationItem.SetRightBarButtonItem(
+					new UIBarButtonItem(UIBarButtonSystemItem.Action, (sender,args) => {
+//					LocationHelper.Refresh();
+//					var loc = LocationHelper.GetLocationResult();
+					CLLocationManager lm = new CLLocationManager(); //changed the class name
+					lm.DesiredAccuracy= 5.0;
+
+						lm.LocationsUpdated += delegate(object s, CLLocationsUpdatedEventArgs e) {
+						foreach(CLLocation l in e.Locations) {
+							Console.WriteLine(l.Coordinate.Latitude.ToString() + ", " +l.Coordinate.Longitude.ToString());
+						}
+					};
+
+					lm.StartUpdatingLocation();
+//					chatView.location = loc;
+					chatView.sendLocation = true;
+					chatView.entry.Text = "Click Send-->";
+					})
+					, true);
+			chatView.NavigationItem.SetHidesBackButton (false, false);
+			return chatView;
 		}
 
 		UIViewController MakeOptions ()
 		{
-			
+			var chatList = new Section();
+			foreach (User chatUser in currentChats) {
+				chatList.Add ((Element)new RootElement (chatUser.Name, x => MakeChat (chatUser)));
+			}
 
 			var options = new DialogViewController (new RootElement ("Chats") {
-				
-				new Section ("Active Chats"){
-					(Element)new RootElement ("Chat with a Robot", x=> MakeChat ("Robot")),
-					(Element)new RootElement ("Chat with Mom", x=> MakeChat ("Mom")),
-				},
+				chatList,
 
 				new Section ("Create a New Chat"){
 					(Element)new RootElement ("New", x=> MakeNewChat ())
 
 				}
-
+			
 			});
 			var controller = new UINavigationController (options);
 			controller.NavigationItem.SetHidesBackButton(false,false);
@@ -151,21 +184,21 @@ namespace BubbleCell {
 
 		UIViewController MakeNewChat ()
 		{
-			var userName = new EntryElement ("Username", "Enter Desired Name", "");
+			var userName = new EntryElement ("", "Username", "");
 
 			var createButton = new StringElement ("Create", delegate {
 				userName.FetchValue ();
-				GetIp(userName.ToString());
-
+				GetIp(userName.Value);
+				window.RootViewController.PresentViewController (MakeOptions (), true, delegate {});
 			});
 
 			var createChat = new DialogViewController (new RootElement ("New Chat") {
 
-				new Section ("Create Chat") {
+				new Section ("Enter username of recipient") {
 					userName
 				},
 				new Section () {
-					createButton
+					(Element)new RootElement ("Create", x=> {userName.FetchValue (); GetIp(userName.Value); return MakeOptions ();})
 				}
 			},true);
 			createChat.NavigationItem.SetHidesBackButton(false,false);
@@ -221,7 +254,7 @@ namespace BubbleCell {
 			}
 			else
 				main = MakeLogin ();
-
+			//LocationHelper.StartLocationManager(5,1);
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			window.RootViewController = main;
 			window.MakeKeyAndVisible ();

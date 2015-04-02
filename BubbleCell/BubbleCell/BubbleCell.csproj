@@ -88,6 +88,7 @@
     <Compile Include="Bubble.cs" />
     <Compile Include="ChatViewController.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="LocationHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="green.png" />
